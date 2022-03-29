@@ -1,4 +1,4 @@
-# not ready to be used and will break your game
+# WIP
 An Infusion 2 addon. The goal is to add concrete and realistic infusions as opposed to magical and metaphorical adjectives used in Infused 2. Each infusion has a small description for more lore.
 New tiers:
 - **tiered** - **negative**, **minor**, **moderate**, **major**, **extreme**, **record** - five tiers for infusions like small-big-large-huge-enormous.
