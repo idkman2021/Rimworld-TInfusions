@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <Infusion.InfusionDef Abstract="True" Name="InfusionBroken">
+        <tier>TI_Broken</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <multiplier>0.4</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionModified">
+        <tier>TI_Modified</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <multiplier>1.6</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionRepurposed">
+        <tier>TI_Repurposed</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <multiplier>2.3</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+    
+    <!-- apparels -->
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionBrokenApparel" ParentName="InfusionBroken">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <apparel>true</apparel>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionModifiedApparel" ParentName="InfusionModified">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <apparel>true</apparel>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionRepurposedApparel" ParentName="InfusionRepurposed">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <apparel>true</apparel>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <!-- armors must cover a body part-->
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionBrokenArmor" ParentName="InfusionBrokenApparel">
+        <matches>
+            <li Class="Infusion.Matchers.NotUtility" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionModifiedArmor" ParentName="InfusionModifiedApparel">
+        <matches>
+            <li Class="Infusion.Matchers.NotUtility" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionRepurposedArmor" ParentName="InfusionRepurposedApparel">
+        <matches>
+            <li Class="Infusion.Matchers.NotUtility" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    
+    <!-- melee -->
+    <Infusion.InfusionDef Abstract="True" Name="InfusionBrokenMelee" ParentName="InfusionBroken">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionModifiedMelee" ParentName="InfusionModified">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionRepurposedMelee" ParentName="InfusionRepurposed">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <!-- ranged -->
+    <Infusion.InfusionDef Abstract="True" Name="InfusionBrokenRanged" ParentName="InfusionBroken">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionModifiedRanged" ParentName="InfusionModified">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionRepurposedRanged" ParentName="InfusionRepurposed">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <!-- shields -->
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionBrokenShield" ParentName="InfusionBroken">
+        <matches>
+            <li Class="Infusion.Matchers.ShieldBelt" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionModifiedShield" ParentName="InfusionModified">
+        <matches>
+            <li Class="Infusion.Matchers.ShieldBelt" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionRepurposedShield" ParentName="InfusionRepurposed">
+        <matches>
+            <li Class="Infusion.Matchers.ShieldBelt" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <!--
+    <Infusion.InfusionDef ParentName="Infusion1All">
+        <defName>_______</defName>
+        <label>_______</label>
+        <labelShort>_______</labelShort>
+        <stats>
+            <li>
+            <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>_______</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef> 
+
+-->
+
+
+</Defs>
