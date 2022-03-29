@@ -7,7 +7,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>0.8</multiplier>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
         </stats>
@@ -18,7 +18,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>1.1</multiplier>
+                    <multiplier>0.1</multiplier>
                 </value>
             </li>
         </stats>
@@ -29,7 +29,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>1.5</multiplier>
+                    <multiplier>0.5</multiplier>
                 </value>
             </li>
         </stats>
@@ -40,7 +40,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>2</multiplier>
+                    <multiplier>1</multiplier>
                 </value>
             </li>
         </stats>
@@ -51,7 +51,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>3</multiplier>
+                    <multiplier>2</multiplier>
                 </value>
             </li>
         </stats>
@@ -62,7 +62,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>10</multiplier>
+                    <multiplier>9</multiplier>
                 </value>
             </li>
         </stats>
@@ -526,31 +526,31 @@
                     <multiplier>-0.1</multiplier>
                 </value>
             </li>
+            <li>
+                <key>ArmorRating_Heat</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Insulation_Cold</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>-0.25</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
         </stats>
-        <li>
-            <key>ArmorRating_Heat</key>
-            <value>
-                <multiplier>-0.1</multiplier>
-            </value>
-        </li>
-        <li>
-            <key>Insulation_Cold</key>
-            <value>
-                <multiplier>-0.1</multiplier>
-            </value>
-        </li>
-        <li>
-            <key>Mass</key>
-            <value>
-                <multiplier>-0.25</multiplier>
-            </value>
-        </li>
-        <li>
-            <key>MaxHitPoints</key>
-            <value>
-                <multiplier>-0.1</multiplier>
-            </value>
-        </li>
         <extraDescriptions>
             <li>This apparel is quite thin.</li>
             <li>It is not as insulative and easier to penetrate.</li>
@@ -574,31 +574,31 @@
                     <offset>0.03</offset>
                 </value>
             </li>
+            <li>
+                <key>ArmorRating_Heat</key>
+                <value>
+                    <offset>0.03</offset>
+                </value>
+            </li>
+            <li>
+                <key>Insulation_Cold</key>
+                <value>
+                    <offset>2</offset>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>0.05</multiplier>
+                </value>
+            </li>
         </stats>
-        <li>
-            <key>ArmorRating_Heat</key>
-            <value>
-                <offset>0.03</offset>
-            </value>
-        </li>
-        <li>
-            <key>Insulation_Cold</key>
-            <value>
-                <offset>2</offset>
-            </value>
-        </li>
-        <li>
-            <key>Mass</key>
-            <value>
-                <multiplier>0.1</multiplier>
-            </value>
-        </li>
-        <li>
-            <key>MaxHitPoints</key>
-            <value>
-                <multiplier>0.05</multiplier>
-            </value>
-        </li>
         <extraDescriptions>
             <li>This apparel is quite thick.</li>
             <li>It is more insulative and harder to penetrate.</li>
@@ -622,31 +622,31 @@
                     <offset>0.05</offset>
                 </value>
             </li>
+            <li>
+                <key>ArmorRating_Heat</key>
+                <value>
+                    <offset>4</offset>
+                </value>
+            </li>
+            <li>
+                <key>Insulation_Cold</key>
+                <value>
+                    <offset>4</offset>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>0.2</multiplier>
+                </value>
+            </li>
         </stats>
-        <li>
-            <key>ArmorRating_Heat</key>
-            <value>
-                <offset>4</offset>
-            </value>
-        </li>
-        <li>
-            <key>Insulation_Cold</key>
-            <value>
-                <offset>4</offset>
-            </value>
-        </li>
-        <li>
-            <key>Mass</key>
-            <value>
-                <multiplier>0.3</multiplier>
-            </value>
-        </li>
-        <li>
-            <key>MaxHitPoints</key>
-            <value>
-                <multiplier>0.2</multiplier>
-            </value>
-        </li>
         <extraDescriptions>
             <li>This apparel is very thick.</li>
             <li>It is more insulative and harder to penetrate.</li>
@@ -671,13 +671,13 @@
                     <multiplier>-0.15</multiplier>
                 </value>
             </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
         </stats>
-        <li>
-            <key>MaxHitPoints</key>
-            <value>
-                <multiplier>-0.3</multiplier>
-            </value>
-        </li>
         <extraDescriptions>
             <li>This apparel is quite flimsy.</li>
             <li>It rips apart easily.</li>
@@ -1199,19 +1199,18 @@
             <li>
                 <key>PawnBeauty</key>
                 <value>
-                    <offset>0.03</offset>
+                    <offset>0.02</offset>
                 </value>
             </li>
             <li>
-                <key>MarketValue</key>
+                <key>SocialImpact</key>
                 <value>
-                    <offset>50</offset>
+                  <offset>0.02</offset>
                 </value>
-            </li>
+              </li>
         </stats>
         <extraDescriptions>
             <li>This apparel was decorated with some patterns.</li>
-            <li>It looks prettier and can be sold for more silver.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -1223,19 +1222,18 @@
             <li>
                 <key>PawnBeauty</key>
                 <value>
-                    <offset>0.01</offset>
+                    <offset>0.03</offset>
                 </value>
             </li>
             <li>
-                <key>MarketValue</key>
+                <key>SocialImpact</key>
                 <value>
-                    <offset>100</offset>
+                  <offset>0.01</offset>
                 </value>
-            </li>
+              </li>
         </stats>
         <extraDescriptions>
             <li>This apparel shines in light.</li>
-            <li>It looks prettier and can be sold for more silver.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -1247,15 +1245,15 @@
             <li>
                 <key>PawnBeauty</key>
                 <value>
-                    <offset>0.02</offset>
+                    <offset>0.01</offset>
                 </value>
             </li>
             <li>
-                <key>MarketValue</key>
+                <key>SocialImpact</key>
                 <value>
-                    <offset>75</offset>
+                  <offset>0.03</offset>
                 </value>
-            </li>
+              </li>
         </stats>
         <extraDescriptions>
             <li>This apparel is decorated with glitter.</li>
@@ -1288,13 +1286,13 @@
             <li>
                 <key>PawnBeauty</key>
                 <value>
-                    <offset>0.03</offset>
+                    <offset>0.05</offset>
                 </value>
             </li>
             <li>
                 <key>SocialImpact</key>
                 <value>
-                    <offset>0.03</offset>
+                    <offset>0.05</offset>
                 </value>
             </li>
         </stats>
@@ -1313,25 +1311,18 @@
             <li>
                 <key>PawnBeauty</key>
                 <value>
-                    <offset>0.02</offset>
+                    <offset>0.04</offset>
                 </value>
             </li>
             <li>
                 <key>SocialImpact</key>
                 <value>
-                    <offset>0.02</offset>
-                </value>
-            </li>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <offset>100</offset>
+                    <offset>0.06</offset>
                 </value>
             </li>
         </stats>
         <extraDescriptions>
             <li>This apparel is stylish.</li>
-            <li>It looks prettier and people are willing to pay more silver for it.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -1617,12 +1608,6 @@
                 </value>
             </li>
             <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>-0.4</multiplier>
-                </value>
-            </li>
-            <li>
                 <key>MentalBreakThreshold</key>
                 <value>
                     <offset>0.005</offset>
@@ -1649,10 +1634,10 @@
         </stats>
         <extraDescriptions>
             <li>This apparel was made in a rush.</li>
-            <li>It is slightly worse than normal apparel and people aren't willing to pay a lot for it.</li>
+            <li>It is slightly worse than normal apparel in most ways.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-<!--
+    <!--
     <Infusion.InfusionDef ParentName="Infusion0Armor">
         <defName>TI_ArmQuality0b</defName>
         <label>primitive</label>
@@ -1695,7 +1680,7 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 -->
-<!--
+    <!--
     <Infusion.InfusionDef ParentName="Infusion1Armor">
         <defName>TI_ArmQuality1</defName>
         <label>high quality</label>
@@ -2954,13 +2939,13 @@
                     <multiplier>-0.4</multiplier>
                 </value>
             </li>
-            <onHits>
-                <li Class="Infusion.OnHitWorkers.ApplyDamage">
-                    <def>Blunt</def>
-                    <amount>0.2</amount>
-                </li>
-            </onHits>
         </stats>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Blunt</def>
+                <amount>0.2</amount>
+            </li>
+        </onHits>
         <extraDescriptions>
             <li>This weapon is too blunt and doesn't always cut.</li>
             <li>It does less damage and sometimes it will cause more blunt damage.</li>
@@ -3004,7 +2989,7 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="Infusion3Piercer">
-        <defName>TI_PSharpness2</defName>
+        <defName>TI_PSharpness3</defName>
         <label>razor-sharp</label>
         <labelShort>sharp+</labelShort>
         <stats>
