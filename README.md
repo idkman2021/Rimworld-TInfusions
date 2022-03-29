@@ -1,5 +1,5 @@
 # not ready to be used and will break your game
-An Infusion 2 addon. The goal is to add concrete and realistic infusions as opposed to random / metaphorical adjectives used in Infused 2. Each infusion has a small description for more lore.
+An Infusion 2 addon. The goal is to add concrete and realistic infusions as opposed to magical and metaphorical adjectives used in Infused 2. Each infusion has a small description for more lore.
 New tiers:
 - **tiered** - **negative**, **minor**, **moderate**, **major**, **extreme**, **record** - five tiers for infusions like small-big-large-huge-enormous.
 - **broken** - a tier that only appears on awful items and makes them even more useless. Doesn't just include forms of breakage, for example there is a "toy" infusion planned.
