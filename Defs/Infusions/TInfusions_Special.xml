@@ -367,7 +367,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <multiplier>-0.75</multiplier>
+                    <offset>-0.75</offset>
                 </value>
             </li>
             <li>
@@ -379,25 +379,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>-0.04</offset>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>-0.04</offset>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>-0.04</offset>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>-0.04</offset>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
         </stats>
@@ -420,7 +420,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <multiplier>-0.875</multiplier>
+                    <offset>-0.875</offset>
                 </value>
             </li>
             <li>
@@ -432,25 +432,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>-0.1</offset>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>-0.1</offset>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>-0.1</offset>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>-0.1</offset>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
         </stats>
@@ -473,7 +473,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <multiplier>-0.9375</multiplier>
+                    <offset>-0.9375</offset>
                 </value>
             </li>
             <li>
@@ -485,25 +485,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>-0.18</offset>
+                    <multiplier>-0.6</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>-0.18</offset>
+                    <multiplier>-0.6</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>-0.18</offset>
+                    <multiplier>-0.6</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>-0.18</offset>
+                    <multiplier>-0.6</multiplier>
                 </value>
             </li>
         </stats>
@@ -528,7 +528,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <multiplier>2</multiplier>
+                    <offset>2</offset>
                 </value>
             </li>
             <li>
@@ -588,7 +588,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <multiplier>3</multiplier>
+                    <offset>3</offset>
                 </value>
             </li>
             <li>
@@ -647,7 +647,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <multiplier>4</multiplier>
+                    <offset>4</offset>
                 </value>
             </li>
             <li>
@@ -818,7 +818,7 @@
             <li>This apparel is covered in an antibacterial coating that kills any germs.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-    
+
     <Infusion.InfusionDef ParentName="InfusionRepurposed1Melee">
         <defName>TI_MeleeHot</defName>
         <label>hot</label>
@@ -1181,7 +1181,7 @@
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
-                    <multiplier>0.2</multiplier>
+                    <multiplier>2.6</multiplier>
                 </value>
             </li>
             <li>
@@ -1212,7 +1212,7 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
-                <amount>0.7</amount>
+                <amount>0.6</amount>
                 <radius>3</radius>
             </li>
         </onHits>
@@ -1229,7 +1229,7 @@
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
-                    <multiplier>1</multiplier>
+                    <multiplier>10</multiplier>
                 </value>
             </li>
             <li>
@@ -1260,12 +1260,12 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
-                <amount>0.9</amount>
+                <amount>0.7</amount>
                 <radius>5</radius>
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Projectiles are very explosive, but because they are heavy, the weapon is now significantly slower and harder to aim.</li>
+            <li>Projectiles are very explosive, but because they are heavy, the weapon is now significantly slower and harder to aim. The explosion is huge but doesn't do a lot of damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 

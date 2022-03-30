@@ -3090,7 +3090,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <multiplier>-0.1</multiplier>
+                    <offset>-0.1</offset>
                 </value>
             </li>
         </stats>
@@ -3113,7 +3113,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <multiplier>0.1</multiplier>
+                    <offset>0.1</offset>
                 </value>
             </li>
         </stats>
@@ -3292,7 +3292,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <multiplier>-0.25</multiplier>
+                    <offset>-0.25</offset>
                 </value>
             </li>
             <li>
@@ -3321,7 +3321,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <multiplier>-0.45</multiplier>
+                    <offset>-0.45</offset>
                 </value>
             </li>
             <li>
@@ -3351,7 +3351,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <multiplier>0.1</multiplier>
+                    <offset>0.1</offset>
                 </value>
             </li>
             <li>
@@ -3380,7 +3380,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <multiplier>0.2</multiplier>
+                    <offset>0.2</offset>
                 </value>
             </li>
             <li>
@@ -3409,7 +3409,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <multiplier>0.4</multiplier>
+                    <offset>0.4</offset>
                 </value>
             </li>
             <li>
