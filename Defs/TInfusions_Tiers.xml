@@ -32,7 +32,7 @@
     <defName>TI_Negative</defName>
     <label>negative</label>
     <priority>5</priority>
-    <color>(0.9, 0.65, 0.65)</color>
+    <color>(0.9, 0.55, 0.55)</color>
     <infuserValue>100</infuserValue>
     <extractionChance>1</extractionChance>
     <weights>
@@ -46,12 +46,12 @@
     </weights>
     <chances>
       <awful>0.6</awful>
-      <poor>0.3</poor>
-      <normal>0.1</normal>
-      <good>0.05</good>
-      <excellent>0</excellent>
-      <masterwork>0</masterwork>
-      <legendary>0</legendary>
+      <poor>0.5</poor>
+      <normal>0.4</normal>
+      <good>0.3</good>
+      <excellent>0.2</excellent>
+      <masterwork>0.1</masterwork>
+      <legendary>0.01</legendary>
     </chances>
   </Infusion.TierDef>
 
@@ -86,7 +86,7 @@
     <defName>TI_Moderate</defName>
     <label>moderate</label>
     <priority>20</priority>
-    <color>(0.7, 0.9, 0.7)</color>
+    <color>(0.6, 0.9, 0.6)</color>
     <infuserValue>400</infuserValue>
     <extractionChance>0.6</extractionChance>
     <weights>
@@ -113,7 +113,7 @@
     <defName>TI_Major</defName>
     <label>major</label>
     <priority>30</priority>
-    <color>(0.55, 1, 0.55)</color>
+    <color>(0.3, 1, 0.3)</color>
     <infuserValue>800</infuserValue>
     <extractionChance>0.4</extractionChance>
     <weights>
@@ -191,8 +191,8 @@
   </Infusion.TierDef>
 
   <Infusion.TierDef>
-    <defName>TI_Repurposed</defName>
-    <label>repurposed</label>
+    <defName>TI_RepurposedT1</defName>
+    <label>repurposed T1</label>
     <priority>50</priority>
     <color>(0.3, 0.3, 1)</color>
     <infuserValue>3200</infuserValue>
@@ -217,12 +217,68 @@
     </chances>
   </Infusion.TierDef>
 
+  
+  <Infusion.TierDef>
+    <defName>TI_RepurposedT2</defName>
+    <label>repurposed T2</label>
+    <priority>53</priority>
+    <color>(0.3, 0.3, 1)</color>
+    <infuserValue>4800</infuserValue>
+    <extractionChance>0.1</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0</awful>
+      <poor>0.02</poor>
+      <normal>0.05</normal>
+      <good>0.1</good>
+      <excellent>0.15</excellent>
+      <masterwork>0.2</masterwork>
+      <legendary>0.2</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+    
+  <Infusion.TierDef>
+    <defName>TI_RepurposedT3</defName>
+    <label>repurposed T3</label>
+    <priority>56</priority>
+    <color>(0.3, 0.3, 1)</color>
+    <infuserValue>6000</infuserValue>
+    <extractionChance>0.1</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0</awful>
+      <poor>0</poor>
+      <normal>0</normal>
+      <good>0.01</good>
+      <excellent>0.02</excellent>
+      <masterwork>0.05</masterwork>
+      <legendary>0.1</legendary>
+    </chances>
+  </Infusion.TierDef>
+
   <Infusion.TierDef>
     <defName>TI_Legend</defName>
     <label>legend</label>
     <priority>60</priority>
     <color>(1, 1, 0)</color>
-    <infuserValue>4800</infuserValue>
+    <infuserValue>7200</infuserValue>
     <extractionChance>0.05</extractionChance>
     <weights>
       <awful>1</awful>
@@ -249,7 +305,7 @@
     <label>artifact</label>
     <priority>70</priority>
     <color>(1, 0, 1)</color>
-    <infuserValue>6400</infuserValue>
+    <infuserValue>7200</infuserValue>
     <extractionChance>0.025</extractionChance>
     <weights>
       <awful>1</awful>

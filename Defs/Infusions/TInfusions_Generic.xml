@@ -445,49 +445,37 @@
     <!-- bullet -->
     <Infusion.InfusionDef Abstract="True" Name="Infusion0Bullet" ParentName="Infusion0Ranged">
         <matches>
-            <matches>
-                <li Class="Infusion.Matchers.ProjectileBullet" />
-            </matches>
+            <li Class="Infusion.Matchers.ProjectileBullet" />
         </matches>
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef Abstract="True" Name="Infusion1Bullet" ParentName="Infusion1Ranged">
         <matches>
-            <matches>
-                <li Class="Infusion.Matchers.ProjectileBullet" />
-            </matches>
+            <li Class="Infusion.Matchers.ProjectileBullet" />
         </matches>
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef Abstract="True" Name="Infusion2Bullet" ParentName="Infusion2Ranged">
         <matches>
-            <matches>
-                <li Class="Infusion.Matchers.ProjectileBullet" />
-            </matches>
+            <li Class="Infusion.Matchers.ProjectileBullet" />
         </matches>
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef Abstract="True" Name="Infusion3Bullet" ParentName="Infusion3Ranged">
         <matches>
-            <matches>
-                <li Class="Infusion.Matchers.ProjectileBullet" />
-            </matches>
+            <li Class="Infusion.Matchers.ProjectileBullet" />
         </matches>
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef Abstract="True" Name="Infusion4Bullet" ParentName="Infusion4Ranged">
         <matches>
-            <matches>
-                <li Class="Infusion.Matchers.ProjectileBullet" />
-            </matches>
+            <li Class="Infusion.Matchers.ProjectileBullet" />
         </matches>
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef Abstract="True" Name="Infusion5Bullet" ParentName="Infusion5Ranged">
         <matches>
-            <matches>
-                <li Class="Infusion.Matchers.ProjectileBullet" />
-            </matches>
+            <li Class="Infusion.Matchers.ProjectileBullet" />
         </matches>
     </Infusion.InfusionDef>
 
@@ -517,25 +505,25 @@
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <multiplier>-0.02</multiplier>
+                    <multiplier>-0.05</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Sharp</key>
                 <value>
-                    <multiplier>-0.1</multiplier>
+                    <multiplier>-0.35</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Heat</key>
                 <value>
-                    <multiplier>-0.1</multiplier>
+                    <multiplier>-0.25</multiplier>
                 </value>
             </li>
             <li>
                 <key>Insulation_Cold</key>
                 <value>
-                    <multiplier>-0.1</multiplier>
+                    <multiplier>-0.3</multiplier>
                 </value>
             </li>
             <li>
@@ -564,25 +552,25 @@
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <multiplier>0.1</multiplier>
+                    <multiplier>0.25</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Sharp</key>
                 <value>
-                    <multiplier>0.1</multiplier>
+                    <multiplier>0.25</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Heat</key>
                 <value>
-                    <multiplier>0.1</multiplier>
+                    <multiplier>0.25</multiplier>
                 </value>
             </li>
             <li>
                 <key>Insulation_Cold</key>
                 <value>
-                    <multiplier>4</multiplier>
+                    <multiplier>0.25</multiplier>
                 </value>
             </li>
             <li>
@@ -594,7 +582,7 @@
             <li>
                 <key>MaxHitPoints</key>
                 <value>
-                    <multiplier>0.1</multiplier>
+                    <multiplier>0.25</multiplier>
                 </value>
             </li>
         </stats>
@@ -689,19 +677,19 @@
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <multiplier>0.01</multiplier>
+                    <multiplier>0.05</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Sharp</key>
                 <value>
-                    <multiplier>0.15</multiplier>
+                    <multiplier>0.3</multiplier>
                 </value>
             </li>
             <li>
                 <key>MaxHitPoints</key>
                 <value>
-                    <multiplier>0.2</multiplier>
+                    <multiplier>0.3</multiplier>
                 </value>
             </li>
         </stats>
@@ -718,13 +706,13 @@
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <multiplier>0.03</multiplier>
+                    <multiplier>0.1</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Sharp</key>
                 <value>
-                    <multiplier>0.3</multiplier>
+                    <multiplier>0.55</multiplier>
                 </value>
             </li>
             <li>
@@ -749,7 +737,7 @@
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <multiplier>0.2</multiplier>
+                    <offset>0.05</offset>
                 </value>
             </li>
             <li>
@@ -772,7 +760,7 @@
             </li>
         </stats>
         <extraDescriptions>
-            <li>This apparel is quite stiff and rigid. It restricts movement, but stops blunt attacks.</li>
+            <li>This apparel is quite stiff and rigid. It restricts movement, but protects slightly against blunt attacks.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -784,7 +772,7 @@
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <offset>-0.01</offset>
+                    <multiplier>-0.05</multiplier>
                 </value>
             </li>
             <li>
@@ -802,13 +790,12 @@
             <li>
                 <key>MeleeDodgeChance</key>
                 <value>
-                    <offset>2</offset>
+                    <offset>1</offset>
                 </value>
             </li>
         </stats>
         <extraDescriptions>
             <li>This apparel is quite flexible and it doesn't restrict movement.</li>
-            <li></li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -885,8 +872,8 @@
 
     <Infusion.InfusionDef ParentName="Infusion3Armor">
         <defName>TI_ArmReinforced3</defName>
-        <label>fortified</label>
-        <labelShort>fort</labelShort>
+        <label>armored</label>
+        <labelShort>armor</labelShort>
         <stats>
             <li>
                 <key>ArmorRating_Sharp</key>
@@ -946,7 +933,7 @@
     <Infusion.InfusionDef ParentName="Infusion4Armor">
         <defName>TI_ArmLight4</defName>
         <label>weightless</label>
-        <labelShort>weightless</labelShort>
+        <labelShort>wless</labelShort>
         <stats>
             <li>
                 <key>MoveSpeed</key>
@@ -970,18 +957,18 @@
     <Infusion.InfusionDef ParentName="Infusion1Armor">
         <defName>TI_ArmHeavy1</defName>
         <label>weighty</label>
-        <labelShort>weight</labelShort>
+        <labelShort>wght</labelShort>
         <stats>
             <li>
                 <key>ArmorRating_Sharp</key>
                 <value>
-                    <multiplier>0.05</multiplier>
+                    <multiplier>0.1</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <multiplier>0.05</multiplier>
+                    <multiplier>0.1</multiplier>
                 </value>
             </li>
             <li>
@@ -1010,13 +997,13 @@
             <li>
                 <key>ArmorRating_Sharp</key>
                 <value>
-                    <multiplier>0.1</multiplier>
+                    <multiplier>0.2</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <multiplier>0.2</multiplier>
+                    <multiplier>0.4</multiplier>
                 </value>
             </li>
             <li>
@@ -1040,18 +1027,18 @@
     <Infusion.InfusionDef ParentName="Infusion3Armor">
         <defName>TI_ArmHeavy3</defName>
         <label>massive</label>
-        <labelShort>massive</labelShort>
+        <labelShort>mass</labelShort>
         <stats>
             <li>
                 <key>ArmorRating_Sharp</key>
                 <value>
-                    <multiplier>0.15</multiplier>
+                    <multiplier>0.3</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <multiplier>0.4</multiplier>
+                    <multiplier>0.8</multiplier>
                 </value>
             </li>
             <li>
@@ -1075,7 +1062,7 @@
     <Infusion.InfusionDef ParentName="Infusion4Armor">
         <defName>TI_ArmHeavy4</defName>
         <label>overweight</label>
-        <labelShort>overwght</labelShort>
+        <labelShort>owght</labelShort>
         <stats>
             <li>
                 <key>ArmorRating_Sharp</key>
@@ -1183,7 +1170,7 @@
     <Infusion.InfusionDef ParentName="Infusion1Apparel">
         <defName>TI_ArmBeauty1b</defName>
         <label>decorated</label>
-        <labelShort>decorated</labelShort>
+        <labelShort>decor</labelShort>
         <stats>
             <li>
                 <key>PawnBeauty</key>
@@ -1194,7 +1181,7 @@
             <li>
                 <key>SocialImpact</key>
                 <value>
-                    <offset>0.02</offset>
+                    <offset>0.01</offset>
                 </value>
             </li>
         </stats>
@@ -1217,7 +1204,7 @@
             <li>
                 <key>SocialImpact</key>
                 <value>
-                    <offset>0.03</offset>
+                    <offset>0.02</offset>
                 </value>
             </li>
         </stats>
@@ -1240,7 +1227,7 @@
             <li>
                 <key>SocialImpact</key>
                 <value>
-                    <offset>0.025</offset>
+                    <offset>0.015</offset>
                 </value>
             </li>
         </stats>
@@ -1252,7 +1239,7 @@
     <Infusion.InfusionDef ParentName="Infusion2Apparel">
         <defName>TI_ArmBeauty2</defName>
         <label>beautiful</label>
-        <labelShort>beauty</labelShort>
+        <labelShort>beaut</labelShort>
         <stats>
             <li>
                 <key>PawnBeauty</key>
@@ -1369,7 +1356,7 @@
             <li>
                 <key>MoveSpeed</key>
                 <value>
-                    <multiplier>0.02</multiplier>
+                    <multiplier>0.04</multiplier>
                 </value>
             </li>
         </stats>
@@ -1398,7 +1385,7 @@
             <li>
                 <key>RestRateMultiplier</key>
                 <value>
-                    <offset>0.05</offset>
+                    <offset>0.1</offset>
                 </value>
             </li>
         </stats>
@@ -1446,7 +1433,7 @@
     <Infusion.InfusionDef ParentName="Infusion2Armor">
         <defName>TI_Warm2</defName>
         <label>insulating</label>
-        <labelShort>insulat</labelShort>
+        <labelShort>insl</labelShort>
         <stats>
             <li>
                 <key>Insulation_Cold</key>
@@ -1517,7 +1504,7 @@
     <Infusion.InfusionDef ParentName="Infusion2Armor">
         <defName>TI_Clean2</defName>
         <label>sanitary</label>
-        <labelShort>sanitary</labelShort>
+        <labelShort>sntr</labelShort>
         <stats>
             <li>
                 <key>ImmunityGainSpeed</key>
@@ -1534,7 +1521,7 @@
     <Infusion.InfusionDef ParentName="Infusion3Armor">
         <defName>TI_Clean3</defName>
         <label>disinfected</label>
-        <labelShort>disinfect</labelShort>
+        <labelShort>dsnf</labelShort>
         <stats>
             <li>
                 <key>ImmunityGainSpeed</key>
@@ -1551,7 +1538,7 @@
     <Infusion.InfusionDef ParentName="Infusion4Armor">
         <defName>TI_Clean4</defName>
         <label>sterile</label>
-        <labelShort>sterile</labelShort>
+        <labelShort>strl</labelShort>
         <stats>
             <li>
                 <key>ImmunityGainSpeed</key>
@@ -1685,7 +1672,7 @@
 
     <Infusion.InfusionDef ParentName="Infusion0Armor">
         <defName>TI_ArmFit0</defName>
-        <label>too tight</label>
+        <label>tight</label>
         <labelShort>tight</labelShort>
         <stats>
             <li>
@@ -1697,7 +1684,7 @@
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <multiplier>-0.1</multiplier>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
             <li>
@@ -1715,7 +1702,7 @@
     <Infusion.InfusionDef ParentName="Infusion0Armor">
         <defName>TI_ArmFit0b</defName>
         <label>baggy</label>
-        <labelShort>baggy</labelShort>
+        <labelShort>bag</labelShort>
         <stats>
             <li>
                 <key>MoveSpeed</key>
@@ -1726,7 +1713,7 @@
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <offset>0.01</offset>
+                    <offset>0.04</offset>
                 </value>
             </li>
         </stats>
@@ -1780,7 +1767,7 @@
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>-0.05</multiplier>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
             <li>
@@ -1792,7 +1779,7 @@
             <li>
                 <key>MeleeWeapon_CooldownMultiplier</key>
                 <value>
-                    <multiplier>-0.2</multiplier>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
             <li>
@@ -1815,7 +1802,7 @@
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>-0.5</multiplier>
+                    <multiplier>-0.6</multiplier>
                 </value>
             </li>
             <li>
@@ -1827,7 +1814,7 @@
             <li>
                 <key>MeleeWeapon_CooldownMultiplier</key>
                 <value>
-                    <multiplier>-0.5</multiplier>
+                    <multiplier>-0.3</multiplier>
                 </value>
             </li>
             <li>
@@ -1842,7 +1829,7 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="Infusion0Piercer">
+    <Infusion.InfusionDef ParentName="Infusion1Piercer">
         <defName>TI_PSize0b</defName>
         <label>tiny</label>
         <labelShort>tiny</labelShort>
@@ -1850,7 +1837,7 @@
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>-0.5</multiplier>
+                    <multiplier>-0.7</multiplier>
                 </value>
             </li>
             <li>
@@ -1862,7 +1849,7 @@
             <li>
                 <key>MeleeWeapon_CooldownMultiplier</key>
                 <value>
-                    <multiplier>-0.5</multiplier>
+                    <multiplier>-0.6</multiplier>
                 </value>
             </li>
             <li>
@@ -1876,11 +1863,11 @@
             <li>This weapon is tiny and does less damage, but you can hit rapidly.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-
+    <!--
     <Infusion.InfusionDef ParentName="Infusion1Blunt">
         <defName>TI_WSize1</defName>
         <label>enlarged</label>
-        <labelShort>enlarged</labelShort>
+        <labelShort>enlrg</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -1910,7 +1897,7 @@
     <Infusion.InfusionDef ParentName="Infusion1Piercer">
         <defName>TI_PSize1</defName>
         <label>enlarged</label>
-        <labelShort>enlarged</labelShort>
+        <labelShort>enlrg</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -1935,7 +1922,7 @@
             <li>This weapon is slightly larger, and bigger reach makes it easier to land hits.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-
+-->
 
     <Infusion.InfusionDef ParentName="Infusion2Blunt">
         <defName>TI_WSize2</defName>
@@ -1975,7 +1962,7 @@
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>0.2</multiplier>
+                    <multiplier>0.05</multiplier>
                 </value>
             </li>
             <li>
@@ -1993,7 +1980,7 @@
             <li>
                 <key>MeleeHitChance</key>
                 <value>
-                    <offset>2</offset>
+                    <offset>1</offset>
                 </value>
             </li>
         </stats>
@@ -2039,7 +2026,7 @@
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>0.4</multiplier>
+                    <multiplier>0.15</multiplier>
                 </value>
             </li>
             <li>
@@ -2057,7 +2044,7 @@
             <li>
                 <key>MeleeHitChance</key>
                 <value>
-                    <offset>3</offset>
+                    <offset>2</offset>
                 </value>
             </li>
         </stats>
@@ -2069,7 +2056,7 @@
     <Infusion.InfusionDef ParentName="Infusion4Blunt">
         <defName>TI_WSize4</defName>
         <label>enormous</label>
-        <labelShort>enormous</labelShort>
+        <labelShort>enrm</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2110,12 +2097,12 @@
     <Infusion.InfusionDef ParentName="Infusion4Piercer">
         <defName>TI_PSize4</defName>
         <label>enormous</label>
-        <labelShort>enormous</labelShort>
+        <labelShort>enrm</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>0.7</multiplier>
+                    <multiplier>0.4</multiplier>
                 </value>
             </li>
             <li>
@@ -2139,7 +2126,7 @@
             <li>
                 <key>MeleeHitChance</key>
                 <value>
-                    <offset>5</offset>
+                    <offset>4</offset>
                 </value>
             </li>
         </stats>
@@ -2152,7 +2139,7 @@
     <Infusion.InfusionDef ParentName="Infusion4Blunt">
         <defName>TI_WSize4b</defName>
         <label>gigantic</label>
-        <labelShort>gigantic</labelShort>
+        <labelShort>giant</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2194,7 +2181,7 @@
     <Infusion.InfusionDef ParentName="Infusion4Piercer">
         <defName>TI_PSize4b</defName>
         <label>gigantic</label>
-        <labelShort>gigantic</labelShort>
+        <labelShort>giant</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2241,7 +2228,7 @@
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>-0.25</multiplier>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
             <li>
@@ -2306,12 +2293,12 @@
     <Infusion.InfusionDef ParentName="Infusion0Blunt">
         <defName>TI_WWeight0b</defName>
         <label>weightless</label>
-        <labelShort>weightless</labelShort>
+        <labelShort>wless</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>-0.75</multiplier>
+                    <multiplier>-0.8</multiplier>
                 </value>
             </li>
             <li>
@@ -2323,7 +2310,7 @@
             <li>
                 <key>MeleeWeapon_CooldownMultiplier</key>
                 <value>
-                    <multiplier>-0.65</multiplier>
+                    <multiplier>-0.45</multiplier>
                 </value>
             </li>
             <li>
@@ -2341,7 +2328,7 @@
     <Infusion.InfusionDef ParentName="Infusion4Piercer">
         <defName>TI_PWeight4b</defName>
         <label>weightless</label>
-        <labelShort>weightless</labelShort>
+        <labelShort>wless</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2376,12 +2363,12 @@
     <Infusion.InfusionDef ParentName="Infusion1Blunt">
         <defName>TI_WWeight1</defName>
         <label>weighty</label>
-        <labelShort>weight</labelShort>
+        <labelShort>wght</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>0.15</multiplier>
+                    <multiplier>0.2</multiplier>
                 </value>
             </li>
             <li>
@@ -2402,15 +2389,15 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="Infusion1Piercer">
+    <Infusion.InfusionDef ParentName="Infusion0Piercer">
         <defName>TI_PWeight1b</defName>
         <label>weighty</label>
-        <labelShort>weight</labelShort>
+        <labelShort>wght</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>0.05</multiplier>
+                    <multiplier>0.1</multiplier>
                 </value>
             </li>
             <li>
@@ -2422,7 +2409,7 @@
             <li>
                 <key>MeleeWeapon_CooldownMultiplier</key>
                 <value>
-                    <offset>0.05</offset>
+                    <offset>0.3</offset>
                 </value>
             </li>
         </stats>
@@ -2439,7 +2426,7 @@
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>0.4</multiplier>
+                    <multiplier>0.5</multiplier>
                 </value>
             </li>
             <li>
@@ -2451,7 +2438,7 @@
             <li>
                 <key>MeleeWeapon_CooldownMultiplier</key>
                 <value>
-                    <offset>0.8</offset>
+                    <offset>0.7</offset>
                 </value>
             </li>
         </stats>
@@ -2468,7 +2455,7 @@
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>0.05</multiplier>
+                    <multiplier>0.1</multiplier>
                 </value>
             </li>
             <li>
@@ -2480,7 +2467,7 @@
             <li>
                 <key>MeleeWeapon_CooldownMultiplier</key>
                 <value>
-                    <offset>0.1</offset>
+                    <offset>0.3</offset>
                 </value>
             </li>
         </stats>
@@ -2527,7 +2514,7 @@
     <Infusion.InfusionDef ParentName="Infusion0Blunt">
         <defName>TI_WWeight0c</defName>
         <label>cumbersome</label>
-        <labelShort>cmbrsm</labelShort>
+        <labelShort>cumb</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2568,12 +2555,12 @@
     <Infusion.InfusionDef ParentName="Infusion0Piercer">
         <defName>TI_PWeight0e</defName>
         <label>cumbersome</label>
-        <labelShort>cmbrsm</labelShort>
+        <labelShort>cumb</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>0.01</multiplier>
+                    <multiplier>0.4</multiplier>
                 </value>
             </li>
             <li>
@@ -2602,7 +2589,7 @@
             </li>
         </stats>
         <extraDescriptions>
-            <li>This weapon was made too heavy and hard to handle</li>
+            <li>This weapon was made too heavy and hard to handle.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -2610,7 +2597,7 @@
     <Infusion.InfusionDef ParentName="Infusion0Blunt">
         <defName>TI_WWield0</defName>
         <label>unwieldy</label>
-        <labelShort>unwieldy</labelShort>
+        <labelShort>unwld</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2639,7 +2626,7 @@
     <Infusion.InfusionDef ParentName="Infusion0Piercer">
         <defName>TI_PWield0</defName>
         <label>unwieldy</label>
-        <labelShort>unwieldy</labelShort>
+        <labelShort>unwld</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2665,10 +2652,10 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="Infusion2Blunt">
+    <Infusion.InfusionDef ParentName="Infusion1Blunt">
         <defName>TI_WWield2</defName>
         <label>wieldy</label>
-        <labelShort>wieldy</labelShort>
+        <labelShort>wld</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2698,7 +2685,7 @@
     <Infusion.InfusionDef ParentName="Infusion2Piercer">
         <defName>TI_PWield2</defName>
         <label>wieldy</label>
-        <labelShort>wieldy</labelShort>
+        <labelShort>wld</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2762,7 +2749,7 @@
     <Infusion.InfusionDef ParentName="Infusion1Blunt">
         <defName>TI_WLength1</defName>
         <label>extended</label>
-        <labelShort>extend</labelShort>
+        <labelShort>extnd</labelShort>
         <stats>
             <li>
                 <key>MeleeHitChance</key>
@@ -2779,12 +2766,12 @@
     <Infusion.InfusionDef ParentName="Infusion1Piercer">
         <defName>TI_PLength1</defName>
         <label>extended</label>
-        <labelShort>extend</labelShort>
+        <labelShort>extnd</labelShort>
         <stats>
             <li>
                 <key>MeleeHitChance</key>
                 <value>
-                    <offset>2</offset>
+                    <offset>1</offset>
                 </value>
             </li>
         </stats>
@@ -2844,7 +2831,8 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Blunt</def>
-                <amount>0.2</amount>
+                <chance>0.4</chance>
+                <amount>0.4</amount>
             </li>
         </onHits>
         <extraDescriptions>
@@ -2855,12 +2843,12 @@
     <Infusion.InfusionDef ParentName="Infusion1Piercer">
         <defName>TI_PSharpness1</defName>
         <label>sharpened</label>
-        <labelShort>sharpened</labelShort>
+        <labelShort>shrp-</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>0.1</multiplier>
+                    <multiplier>0.15</multiplier>
                 </value>
             </li>
         </stats>
@@ -2872,12 +2860,12 @@
     <Infusion.InfusionDef ParentName="Infusion2Piercer">
         <defName>TI_PSharpness2</defName>
         <label>sharp</label>
-        <labelShort>sharp</labelShort>
+        <labelShort>shrp</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>0.2</multiplier>
+                    <multiplier>0.25</multiplier>
                 </value>
             </li>
         </stats>
@@ -2889,7 +2877,7 @@
     <Infusion.InfusionDef ParentName="Infusion3Piercer">
         <defName>TI_PSharpness3</defName>
         <label>razor-sharp</label>
-        <labelShort>sharp+</labelShort>
+        <labelShort>shrp+</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2907,7 +2895,7 @@
     <Infusion.InfusionDef ParentName="Infusion1Piercer">
         <defName>TI_PSerrated1</defName>
         <label>serrated</label>
-        <labelShort>serrated</labelShort>
+        <labelShort>saw</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2916,10 +2904,773 @@
                 </value>
             </li>
         </stats>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.IfBioTargetHit">
+                <value Class="Infusion.OnHitWorkers.Sequence">
+                    <value>
+                        <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                            <def>BloodLoss</def>
+                            <amount>0.1</amount>
+                        </li>
+                    </value>
+                </value>
+            </li>
+        </onHits>
         <extraDescriptions>
-            <li>This weapon has a jagged, sawlike edge, increasing the damage.</li>
+            <li>This weapon has a jagged, sawlike edge, increasing the damage and bleeding.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
 
+    <!-- ranged -->
+    <Infusion.InfusionDef ParentName="Infusion0Ranged">
+        <defName>TI_RSpeed0</defName>
+        <label>slow</label>
+        <labelShort>slow</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>0.4</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon has a decreased rate of fire.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion1Ranged">
+        <defName>TI_RSpeed1</defName>
+        <label>fast</label>
+        <labelShort>fast</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>-0.15</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon has a slightly increased rate of fire.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion2Ranged">
+        <defName>TI_RSpeed2</defName>
+        <label>rapid firing</label>
+        <labelShort>rapid</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon has a moderately increased rate of fire.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion3Bullet">
+        <defName>TI_RSpeed3</defName>
+        <label>overclocked</label>
+        <labelShort>oclck</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <offset>-0.04</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <offset>-0.09</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <offset>-0.13</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <offset>-0.16</offset>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon was overclocked and has significantly increased rate of fire, however overclocking reduces accuracy.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <!-- power -->
+    <Infusion.InfusionDef ParentName="Infusion0Ranged">
+        <defName>TI_RPower0</defName>
+        <label>weak</label>
+        <labelShort>weak</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon fires weaker projectiles with smaller force, dealing less damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion2Ranged">
+        <defName>TI_RPower2</defName>
+        <label>powerful</label>
+        <labelShort>pow</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>0.2</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon fires bigger projectiles with stronger force, dealing more damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <!-- weight -->
+
+    <Infusion.InfusionDef ParentName="Infusion1Ranged">
+        <defName>TI_RWeight1a</defName>
+        <label>light</label>
+        <labelShort>light</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <offset>0.05</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <offset>0.05</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <offset>0.05</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <offset>0.05</offset>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon is quite light and does less damage, but it is easier to handle.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion2Ranged">
+        <defName>TI_RWeight2</defName>
+        <label>heavy</label>
+        <labelShort>heavy</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <multiplier>0.1</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon is quite heavy and does more damage, but it takes more time to aim.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <!-- length -->
+    <Infusion.InfusionDef ParentName="Infusion1Ranged">
+        <defName>TI_RShort</defName>
+        <label>short</label>
+        <labelShort>short</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>0.35</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <offset>-0.02</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <offset>-0.08</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <offset>-0.16</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <offset>-0.24</offset>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon was shortened, making it more effective up-close and less effective at distance.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion1Ranged">
+        <defName>TI_RLong</defName>
+        <label>long</label>
+        <labelShort>long</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <offset>-0.06</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <offset>-0.02</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <offset>0.16</offset>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon was elongated, making it more effective at distance and less effective up-close.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <!-- accuracy -->
+    <Infusion.InfusionDef ParentName="Infusion0Ranged">
+        <defName>TI_RAccuracy0</defName>
+        <label>inaccurate</label>
+        <labelShort>inacc</labelShort>
+        <stats>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <offset>-0.15</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <offset>-0.15</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <offset>-0.15</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <offset>-0.15</offset>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon is quite inaccurate and hard to land shots with.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion2Ranged">
+        <defName>TI_RAccuracy2</defName>
+        <label>accurate</label>
+        <labelShort>accur</labelShort>
+        <stats>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon is quite accurate and easy to land shots with.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <!-- size -->
+
+    <Infusion.InfusionDef ParentName="Infusion1Ranged">
+        <defName>TI_RSize1</defName>
+        <label>small</label>
+        <labelShort>small</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.25</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <multiplier>-0.25</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>-0.25</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon quite small and does less damage, but it fires quicker.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion0Ranged">
+        <defName>TI_RSize0b</defName>
+        <label>tiny</label>
+        <labelShort>tiny</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.65</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <multiplier>-0.45</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            
+        </stats>
+        <extraDescriptions>
+            <li>This weapon too small and does little damage, although it fires quite fast.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion1Ranged">
+        <defName>TI_RSize1c</defName>
+        <label>big</label>
+        <labelShort>big</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>0.25</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <multiplier>0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>0.1</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon is quite big and does more damage, but fires slower.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion2Ranged">
+        <defName>TI_RSize2</defName>
+        <label>large</label>
+        <labelShort>large</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>0.4</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <multiplier>0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>0.2</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon is large and does more damage, but fires slower.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion3Ranged">
+        <defName>TI_RSize3</defName>
+        <label>enormous</label>
+        <labelShort>enrm</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>0.65</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <multiplier>0.4</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>0.4</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon is enormous and does more damage, but it is hard to handle and fires significantly slower.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <!-- shields -->
+    <Infusion.InfusionDef ParentName="Infusion0Shield">
+        <defName>TI_SCapacity0</defName>
+        <label>low capacity</label>
+        <labelShort>low-c</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This shield can't hold as much energy.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion1Shield">
+        <defName>TI_SCapacity1</defName>
+        <label>higher capacity</label>
+        <labelShort>hghr-c</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>0.2</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This shield can hold slightly more energy.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion2Shield">
+        <defName>TI_SCapacity2</defName>
+        <label>high capacity</label>
+        <labelShort>high-c</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>0.4</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This shield can hold more energy.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <!-- recharge -->
+
+    <Infusion.InfusionDef ParentName="Infusion0Shield">
+        <defName>TI_SRecharge0</defName>
+        <label>slow-charging</label>
+        <labelShort>slow-ch</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>-0.4</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This shield recharges slower.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion1Shield">
+        <defName>TI_SRecharge1</defName>
+        <label>fast-charging</label>
+        <labelShort>fast-ch</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>0.2</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This shield recharges slightly faster.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion3Shield">
+        <defName>TI_SRecharge3</defName>
+        <label>quick-charging</label>
+        <labelShort>qck-ch</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>0.4</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This shield uses quick-charge technology to recharge faster.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion4Shield">
+        <defName>TI_SRecharge4</defName>
+        <label>rapid-charging</label>
+        <labelShort>rpd-ch</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>0.65</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This shield can recharge very fast.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <!-- size -->
+    <Infusion.InfusionDef ParentName="Infusion1Shield">
+        <defName>TI_SSize1a</defName>
+        <label>light</label>
+        <labelShort>light</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This shield is lighter and holds less energy but recharges faster.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion1Shield">
+        <defName>TI_SSize1b</defName>
+        <label>heavy</label>
+        <labelShort>heavy</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>-0.4</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This shield is heavier and holds more energy but recharges slower.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion3Shield">
+        <defName>TI_SSize3</defName>
+        <label>heavy duty</label>
+        <labelShort>heavy</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>-0.6</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>1.2</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This shield is designed for heavy duty tasks and holds twice as much energy, but recharges much slower.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <!-- sound -->
+    <Infusion.InfusionDef ParentName="Infusion0Bullet">
+        <defName>TI_BSound0</defName>
+        <label>loud</label>
+        <labelShort>loud</labelShort>
+        <stats>
+            <li>
+                <key>HuntingStealth</key>
+                <value>
+                    <offset>-0.3</offset>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon is too loud and scares animals away.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion1Bullet">
+        <defName>TI_BSound1</defName>
+        <label>muffled</label>
+        <labelShort>muffl</labelShort>
+        <stats>
+            <li>
+                <key>HuntingStealth</key>
+                <value>
+                    <offset>0.2</offset>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon fires with less sound. Animals are less likely to notice the user.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="Infusion3Bullet">
+        <defName>TI_BSound3</defName>
+        <label>silent</label>
+        <labelShort>sil</labelShort>
+        <stats>
+            <li>
+                <key>HuntingStealth</key>
+                <value>
+                    <offset>0.4</offset>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon is almost silent. Animals are significantly less likely to notice the user.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
 </Defs>

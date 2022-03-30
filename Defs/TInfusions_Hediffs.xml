@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+<!--
     <HediffDef>
     <defName>Paralysis</defName>
     <label>Paralysis</label>
@@ -74,4 +75,5 @@
       </li>
     </stages>
     </HediffDef>
+-->
 </Defs>
