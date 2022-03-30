@@ -700,21 +700,21 @@
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <offset>1</offset>
-                    <multiplier>0.6</multiplier>
+                    <offset>0.5</offset>
+                    <multiplier>0.5</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Sharp</key>
                 <value>
-                    <offset>-0.3</offset>
+                    <offset>-0.25</offset>
                     <multiplier>-0.5</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Heat</key>
                 <value>
-                    <offset>-0.3</offset>
+                    <offset>-0.25</offset>
                     <multiplier>-0.5</multiplier>
                 </value>
             </li>
@@ -732,21 +732,21 @@
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <offset>-0.3</offset>
+                    <offset>-0.25</offset>
                     <multiplier>-0.5</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Sharp</key>
                 <value>
-                    <offset>1</offset>
-                    <multiplier>0.6</multiplier>
+                    <offset>0.5</offset>
+                    <multiplier>0.5</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Heat</key>
                 <value>
-                    <offset>-0.3</offset>
+                    <offset>-0.25</offset>
                     <multiplier>-0.5</multiplier>
                 </value>
             </li>
@@ -756,6 +756,7 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
+
     <Infusion.InfusionDef ParentName="InfusionRepurposed1Armor">
         <defName>TI_ArmHeat1</defName>
         <label>heat protection</label>
@@ -764,34 +765,34 @@
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <offset>-0.3</offset>
+                    <offset>-0.25</offset>
                     <multiplier>-0.5</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Sharp</key>
                 <value>
-                    <offset>-0.3</offset>
+                    <offset>-0.25</offset>
                     <multiplier>-0.5</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Heat</key>
                 <value>
-                    <offset>2</offset>
-                    <multiplier>1.2</multiplier>
+                    <offset>0.75</offset>
+                    <multiplier>0.75</multiplier>
                 </value>
             </li>
             <li>
                 <key>Insulation_Heat</key>
                 <value>
-                    <offset>100</offset>
+                    <offset>40</offset>
                 </value>
             </li>
             <li>
                 <key>Flammability</key>
                 <value>
-                    <multiplier>-2</multiplier>
+                    <multiplier>-0.75</multiplier>
                 </value>
             </li>
         </stats>
@@ -801,6 +802,23 @@
     </Infusion.InfusionDef>
 
 
+    <Infusion.InfusionDef ParentName="InfusionModifiedArmor">
+        <defName>TI_ArmAntibact</defName>
+        <label>antibacterial coating</label>
+        <labelShort>antib</labelShort>
+        <stats>
+            <li>
+                <key>ImmunityGainSpeed</key>
+                <value>
+                    <offset>0.05</offset>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This apparel is covered in an antibacterial coating that kills any germs.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+    
     <Infusion.InfusionDef ParentName="InfusionRepurposed1Melee">
         <defName>TI_MeleeHot</defName>
         <label>hot</label>
