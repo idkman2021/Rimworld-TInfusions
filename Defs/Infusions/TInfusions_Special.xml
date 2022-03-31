@@ -1215,12 +1215,6 @@
         <label>explosive T2</label>
         <labelShort>expl2</labelShort>
         <onHits>
-            <li>
-                <key>RangedWeapon_Cooldown</key>
-                <value>
-                    <multiplier>1</multiplier>
-                </value>
-            </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
                 <amount>0.5</amount>
@@ -1228,6 +1222,12 @@
             </li>
         </onHits>
         <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>1</multiplier>
+                </value>
+            </li>
             <li>
                 <key>AccuracyTouch</key>
                 <value>
