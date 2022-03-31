@@ -826,7 +826,12 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Burn</def>
-                <amount>0.1</amount>
+                <amount>0.5</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Flame</def>
+                <amount>0.5</amount>
+                <chance>0.2</chance>
             </li>
         </onHits>
         <extraDescriptions>
@@ -841,7 +846,12 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Burn</def>
-                <amount>0.1</amount>
+                <amount>0.5</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Flame</def>
+                <amount>0.5</amount>
+                <chance>0.2</chance>
             </li>
         </onHits>
         <extraDescriptions>
@@ -854,10 +864,15 @@
         <label>burning</label>
         <labelShort>burn</labelShort>
         <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+            <!--<li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Burn</def>
+                <amount>1</amount>
+                <chance>0.5</chance>
+            </li>-->
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Flame</def>
                 <amount>0.5</amount>
-                <chance>0.25</chance>
+                <chance>0.3</chance>
             </li>
         </onHits>
         <extraDescriptions>
@@ -872,8 +887,13 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Burn</def>
-                <amount>0.5</amount>
-                <chance>0.25</chance>
+                <amount>1</amount>
+                <chance>0.5</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Flame</def>
+                <amount>0.3</amount>
+                <chance>0.5</chance>
             </li>
         </onHits>
         <extraDescriptions>
@@ -910,8 +930,8 @@
         <deathMessage>{0} has been shot to death.</deathMessage>
     </DamageDef>
 
-    <Infusion.InfusionDef ParentName="InfusionModifiedSharp">
-        <defName>TI_BConcussive</defName>
+    <Infusion.InfusionDef ParentName="InfusionModifiedRanged">
+        <defName>TI_RConcussive</defName>
         <label>concussive</label>
         <labelShort>conc</labelShort>
         <stats>
@@ -940,8 +960,8 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Stun</def>
-                <amount>0.5</amount>
-                <chance>0.2</chance>
+                <amount>1</amount>
+                <chance>0.3</chance>
             </li>
         </onHits>
         <extraDescriptions>
@@ -956,8 +976,8 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Stun</def>
-                <amount>0.2</amount>
-                <chance>0.5</chance>
+                <amount>1</amount>
+                <chance>0.4</chance>
             </li>
         </onHits>
         <extraDescriptions>
@@ -975,6 +995,11 @@
                 <amount>0.5</amount>
                 <chance>0.5</chance>
             </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>Hypothermia</def>
+                <amount>0.5</amount>
+                <severityScaleBy>ToxicSensitivity</severityScaleBy>
+            </li>
         </onHits>
         <extraDescriptions>
             <li>This weapon can quickly release heat and get extremely cold, dealing frostbite damage during cuts.</li>
@@ -991,6 +1016,11 @@
                 <amount>0.5</amount>
                 <chance>0.5</chance>
             </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>Hypothermia</def>
+                <amount>0.5</amount>
+                <severityScaleBy>ToxicSensitivity</severityScaleBy>
+            </li>
         </onHits>
         <extraDescriptions>
             <li>Projectiles are cooled, dealing frostbite damage.</li>
@@ -1004,7 +1034,7 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>ToxicBuildup</def>
-                <amount>0.1</amount>
+                <amount>0.75</amount>
                 <severityScaleBy>ToxicSensitivity</severityScaleBy>
             </li>
         </onHits>
@@ -1020,7 +1050,7 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>ToxicBuildup</def>
-                <amount>0.1</amount>
+                <amount>0.5</amount>
                 <severityScaleBy>ToxicSensitivity</severityScaleBy>
             </li>
         </onHits>
@@ -1052,7 +1082,6 @@
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>EMP</def>
                 <amount>1</amount>
-                <chance>0.25</chance>
             </li>
         </onHits>
         <extraDescriptions>
@@ -1068,7 +1097,6 @@
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>EMP</def>
                 <amount>1.5</amount>
-                <chance>0.35</chance>
                 <radius>5</radius>
             </li>
         </onHits>
@@ -1133,7 +1161,7 @@
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
                 <amount>0.85</amount>
-                <chance>0.2</chance>
+                <chance>0.4</chance>
             </li>
         </onHits>
         <extraDescriptions>
@@ -1151,6 +1179,32 @@
                 <amount>0.5</amount>
             </li>
         </onHits>
+        <stats>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+        </stats>
         <extraDescriptions>
             <li>Projectiles are slightly explosive.</li>
         </extraDescriptions>
@@ -1161,14 +1215,46 @@
         <label>explosive T2</label>
         <labelShort>expl2</labelShort>
         <onHits>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>1</multiplier>
+                </value>
+            </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
-                <amount>0.6</amount>
+                <amount>0.5</amount>
                 <radius>2</radius>
             </li>
         </onHits>
+        <stats>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+        </stats>
         <extraDescriptions>
-            <li>Projectiles are explosive.</li>
+            <li>Projectiles are explosive, but the weapon is slower to fire.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -1187,32 +1273,32 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>-0.3</offset>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>-0.3</offset>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>-0.3</offset>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>-0.3</offset>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
         </stats>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
-                <amount>0.6</amount>
+                <amount>0.5</amount>
                 <radius>3</radius>
             </li>
         </onHits>
@@ -1235,25 +1321,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>-0.1</offset>
+                    <multiplier>-0.6</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>-0.1</offset>
+                    <multiplier>-0.6</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>-0.1</offset>
+                    <multiplier>-0.6</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>-0.1</offset>
+                    <multiplier>-0.6</multiplier>
                 </value>
             </li>
         </stats>

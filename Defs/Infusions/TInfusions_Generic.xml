@@ -2934,6 +2934,12 @@
                     <multiplier>0.4</multiplier>
                 </value>
             </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
         </stats>
         <extraDescriptions>
             <li>This weapon has a decreased rate of fire.</li>
@@ -2949,6 +2955,12 @@
                 <key>RangedWeapon_Cooldown</key>
                 <value>
                     <multiplier>-0.15</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>-0.15</offset>
                 </value>
             </li>
         </stats>
@@ -2968,6 +2980,12 @@
                     <multiplier>-0.3</multiplier>
                 </value>
             </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>-0.25</offset>
+                </value>
+            </li>
         </stats>
         <extraDescriptions>
             <li>This weapon has a moderately increased rate of fire.</li>
@@ -2983,6 +3001,12 @@
                 <key>RangedWeapon_Cooldown</key>
                 <value>
                     <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>-0.4</offset>
                 </value>
             </li>
             <li>
@@ -3292,13 +3316,13 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <offset>-0.25</offset>
+                    <offset>-0.15</offset>
                 </value>
             </li>
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
-                    <multiplier>-0.25</multiplier>
+                    <multiplier>-0.35</multiplier>
                 </value>
             </li>
         </stats>
@@ -3321,13 +3345,13 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <offset>-0.45</offset>
+                    <offset>-0.35</offset>
                 </value>
             </li>
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
-                    <multiplier>-0.5</multiplier>
+                    <multiplier>-0.65</multiplier>
                 </value>
             </li>
             
