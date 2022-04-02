@@ -2921,6 +2921,36 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
+        <!-- rough -->
+        <Infusion.InfusionDef ParentName="Infusion1Piercer">
+            <defName>TI_PRough1</defName>
+            <label>rough</label>
+            <labelShort>rough</labelShort>
+            <stats>
+                <li>
+                    <key>MeleeWeapon_DamageMultiplier</key>
+                    <value>
+                        <multiplier>-0.15</multiplier>
+                    </value>
+                </li>
+            </stats>
+            <onHits>
+                <li Class="Infusion.OnHitWorkers.IfBioTargetHit">
+                    <value Class="Infusion.OnHitWorkers.Sequence">
+                        <value>
+                            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                                <def>BloodLoss</def>
+                                <amount>0.3</amount>
+                            </li>
+                        </value>
+                    </value>
+                </li>
+            </onHits>
+            <extraDescriptions>
+                <li>This weapon is quite harsh and deal less damage but causes significantly more bleeding.</li>
+            </extraDescriptions>
+        </Infusion.InfusionDef>
+
 
     <!-- ranged -->
     <Infusion.InfusionDef ParentName="Infusion0Ranged">
@@ -3238,25 +3268,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>-0.15</offset>
+                    <multiplier>-0.25</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>-0.15</offset>
+                    <multiplier>-0.25</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>-0.15</offset>
+                    <multiplier>-0.25</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>-0.15</offset>
+                    <multiplier>-0.25</multiplier>
                 </value>
             </li>
         </stats>

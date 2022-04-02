@@ -60,6 +60,42 @@
         </stats>
     </Infusion.InfusionDef>
 
+    <Infusion.InfusionDef Abstract="True" Name="InfusionRepurposed4">
+        <tier>TI_RepurposedT4</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <multiplier>6</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionRepurposed5">
+        <tier>TI_RepurposedT5</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <multiplier>8</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionRepurposed6">
+        <tier>TI_RepurposedT5</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <multiplier>10</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
     <!-- apparels -->
 
     <Infusion.InfusionDef Abstract="True" Name="InfusionBrokenApparel" ParentName="InfusionBroken">
@@ -303,6 +339,31 @@
         </matches>
     </Infusion.InfusionDef>
 
+    <Infusion.InfusionDef Abstract="True" Name="InfusionRepurposed4Ranged" ParentName="InfusionRepurposed4">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="InfusionRepurposed5Ranged" ParentName="InfusionRepurposed5">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    
+    <Infusion.InfusionDef Abstract="True" Name="InfusionRepurposed6Ranged" ParentName="InfusionRepurposed6">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
 
     <!-- shields -->
 
@@ -361,6 +422,36 @@
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>-0.5</offset>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.45</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>This weapon was repurposed to fire two times more rapidly by making projectiles much smaller.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="InfusionRepurposed2Ranged">
+        <defName>TI_RRapidFire2</defName>
+        <label>Rapid Fire 2</label>
+        <labelShort>rfire2</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
                     <multiplier>-0.75</multiplier>
                 </value>
             </li>
@@ -373,31 +464,31 @@
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>-0.75</multiplier>
+                    <multiplier>-0.675</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <multiplier>-0.2</multiplier>
+                    <multiplier>-0.1</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <multiplier>-0.2</multiplier>
+                    <multiplier>-0.1</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <multiplier>-0.2</multiplier>
+                    <multiplier>-0.1</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <multiplier>-0.2</multiplier>
+                    <multiplier>-0.1</multiplier>
                 </value>
             </li>
         </stats>
@@ -406,10 +497,10 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="InfusionRepurposed2Ranged">
-        <defName>TI_RRapidFire2</defName>
-        <label>Rapid Fire 2</label>
-        <labelShort>rfire2</labelShort>
+    <Infusion.InfusionDef ParentName="InfusionRepurposed5Ranged">
+        <defName>TI_RRapidFire3</defName>
+        <label>Rapid Fire 3</label>
+        <labelShort>rfire3</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_Cooldown</key>
@@ -426,31 +517,31 @@
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>-0.875</multiplier>
+                    <multiplier>-0.8</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <multiplier>-0.4</multiplier>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <multiplier>-0.4</multiplier>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <multiplier>-0.4</multiplier>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <multiplier>-0.4</multiplier>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
         </stats>
@@ -458,11 +549,11 @@
             <li>This weapon was repurposed to fire eight times more rapidly by making projectiles significantly smaller.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-
+    <!--
     <Infusion.InfusionDef ParentName="InfusionRepurposed3Ranged">
-        <defName>TI_RRapidFire3</defName>
-        <label>Rapid Fire 3</label>
-        <labelShort>rfire3</labelShort>
+        <defName>TI_RRapidFire4</defName>
+        <label>Rapid Fire 4</label>
+        <labelShort>rfire4</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_Cooldown</key>
@@ -511,10 +602,10 @@
             <li>This weapon was repurposed to fire extremely rapidly by making the projectiles tiny.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-
+-->
     <!-- sniper -->
 
-    <Infusion.InfusionDef ParentName="InfusionRepurposed1Ranged">
+    <Infusion.InfusionDef ParentName="InfusionRepurposed2Ranged">
         <defName>TI_RSniper1</defName>
         <label>Sniper 1</label>
         <labelShort>snipe1</labelShort>
@@ -574,7 +665,7 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="InfusionRepurposed2Ranged">
+    <Infusion.InfusionDef ParentName="InfusionRepurposed4Ranged">
         <defName>TI_RSniper2</defName>
         <label>Sniper 2</label>
         <labelShort>snipe2</labelShort>
@@ -633,7 +724,7 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="InfusionRepurposed3Ranged">
+    <Infusion.InfusionDef ParentName="InfusionRepurposed5Ranged">
         <defName>TI_RSniper3</defName>
         <label>Sniper 3</label>
         <labelShort>snipe3</labelShort>
