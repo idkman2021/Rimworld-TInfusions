@@ -7,7 +7,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>-0.2</multiplier>
+                    <multiplier>-0.3</multiplier>
                 </value>
             </li>
         </stats>
@@ -18,7 +18,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>0.1</multiplier>
+                    <offset>50</offset>
                 </value>
             </li>
         </stats>
@@ -29,7 +29,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>0.5</multiplier>
+                    <offset>100</offset>
                 </value>
             </li>
         </stats>
@@ -40,7 +40,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>1</multiplier>
+                    <offset>200</offset>
                 </value>
             </li>
         </stats>
@@ -51,7 +51,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>2</multiplier>
+                    <offset>300</offset>
                 </value>
             </li>
         </stats>
@@ -62,7 +62,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>9</multiplier>
+                    <offset>1200</offset>
                 </value>
             </li>
         </stats>
@@ -3420,7 +3420,7 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="Infusion2Ranged">
+    <Infusion.InfusionDef ParentName="Infusion3Ranged">
         <defName>TI_RSize2</defName>
         <label>large</label>
         <labelShort>large</labelShort>
@@ -3449,7 +3449,7 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="Infusion3Ranged">
+    <Infusion.InfusionDef ParentName="Infusion4Ranged">
         <defName>TI_RSize3</defName>
         <label>enormous</label>
         <labelShort>enrm</labelShort>

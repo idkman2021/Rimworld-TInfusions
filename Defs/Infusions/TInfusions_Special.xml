@@ -18,7 +18,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>1.6</multiplier>
+                    <offset>150</offset>
                 </value>
             </li>
         </stats>
@@ -30,7 +30,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>2.3</multiplier>
+                    <multiplier>1.5</multiplier>
                 </value>
             </li>
         </stats>
@@ -42,7 +42,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>3</multiplier>
+                    <multiplier>1.9</multiplier>
                 </value>
             </li>
         </stats>
@@ -54,7 +54,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>4</multiplier>
+                    <multiplier>2.3</multiplier>
                 </value>
             </li>
         </stats>
@@ -66,7 +66,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>6</multiplier>
+                    <multiplier>2.7</multiplier>
                 </value>
             </li>
         </stats>
@@ -78,7 +78,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>8</multiplier>
+                    <multiplier>3.1</multiplier>
                 </value>
             </li>
         </stats>
@@ -90,7 +90,7 @@
             <li>
                 <key>MarketValue</key>
                 <value>
-                    <multiplier>10</multiplier>
+                    <multiplier>3.5</multiplier>
                 </value>
             </li>
         </stats>
