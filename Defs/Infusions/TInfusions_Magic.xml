@@ -609,12 +609,12 @@
                 <chance>0.1</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
-                <def>HeatStroke</def>
+                <def>Heatstroke</def>
                 <amount>0.5</amount>
                 <chance>0.1</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ReduceSeverity">
-                <def>HeatStroke</def>
+                <def>Heatstroke</def>
                 <amount>0.5</amount>
                 <chance>0.1</chance>
             </li>
@@ -701,7 +701,7 @@
                 <chance>0.5</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
-                <def>HeatStroke</def>
+                <def>Heatstroke</def>
                 <amount>0.1</amount>
                 <chance>0.5</chance>
             </li>
@@ -802,12 +802,12 @@
                 <chance>0.1</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
-                <def>HeatStroke</def>
+                <def>Heatstroke</def>
                 <amount>0.5</amount>
                 <chance>0.1</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ReduceSeverity">
-                <def>HeatStroke</def>
+                <def>Heatstroke</def>
                 <amount>0.5</amount>
                 <chance>0.1</chance>
             </li>
@@ -882,7 +882,7 @@
                 <chance>0.5</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
-                <def>HeatStroke</def>
+                <def>Heatstroke</def>
                 <amount>0.1</amount>
                 <chance>0.5</chance>
             </li>
