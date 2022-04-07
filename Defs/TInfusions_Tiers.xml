@@ -4,7 +4,7 @@
   <Infusion.TierDef>
     <defName>TI_CommonAwful</defName>
     <label>common (awful)</label>
-    <priority>0</priority>
+    <priority>10</priority>
     <color>(0.7, 0, 0)</color>
     <infuserValue>50</infuserValue>
     <extractionChance>1</extractionChance>
@@ -18,7 +18,7 @@
       <legendary>1</legendary>
     </weights>
     <chances>
-      <awful>0.3</awful>
+      <awful>0.2</awful>
       <poor>0.1</poor>
       <normal>0</normal>
       <good>0</good>
@@ -58,7 +58,7 @@
   <Infusion.TierDef>
     <defName>TI_CommonNormal</defName>
     <label>common (normal)</label>
-    <priority>20</priority>
+    <priority>10</priority>
     <color>(1, 1, 1)</color>
     <infuserValue>100</infuserValue>
     <extractionChance>1</extractionChance>
@@ -85,7 +85,7 @@
   <Infusion.TierDef>
     <defName>TI_CommonGood</defName>
     <label>common (good)</label>
-    <priority>30</priority>
+    <priority>10</priority>
     <color>(0.75, 1, 0.75)</color>
     <infuserValue>150</infuserValue>
     <extractionChance>0.8</extractionChance>
@@ -112,7 +112,7 @@
   <Infusion.TierDef>
     <defName>TI_CommonExcellent</defName>
     <label>common (excellent)</label>
-    <priority>40</priority>
+    <priority>10</priority>
     <color>(0.5, 1, 0.5)</color>
     <infuserValue>200</infuserValue>
     <extractionChance>0.6</extractionChance>
@@ -139,7 +139,7 @@
   <Infusion.TierDef>
     <defName>TI_CommonMasterwork</defName>
     <label>common (masterwork)</label>
-    <priority>50</priority>
+    <priority>10</priority>
     <color>(0.25, 1, 0.25)</color>
     <infuserValue>500</infuserValue>
     <extractionChance>0.4</extractionChance>
@@ -166,7 +166,7 @@
   <Infusion.TierDef>
     <defName>TI_CommonLegendary</defName>
     <label>common (legendary)</label>
-    <priority>60</priority>
+    <priority>10</priority>
     <color>(0, 1, 0)</color>
     <infuserValue>750</infuserValue>
     <extractionChance>0.2</extractionChance>
@@ -193,7 +193,7 @@
   <Infusion.TierDef>
     <defName>TI_ModNormal</defName>
     <label>mod (normal)</label>
-    <priority>70</priority>
+    <priority>10</priority>
     <color>(0.8, 0.8, 1)</color>
     <infuserValue>500</infuserValue>
     <extractionChance>0.4</extractionChance>
@@ -220,7 +220,7 @@
   <Infusion.TierDef>
     <defName>TI_ModGood</defName>
     <label>mod (good)</label>
-    <priority>80</priority>
+    <priority>10</priority>
     <color>(0.6, 0.6, 1)</color>
     <infuserValue>500</infuserValue>
     <extractionChance>0.4</extractionChance>
@@ -247,7 +247,7 @@
   <Infusion.TierDef>
     <defName>TI_ModExcellent</defName>
     <label>mod (excellent)</label>
-    <priority>90</priority>
+    <priority>10</priority>
     <color>(0.4, 0.4, 1)</color>
     <infuserValue>1600</infuserValue>
     <extractionChance>0.1</extractionChance>
@@ -275,7 +275,7 @@
   <Infusion.TierDef>
     <defName>TI_ModMasterwork</defName>
     <label>mod (masterwork)</label>
-    <priority>100</priority>
+    <priority>10</priority>
     <color>(0.2, 0.2, 1)</color>
     <infuserValue>3200</infuserValue>
     <extractionChance>0.1</extractionChance>
@@ -303,7 +303,7 @@
   <Infusion.TierDef>
     <defName>TI_ModLegendary</defName>
     <label>mod (legendary)</label>
-    <priority>110</priority>
+    <priority>10</priority>
     <color>(0, 0, 1)</color>
     <infuserValue>4800</infuserValue>
     <extractionChance>0.1</extractionChance>
@@ -330,7 +330,7 @@
   <Infusion.TierDef>
     <defName>TI_AlternateNormal</defName>
     <label>alternate (normal)</label>
-    <priority>120</priority>
+    <priority>10</priority>
     <color>(1, 1, 0.8)</color>
     <infuserValue>500</infuserValue>
     <extractionChance>0.4</extractionChance>
@@ -357,7 +357,7 @@
   <Infusion.TierDef>
     <defName>TI_AlternateGood</defName>
     <label>alternate (good)</label>
-    <priority>130</priority>
+    <priority>10</priority>
     <color>(1, 1, 0.6)</color>
     <infuserValue>500</infuserValue>
     <extractionChance>0.4</extractionChance>
@@ -384,7 +384,7 @@
   <Infusion.TierDef>
     <defName>TI_AlternateExcellent</defName>
     <label>alternate (excellent)</label>
-    <priority>140</priority>
+    <priority>10</priority>
     <color>(1, 1, 0.4)</color>
     <infuserValue>1600</infuserValue>
     <extractionChance>0.1</extractionChance>
@@ -412,7 +412,7 @@
   <Infusion.TierDef>
     <defName>TI_AlternateMasterwork</defName>
     <label>alternate (masterwork)</label>
-    <priority>150</priority>
+    <priority>10</priority>
     <color>(1, 1, 0.2)</color>
     <infuserValue>3200</infuserValue>
     <extractionChance>0.1</extractionChance>
@@ -440,7 +440,7 @@
   <Infusion.TierDef>
     <defName>TI_AlternateLegendary</defName>
     <label>alternate (legendary)</label>
-    <priority>160</priority>
+    <priority>10</priority>
     <color>(1, 1, 0)</color>
     <infuserValue>4800</infuserValue>
     <extractionChance>0.1</extractionChance>
@@ -467,7 +467,7 @@
   <Infusion.TierDef>
     <defName>TI_MagicNormal</defName>
     <label>magic (normal)</label>
-    <priority>170</priority>
+    <priority>10</priority>
     <color>(1, 0.8, 1)</color>
     <infuserValue>500</infuserValue>
     <extractionChance>0.4</extractionChance>
@@ -494,7 +494,7 @@
   <Infusion.TierDef>
     <defName>TI_MagicGood</defName>
     <label>magic (good)</label>
-    <priority>180</priority>
+    <priority>10</priority>
     <color>(1, 0.6, 1)</color>
     <infuserValue>500</infuserValue>
     <extractionChance>0.4</extractionChance>
@@ -521,7 +521,7 @@
   <Infusion.TierDef>
     <defName>TI_MagicExcellent</defName>
     <label>magic (excellent)</label>
-    <priority>190</priority>
+    <priority>10</priority>
     <color>(1, 0.4, 1)</color>
     <infuserValue>1600</infuserValue>
     <extractionChance>0.1</extractionChance>
@@ -549,7 +549,7 @@
   <Infusion.TierDef>
     <defName>TI_MagicMasterwork</defName>
     <label>magic (masterwork)</label>
-    <priority>200</priority>
+    <priority>10</priority>
     <color>(1, 0.2, 1)</color>
     <infuserValue>3200</infuserValue>
     <extractionChance>0.1</extractionChance>
@@ -577,7 +577,7 @@
   <Infusion.TierDef>
     <defName>TI_MagicLegendary</defName>
     <label>magic (legendary)</label>
-    <priority>50</priority>
+    <priority>10</priority>
     <color>(1, 0, 1)</color>
     <infuserValue>4800</infuserValue>
     <extractionChance>0.1</extractionChance>
