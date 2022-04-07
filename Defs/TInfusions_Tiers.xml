@@ -2,8 +2,8 @@
 <Defs>
 
   <Infusion.TierDef>
-    <defName>TI_Broken</defName>
-    <label>broken</label>
+    <defName>TI_CommonAwful</defName>
+    <label>common (awful)</label>
     <priority>0</priority>
     <color>(0.8, 0.1, 0.1)</color>
     <infuserValue>50</infuserValue>
@@ -18,8 +18,8 @@
       <legendary>1</legendary>
     </weights>
     <chances>
-      <awful>0.5</awful>
-      <poor>0.25</poor>
+      <awful>0.3</awful>
+      <poor>0.1</poor>
       <normal>0</normal>
       <good>0</good>
       <excellent>0</excellent>
@@ -29,8 +29,8 @@
   </Infusion.TierDef>
 
   <Infusion.TierDef>
-    <defName>TI_Negative</defName>
-    <label>negative</label>
+    <defName>TI_CommonPoor</defName>
+    <label>common (poor)</label>
     <priority>5</priority>
     <color>(0.9, 0.55, 0.55)</color>
     <infuserValue>100</infuserValue>
@@ -45,22 +45,49 @@
       <legendary>1</legendary>
     </weights>
     <chances>
-      <awful>0.7</awful>
-      <poor>0.4</poor>
-      <normal>0.2</normal>
-      <good>0.1</good>
-      <excellent>0.05</excellent>
-      <masterwork>0.025</masterwork>
+      <awful>0.1</awful>
+      <poor>0.1</poor>
+      <normal>0.05</normal>
+      <good>0</good>
+      <excellent>0</excellent>
+      <masterwork>0</masterwork>
       <legendary>0</legendary>
     </chances>
   </Infusion.TierDef>
 
   <Infusion.TierDef>
-    <defName>TI_Minor</defName>
-    <label>minor</label>
+    <defName>TI_CommonNormal</defName>
+    <label>common (normal)</label>
+    <priority>5</priority>
+    <color>(0.9, 0.55, 0.55)</color>
+    <infuserValue>100</infuserValue>
+    <extractionChance>1</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0.3</awful>
+      <poor>0.4</poor>
+      <normal>0.5</normal>
+      <good>0.4</good>
+      <excellent>0.3</excellent>
+      <masterwork>0.2</masterwork>
+      <legendary>0.1</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef>
+    <defName>TI_CommonGood</defName>
+    <label>common (good)</label>
     <priority>10</priority>
     <color>(1, 1, 1)</color>
-    <infuserValue>200</infuserValue>
+    <infuserValue>150</infuserValue>
     <extractionChance>0.8</extractionChance>
     <weights>
       <awful>1</awful>
@@ -72,22 +99,22 @@
       <legendary>1</legendary>
     </weights>
     <chances>
-      <awful>0.6</awful>
-      <poor>0.6</poor>
-      <normal>0.6</normal>
-      <good>0.6</good>
-      <excellent>0.6</excellent>
-      <masterwork>0.6</masterwork>
-      <legendary>0.6</legendary>
+      <awful>0.3</awful>
+      <poor>0.3</poor>
+      <normal>0.4</normal>
+      <good>0.5</good>
+      <excellent>0.4</excellent>
+      <masterwork>0.3</masterwork>
+      <legendary>0.2</legendary>
     </chances>
   </Infusion.TierDef>
 
   <Infusion.TierDef>
-    <defName>TI_Moderate</defName>
-    <label>moderate</label>
+    <defName>TI_CommonExcellent</defName>
+    <label>common (excellent)</label>
     <priority>20</priority>
     <color>(0.6, 0.9, 0.6)</color>
-    <infuserValue>400</infuserValue>
+    <infuserValue>200</infuserValue>
     <extractionChance>0.6</extractionChance>
     <weights>
       <awful>1</awful>
@@ -99,50 +126,23 @@
       <legendary>1</legendary>
     </weights>
     <chances>
-      <awful>0.45</awful>
-      <poor>0.45</poor>
-      <normal>0.45</normal>
-      <good>0.45</good>
-      <excellent>0.45</excellent>
-      <masterwork>0.45</masterwork>
-      <legendary>0.45</legendary>
+      <awful>0.2</awful>
+      <poor>0.2</poor>
+      <normal>0.2</normal>
+      <good>0.3</good>
+      <excellent>0.4</excellent>
+      <masterwork>0.35</masterwork>
+      <legendary>0.3</legendary>
     </chances>
   </Infusion.TierDef>
 
   <Infusion.TierDef>
-    <defName>TI_Major</defName>
-    <label>major</label>
+    <defName>TI_CommonMasterwork</defName>
+    <label>common (masterwork)</label>
     <priority>30</priority>
     <color>(0.3, 1, 0.3)</color>
-    <infuserValue>800</infuserValue>
+    <infuserValue>500</infuserValue>
     <extractionChance>0.4</extractionChance>
-    <weights>
-      <awful>1</awful>
-      <poor>1</poor>
-      <normal>1</normal>
-      <good>1</good>
-      <excellent>1</excellent>
-      <masterwork>1</masterwork>
-      <legendary>1</legendary>
-    </weights>
-    <chances>
-      <awful>0.25</awful>
-      <poor>0.25</poor>
-      <normal>0.25</normal>
-      <good>0.25</good>
-      <excellent>0.25</excellent>
-      <masterwork>0.25</masterwork>
-      <legendary>0.25</legendary>
-    </chances>
-  </Infusion.TierDef>
-
-  <Infusion.TierDef>
-    <defName>TI_Extreme</defName>
-    <label>extreme</label>
-    <priority>40</priority>
-    <color>(0, 1, 0)</color>
-    <infuserValue>1600</infuserValue>
-    <extractionChance>0.2</extractionChance>
     <weights>
       <awful>1</awful>
       <poor>1</poor>
@@ -157,18 +157,45 @@
       <poor>0.1</poor>
       <normal>0.1</normal>
       <good>0.1</good>
-      <excellent>0.1</excellent>
-      <masterwork>0.1</masterwork>
-      <legendary>0.1</legendary>
+      <excellent>0.2</excellent>
+      <masterwork>0.35</masterwork>
+      <legendary>0.35</legendary>
     </chances>
   </Infusion.TierDef>
 
   <Infusion.TierDef>
-    <defName>TI_Modified</defName>
-    <label>modified</label>
+    <defName>TI_CommonLegendary</defName>
+    <label>common (legendary)</label>
+    <priority>40</priority>
+    <color>(0, 1, 0)</color>
+    <infuserValue>750</infuserValue>
+    <extractionChance>0.2</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0.05</awful>
+      <poor>0.05</poor>
+      <normal>0.05</normal>
+      <good>0.05</good>
+      <excellent>0.1</excellent>
+      <masterwork>0.15</masterwork>
+      <legendary>0.25</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef>
+    <defName>TI_ModNormal</defName>
+    <label>mod (normal)</label>
     <priority>45</priority>
     <color>(0.8, 0.6, 1)</color>
-    <infuserValue>800</infuserValue>
+    <infuserValue>500</infuserValue>
     <extractionChance>0.4</extractionChance>
     <weights>
       <awful>1</awful>
@@ -180,20 +207,75 @@
       <legendary>1</legendary>
     </weights>
     <chances>
-      <awful>0.25</awful>
-      <poor>0.25</poor>
-      <normal>0.25</normal>
-      <good>0.25</good>
-      <excellent>0.25</excellent>
-      <masterwork>0.25</masterwork>
-      <legendary>0.25</legendary>
+      <awful>0.1</awful>
+      <poor>0.1</poor>
+      <normal>0.15</normal>
+      <good>0.1</good>
+      <excellent>0.1</excellent>
+      <masterwork>0.05</masterwork>
+      <legendary>0.05</legendary>
     </chances>
   </Infusion.TierDef>
 
   <Infusion.TierDef>
-    <defName>TI_RepurposedT1</defName>
-    <label>repurposed T1</label>
+    <defName>TI_ModGood</defName>
+    <label>mod (good)</label>
+    <priority>45</priority>
+    <color>(0.8, 0.6, 1)</color>
+    <infuserValue>500</infuserValue>
+    <extractionChance>0.4</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0.1</awful>
+      <poor>0.1</poor>
+      <normal>0.15</normal>
+      <good>0.2</good>
+      <excellent>0.2</excellent>
+      <masterwork>0.15</masterwork>
+      <legendary>0.1</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef>
+    <defName>TI_ModExcellent</defName>
+    <label>mod (excellent)</label>
     <priority>50</priority>
+    <color>(0.3, 0.3, 1)</color>
+    <infuserValue>1600</infuserValue>
+    <extractionChance>0.1</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0.05</awful>
+      <poor>0.05</poor>
+      <normal>0.05</normal>
+      <good>0.1</good>
+      <excellent>0.15</excellent>
+      <masterwork>0.15</masterwork>
+      <legendary>0.1</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+  
+  <Infusion.TierDef>
+    <defName>TI_ModMasterwork</defName>
+    <label>mod (masterwork)</label>
+    <priority>53</priority>
     <color>(0.3, 0.3, 1)</color>
     <infuserValue>3200</infuserValue>
     <extractionChance>0.1</extractionChance>
@@ -207,21 +289,21 @@
       <legendary>1</legendary>
     </weights>
     <chances>
-      <awful>0</awful>
-      <poor>0.05</poor>
-      <normal>0.1</normal>
-      <good>0.15</good>
-      <excellent>0.2</excellent>
-      <masterwork>0.25</masterwork>
-      <legendary>0.3</legendary>
+      <awful>0.025</awful>
+      <poor>0.025</poor>
+      <normal>0.025</normal>
+      <good>0.05</good>
+      <excellent>0.1</excellent>
+      <masterwork>0.15</masterwork>
+      <legendary>0.15</legendary>
     </chances>
   </Infusion.TierDef>
 
-  
+    
   <Infusion.TierDef>
-    <defName>TI_RepurposedT2</defName>
-    <label>repurposed T2</label>
-    <priority>53</priority>
+    <defName>TI_ModLegendary</defName>
+    <label>mod (legendary)</label>
+    <priority>56</priority>
     <color>(0.3, 0.3, 1)</color>
     <infuserValue>4800</infuserValue>
     <extractionChance>0.1</extractionChance>
@@ -235,23 +317,76 @@
       <legendary>1</legendary>
     </weights>
     <chances>
-      <awful>0</awful>
-      <poor>0.02</poor>
-      <normal>0.05</normal>
-      <good>0.1</good>
-      <excellent>0.15</excellent>
-      <masterwork>0.2</masterwork>
-      <legendary>0.2</legendary>
+      <awful>0.0125</awful>
+      <poor>0.0125</poor>
+      <normal>0.0125</normal>
+      <good>0.025</good>
+      <excellent>0.05</excellent>
+      <masterwork>0.075</masterwork>
+      <legendary>0.1</legendary>
     </chances>
   </Infusion.TierDef>
 
-    
   <Infusion.TierDef>
-    <defName>TI_RepurposedT3</defName>
-    <label>repurposed T3</label>
-    <priority>56</priority>
+    <defName>TI_AlternateNormal</defName>
+    <label>alternate (normal)</label>
+    <priority>45</priority>
+    <color>(0.8, 0.6, 1)</color>
+    <infuserValue>500</infuserValue>
+    <extractionChance>0.4</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0.1</awful>
+      <poor>0.1</poor>
+      <normal>0.15</normal>
+      <good>0.1</good>
+      <excellent>0.1</excellent>
+      <masterwork>0.05</masterwork>
+      <legendary>0.05</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef>
+    <defName>TI_AlternateGood</defName>
+    <label>alternate (good)</label>
+    <priority>45</priority>
+    <color>(0.8, 0.6, 1)</color>
+    <infuserValue>500</infuserValue>
+    <extractionChance>0.4</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0.1</awful>
+      <poor>0.1</poor>
+      <normal>0.15</normal>
+      <good>0.2</good>
+      <excellent>0.2</excellent>
+      <masterwork>0.15</masterwork>
+      <legendary>0.1</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef>
+    <defName>TI_AlternateExcellent</defName>
+    <label>alternate (excellent)</label>
+    <priority>50</priority>
     <color>(0.3, 0.3, 1)</color>
-    <infuserValue>6000</infuserValue>
+    <infuserValue>1600</infuserValue>
     <extractionChance>0.1</extractionChance>
     <weights>
       <awful>1</awful>
@@ -263,17 +398,210 @@
       <legendary>1</legendary>
     </weights>
     <chances>
-      <awful>0</awful>
-      <poor>0</poor>
-      <normal>0.005</normal>
-      <good>0.01</good>
-      <excellent>0.02</excellent>
-      <masterwork>0.05</masterwork>
+      <awful>0.05</awful>
+      <poor>0.05</poor>
+      <normal>0.05</normal>
+      <good>0.1</good>
+      <excellent>0.15</excellent>
+      <masterwork>0.15</masterwork>
       <legendary>0.1</legendary>
     </chances>
   </Infusion.TierDef>
 
-      
+  
+  <Infusion.TierDef>
+    <defName>TI_AlternateMasterwork</defName>
+    <label>alternate (masterwork)</label>
+    <priority>53</priority>
+    <color>(0.3, 0.3, 1)</color>
+    <infuserValue>3200</infuserValue>
+    <extractionChance>0.1</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0.025</awful>
+      <poor>0.025</poor>
+      <normal>0.025</normal>
+      <good>0.025</good>
+      <excellent>0.05</excellent>
+      <masterwork>0.1</masterwork>
+      <legendary>0.1</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+    
+  <Infusion.TierDef>
+    <defName>TI_AlternateLegendary</defName>
+    <label>alternate (legendary)</label>
+    <priority>56</priority>
+    <color>(0.3, 0.3, 1)</color>
+    <infuserValue>4800</infuserValue>
+    <extractionChance>0.1</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0.0125</awful>
+      <poor>0.0125</poor>
+      <normal>0.0125</normal>
+      <good>0.0125</good>
+      <excellent>0.0125</excellent>
+      <masterwork>0.025</masterwork>
+      <legendary>0.05</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef>
+    <defName>TI_MagicNormal</defName>
+    <label>magic (normal)</label>
+    <priority>45</priority>
+    <color>(0.8, 0.6, 1)</color>
+    <infuserValue>500</infuserValue>
+    <extractionChance>0.4</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0.05</awful>
+      <poor>0.05</poor>
+      <normal>0.1</normal>
+      <good>0.05</good>
+      <excellent>0.05</excellent>
+      <masterwork>0.05</masterwork>
+      <legendary>0.05</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef>
+    <defName>TI_MagicGood</defName>
+    <label>magic (good)</label>
+    <priority>45</priority>
+    <color>(0.8, 0.6, 1)</color>
+    <infuserValue>500</infuserValue>
+    <extractionChance>0.4</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0.05</awful>
+      <poor>0.05</poor>
+      <normal>0.1</normal>
+      <good>0.15</good>
+      <excellent>0.15</excellent>
+      <masterwork>0.1</masterwork>
+      <legendary>0.05</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef>
+    <defName>TI_MagicExcellent</defName>
+    <label>magic (excellent)</label>
+    <priority>50</priority>
+    <color>(0.3, 0.3, 1)</color>
+    <infuserValue>1600</infuserValue>
+    <extractionChance>0.1</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0.025</awful>
+      <poor>0.025</poor>
+      <normal>0.025</normal>
+      <good>0.05</good>
+      <excellent>0.1</excellent>
+      <masterwork>0.1</masterwork>
+      <legendary>0.05</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+  
+  <Infusion.TierDef>
+    <defName>TI_MagicMasterwork</defName>
+    <label>magic (masterwork)</label>
+    <priority>53</priority>
+    <color>(0.3, 0.3, 1)</color>
+    <infuserValue>3200</infuserValue>
+    <extractionChance>0.1</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0.0125</awful>
+      <poor>0.0125</poor>
+      <normal>0.0125</normal>
+      <good>0.025</good>
+      <excellent>0.05</excellent>
+      <masterwork>0.1</masterwork>
+      <legendary>0.1</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+    
+  <Infusion.TierDef>
+    <defName>TI_MagicLegendary</defName>
+    <label>magic (legendary)</label>
+    <priority>56</priority>
+    <color>(0.3, 0.3, 1)</color>
+    <infuserValue>4800</infuserValue>
+    <extractionChance>0.1</extractionChance>
+    <weights>
+      <awful>1</awful>
+      <poor>1</poor>
+      <normal>1</normal>
+      <good>1</good>
+      <excellent>1</excellent>
+      <masterwork>1</masterwork>
+      <legendary>1</legendary>
+    </weights>
+    <chances>
+      <awful>0.00125</awful>
+      <poor>0.00125</poor>
+      <normal>0.00125</normal>
+      <good>0.0125</good>
+      <excellent>0.025</excellent>
+      <masterwork>0.05</masterwork>
+      <legendary>0.75</legendary>
+    </chances>
+  </Infusion.TierDef>
+
+<!--
   <Infusion.TierDef>
     <defName>TI_RepurposedT4</defName>
     <label>repurposed T4</label>
@@ -333,7 +661,7 @@
     <label>repurposed T6</label>
     <priority>59</priority>
     <color>(0.3, 0.3, 1)</color>
-    <infuserValue>14000</infuserValue>
+    <infuserValue>20000</infuserValue>
     <extractionChance>0.1</extractionChance>
     <weights>
       <awful>1</awful>
@@ -354,8 +682,8 @@
       <legendary>0.01</legendary>
     </chances>
   </Infusion.TierDef>
-
-
+-->
+<!--
   <Infusion.TierDef>
     <defName>TI_Legend</defName>
     <label>legend</label>
@@ -463,4 +791,5 @@
       <legendary>0.01</legendary>
     </chances>
   </Infusion.TierDef>
+-->
 </Defs>
