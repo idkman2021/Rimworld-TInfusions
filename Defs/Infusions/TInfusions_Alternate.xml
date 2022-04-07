@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGood">
+        <tier>TI_AlternateGood</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <offset>150</offset>
+                    <multiplier>0.35</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellent">
+        <tier>TI_AlternateExcellent</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterwork">
+        <tier>TI_AlternateMasterwork</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <multiplier>0.9</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendary">
+        <tier>TI_AlternateLegendary</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <multiplier>1.3</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- apparels -->
+
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodApparel" ParentName="TI_AlternateGood">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <apparel>true</apparel>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentApparel" ParentName="TI_AlternateExcellent">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <apparel>true</apparel>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkApparel" ParentName="TI_AlternateMasterwork">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <apparel>true</apparel>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendaryApparel" ParentName="TI_AlternateLegendary">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <apparel>true</apparel>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <!-- armors must cover a body part-->
+
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodArmor" ParentName="TI_AlternateGoodApparel">
+        <matches>
+            <li Class="Infusion.Matchers.NotUtility" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentArmor" ParentName="TI_AlternateExcellentApparel">
+        <matches>
+            <li Class="Infusion.Matchers.NotUtility" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkArmor" ParentName="TI_AlternateMasterworkApparel">
+        <matches>
+            <li Class="Infusion.Matchers.NotUtility" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendaryArmor" ParentName="TI_AlternateLegendaryApparel">
+        <matches>
+            <li Class="Infusion.Matchers.NotUtility" />
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <!-- melee -->
+
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodMelee" ParentName="TI_AlternateGood">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentMelee" ParentName="TI_AlternateExcellent">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkMelee" ParentName="TI_AlternateMasterwork">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendaryMelee" ParentName="TI_AlternateLegendary">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <!-- blunt -->
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodBlunt" ParentName="TI_AlternateGoodMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleeBlunt</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentBlunt" ParentName="TI_AlternateExcellentMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleeBlunt</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkBlunt" ParentName="TI_AlternateMasterworkMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleeBlunt</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendaryBlunt" ParentName="TI_AlternateLegendaryMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleeBlunt</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <!-- piercer -->
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodSharp" ParentName="TI_AlternateGoodMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleePiercer</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentSharp" ParentName="TI_AlternateExcellentMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleePiercer</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkSharp" ParentName="TI_AlternateMasterworkMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleePiercer</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendarySharp" ParentName="TI_AlternateLegendaryMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleePiercer</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <!-- ranged -->
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodRanged" ParentName="TI_AlternateGood">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentRanged" ParentName="TI_AlternateExcellent">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkRanged" ParentName="TI_AlternateMasterwork">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendaryRanged" ParentName="TI_AlternateLegendary">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+
+
+    <!-- shields -->
+
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodShield" ParentName="TI_AlternateGood">
+        <matches>
+            <li Class="Infusion.Matchers.ShieldBelt" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentShield" ParentName="TI_AlternateExcellent">
+        <matches>
+            <li Class="Infusion.Matchers.ShieldBelt" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkShield" ParentName="TI_AlternateMasterwork">
+        <matches>
+            <li Class="Infusion.Matchers.ShieldBelt" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendaryShield" ParentName="TI_AlternateLegendary">
+        <matches>
+            <li Class="Infusion.Matchers.ShieldBelt" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <!--
+    <Infusion.InfusionDef ParentName="TI_CommonGood">
+        <defName>_______</defName>
+        <label>_______</label>
+        <labelShort>_______</labelShort>
+        <stats>
+            <li>
+            <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>_______</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef> 
+
+-->
+
+    <Infusion.InfusionDef ParentName="TI_AlternateGoodRanged">
+        <defName>TI_RRapidFire1</defName>
+        <label>Rapid Fire 1</label>
+        <labelShort>rfire1</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>-0.5</offset>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.45</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Fires 2 times faster but does 2 times less damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_AlternateMasterworkRanged">
+        <defName>TI_RRapidFire2</defName>
+        <label>Rapid Fire 2</label>
+        <labelShort>rfire2</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>-0.75</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>-0.75</offset>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.675</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Fires 4 times faster but does 4 times less damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_AlternateLegendaryRanged">
+        <defName>TI_RRapidFire3</defName>
+        <label>Rapid Fire 3</label>
+        <labelShort>rfire3</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>-0.875</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>-0.875</offset>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.8</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Fires 8 times faster but does 8 times less damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+  
+    <!-- sniper -->
+
+    <Infusion.InfusionDef ParentName="TI_AlternateGoodRanged">
+        <defName>TI_RSniper1</defName>
+        <label>Sniper 1</label>
+        <labelShort>snipe1</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>1</offset>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <offset>-0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <offset>-0.04</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <offset>0.02</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <offset>0.05</offset>
+                </value>
+            </li>
+            <!--<li>
+                <key>Range</key>
+                <value>
+                    <offset>10</offset>
+                </value>
+            </li>-->
+        </stats>
+        <extraDescriptions>
+            <li>Fires 2 times slower but does 2 times more damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_AlternateMasterworkRanged">
+        <defName>TI_RSniper2</defName>
+        <label>Sniper 2</label>
+        <labelShort>snipe2</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>3</offset>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <offset>-0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <offset>-0.04</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <offset>0.05</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
+            <!--<li>
+                <key>Range</key>
+                <value>
+                    <offset>14</offset>
+                </value>
+            </li>-->
+        </stats>
+        <extraDescriptions>
+            <li>Fires 4 times slower but does 4 times more damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_AlternateLegendaryRanged">
+        <defName>TI_RSniper3</defName>
+        <label>Sniper 3</label>
+        <labelShort>snipe3</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>7</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>7</offset>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>7</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <offset>-0.2</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <offset>-0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <offset>0.2</offset>
+                </value>
+            </li>
+            <!--<li>
+                <key>Range</key>
+                <value>
+                    <offset>20</offset>
+                </value>
+            </li>-->
+        </stats>
+        <extraDescriptions>
+            <li>Fires 8 times slower but does 8 times more damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_AlternateExcellentArmor">
+        <defName>TI_ArmBlunt1</defName>
+        <label>blunt protection</label>
+        <labelShort>bluntp</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>0.5</offset>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <offset>-0.25</offset>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Heat</key>
+                <value>
+                    <offset>-0.25</offset>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Significantly better protection from blunt attacks, but worse protection from sharp and heat.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_AlternateExcellentArmor">
+        <defName>TI_ArmSharp1</defName>
+        <label>sharp protection</label>
+        <labelShort>sharpp</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>-0.25</offset>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <offset>0.5</offset>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Heat</key>
+                <value>
+                    <offset>-0.25</offset>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Significantly better protection from sharp attacks, but worse protection from blunt and heat.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_AlternateExcellentArmor">
+        <defName>TI_ArmHeat1</defName>
+        <label>heat protection</label>
+        <labelShort>heatp</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>-0.25</offset>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <offset>-0.25</offset>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Heat</key>
+                <value>
+                    <offset>0.75</offset>
+                    <multiplier>0.75</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Insulation_Heat</key>
+                <value>
+                    <offset>40</offset>
+                </value>
+            </li>
+            <li>
+                <key>Flammability</key>
+                <value>
+                    <multiplier>-0.75</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Significantly better protection from heat, but worse protection from sharp and blunt.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_AlternateGoodRanged">
+        <defName>TI_RExplosive2</defName>
+        <label>explosive 2</label>
+        <labelShort>expl2</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Bomb</def>
+                <amount>0.5</amount>
+                <radius>1</radius>
+            </li>
+        </onHits>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>1</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Projectiles are explosive, but the weapon is less accurate and slower to fire.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_AlternateMasterworkRanged">
+        <defName>TI_RExplosive3</defName>
+        <label>explosive 3</label>
+        <labelShort>expl3</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>1.6</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>1.6</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.4</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.4</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>-0.4</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>-0.4</multiplier>
+                </value>
+            </li>
+        </stats>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Bomb</def>
+                <amount>0.5</amount>
+                <radius>2</radius>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Projectiles are very explosive, but the weapon is less accurate and significantly slower to fire.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_AlternateLegendaryRanged">
+        <defName>TI_RExplosive4</defName>
+        <label>explosive 4</label>
+        <labelShort>expl4</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <offset>1</offset>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>1</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.6</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.6</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>-0.6</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>-0.6</multiplier>
+                </value>
+            </li>
+        </stats>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Bomb</def>
+                <amount>0.5</amount>
+                <radius>4</radius>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Projectiles are very explosive, but the weapon is extremely slow and inaccurate.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+      <!-- lucky shot -->
+
+      <Infusion.InfusionDef ParentName="TI_AlternateGoodRanged">
+        <defName>TI_RLuckyShot1</defName>
+        <label>lucky shot 1</label>
+        <labelShort>luck1</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.45</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.45</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>-0.45</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>-0.45</multiplier>
+                </value>
+            </li>
+            <!--<li>
+                <key>Range</key>
+                <value>
+                    <offset>10</offset>
+                </value>
+            </li>-->
+        </stats>
+        <extraDescriptions>
+            <li>2 times more damage but 2 times less accuracy.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_AlternateExcellentRanged">
+        <defName>TI_RLuckyShot2</defName>
+        <label>lucky shot 2</label>
+        <labelShort>luck2</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.7</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.7</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>-0.7</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>-0.7</multiplier>
+                </value>
+            </li>
+            <!--<li>
+                <key>Range</key>
+                <value>
+                    <offset>14</offset>
+                </value>
+            </li>-->
+        </stats>
+        <extraDescriptions>
+            <li>4 times more damage but 4 times less accuracy.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_AlternateLegendaryRanged">
+        <defName>TI_RLuckyShot2</defName>
+        <label>lucky shot 3</label>
+        <labelShort>luck3</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>7</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.84</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.84</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>-0.84</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>-0.84</multiplier>
+                </value>
+            </li>
+            <!--<li>
+                <key>Range</key>
+                <value>
+                    <offset>20</offset>
+                </value>
+            </li>-->
+        </stats>
+        <extraDescriptions>
+            <li>8 times more damage but 8 times less accuracy.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+</Defs>

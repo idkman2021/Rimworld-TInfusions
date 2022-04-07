@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicAwful">
+        <tier>TI_MagicAwful</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoor">
+        <tier>TI_MagicPoor</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormal">
+        <tier>TI_MagicNormal</tier>
+        <!--<stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <multiplier>0.1</multiplier>
+                </value>
+            </li>
+        </stats>-->
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGood">
+        <tier>TI_MagicGood</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <offset>50</offset>
+                    <multiplier>0.1</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellent">
+        <tier>TI_MagicExcellent</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <offset>100</offset>
+                    <multiplier>0.2</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterwork">
+        <tier>TI_MagicMasterwork</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <offset>200</offset>
+                    <multiplier>0.3</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendary">
+        <tier>TI_MagicLegendary</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <offset>300</offset>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- apparels -->
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorApparel" ParentName="TI_MagicPoor">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <apparel>true</apparel>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalApparel" ParentName="TI_MagicNormal">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <apparel>true</apparel>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodApparel" ParentName="TI_MagicGood">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <apparel>true</apparel>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentApparel" ParentName="TI_MagicExcellent">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <apparel>true</apparel>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkApparel" ParentName="TI_MagicMasterwork">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <apparel>true</apparel>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryApparel" ParentName="TI_MagicLegendary">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <apparel>true</apparel>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+    <!-- armors must cover a body part-->
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorArmor" ParentName="TI_MagicPoorApparel">
+        <matches>
+            <li Class="Infusion.Matchers.NotUtility" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalArmor" ParentName="TI_MagicNormalApparel">
+        <matches>
+            <li Class="Infusion.Matchers.NotUtility" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodArmor" ParentName="TI_MagicGoodApparel">
+        <matches>
+            <li Class="Infusion.Matchers.NotUtility" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentArmor" ParentName="TI_MagicExcellentApparel">
+        <matches>
+            <li Class="Infusion.Matchers.NotUtility" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkArmor" ParentName="TI_MagicMasterworkApparel">
+        <matches>
+            <li Class="Infusion.Matchers.NotUtility" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryArmor" ParentName="TI_MagicLegendaryApparel">
+        <matches>
+            <li Class="Infusion.Matchers.NotUtility" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <!-- melee -->
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorMelee" ParentName="TI_MagicPoor">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalMelee" ParentName="TI_MagicNormal">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodMelee" ParentName="TI_MagicGood">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentMelee" ParentName="TI_MagicExcellent">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkMelee" ParentName="TI_MagicMasterwork">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryMelee" ParentName="TI_MagicLegendary">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <!-- ranged -->
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorRanged" ParentName="TI_MagicPoor">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalRanged" ParentName="TI_MagicNormal">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodRanged" ParentName="TI_MagicGood">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentRanged" ParentName="TI_MagicExcellent">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkRanged" ParentName="TI_MagicMasterwork">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryRanged" ParentName="TI_MagicLegendary">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <!-- shields -->
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorShield" ParentName="TI_MagicPoor">
+        <matches>
+            <li Class="Infusion.Matchers.ShieldBelt" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalShield" ParentName="TI_MagicNormal">
+        <matches>
+            <li Class="Infusion.Matchers.ShieldBelt" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodShield" ParentName="TI_MagicGood">
+        <matches>
+            <li Class="Infusion.Matchers.ShieldBelt" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentShield" ParentName="TI_MagicExcellent">
+        <matches>
+            <li Class="Infusion.Matchers.ShieldBelt" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkShield" ParentName="TI_MagicMasterwork">
+        <matches>
+            <li Class="Infusion.Matchers.ShieldBelt" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryShield" ParentName="TI_MagicLegendary">
+        <matches>
+            <li Class="Infusion.Matchers.ShieldBelt" />
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <!-- blunt -->
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorBlunt" ParentName="TI_MagicPoorMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleeBlunt</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalBlunt" ParentName="TI_MagicNormalMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleeBlunt</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodBlunt" ParentName="TI_MagicGoodMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleeBlunt</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentBlunt" ParentName="TI_MagicExcellentMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleeBlunt</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkBlunt" ParentName="TI_MagicMasterworkMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleeBlunt</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryBlunt" ParentName="TI_MagicLegendaryMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleeBlunt</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <!-- piercer -->
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorSharp" ParentName="TI_MagicPoorMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleePiercer</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalSharp" ParentName="TI_MagicNormalMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleePiercer</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodSharp" ParentName="TI_MagicGoodMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleePiercer</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentSharp" ParentName="TI_MagicExcellentMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleePiercer</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkSharp" ParentName="TI_MagicMasterworkMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleePiercer</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendarySharp" ParentName="TI_MagicLegendaryMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleePiercer</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <!-- bullet -->
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorBullet" ParentName="TI_MagicPoorRanged">
+        <matches>
+            <li Class="Infusion.Matchers.ProjectileBullet" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalBullet" ParentName="TI_MagicNormalRanged">
+        <matches>
+            <li Class="Infusion.Matchers.ProjectileBullet" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodBullet" ParentName="TI_MagicGoodRanged">
+        <matches>
+            <li Class="Infusion.Matchers.ProjectileBullet" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentBullet" ParentName="TI_MagicExcellentRanged">
+        <matches>
+            <li Class="Infusion.Matchers.ProjectileBullet" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkBullet" ParentName="TI_MagicMasterworkRanged">
+        <matches>
+            <li Class="Infusion.Matchers.ProjectileBullet" />
+        </matches>
+    </Infusion.InfusionDef>
+    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryBullet" ParentName="TI_MagicLegendaryRanged">
+        <matches>
+            <li Class="Infusion.Matchers.ProjectileBullet" />
+        </matches>
+    </Infusion.InfusionDef>
+
+    <!--
+    <Infusion.InfusionDef ParentName="TI_MagicGood">
+        <defName>_______</defName>
+        <label>_______</label>
+        <labelShort>_______</labelShort>
+        <stats>
+            <li>
+            <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>_______</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef> 
+
+-->
+
+    <Infusion.InfusionDef ParentName="TI_MagicMasterworkMelee">
+        <defName>TI_MHealing</defName>
+        <label>healing</label>
+        <labelShort>heal</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.HealCaster">
+                <amount>0.05</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ThrowFleck">
+                <def>HealingCross</def>
+                <selfCast>true</selfCast>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Heals user's fresh wounds when dealing damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_MagicMasterworkSharp">
+        <defName>TI_SLeaching</defName>
+        <label>leaching</label>
+        <labelShort>leach</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.IfBioTargetHit">
+                <value Class="Infusion.OnHitWorkers.Sequence">
+                    <value>
+                        <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                            <def>BloodLoss</def>
+                            <amount>0.2</amount>
+                        </li>
+                        <li Class="Infusion.OnHitWorkers.HealCaster">
+                            <amount>0.075</amount>
+                        </li>
+                        <li Class="Infusion.OnHitWorkers.ThrowFleck">
+                            <def>HealingCross</def>
+                            <selfCast>true</selfCast>
+                        </li>
+                    </value>
+                </value>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_MagicMasterworkRanged">
+        <defName>TI_RHealing</defName>
+        <label>healing</label>
+        <labelShort>heal</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.HealCaster">
+                <amount>0.05</amount>
+                <chance>0.3</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ThrowFleck">
+                <def>HealingCross</def>
+                <selfCast>true</selfCast>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>30% chance to heal user's fresh wounds when dealing damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_MagicLegendaryRanged">
+        <defName>TI_RLeaching</defName>
+        <label>leaching</label>
+        <labelShort>leach</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.IfBioTargetHit">
+                <value Class="Infusion.OnHitWorkers.Sequence">
+                    <value>
+                        <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                            <def>BloodLoss</def>
+                            <amount>0.2</amount>
+                        </li>
+                        <li Class="Infusion.OnHitWorkers.HealCaster">
+                            <amount>0.05</amount>
+                        </li>
+                        <li Class="Infusion.OnHitWorkers.ThrowFleck">
+                            <def>HealingCross</def>
+                            <selfCast>true</selfCast>
+                        </li>
+                    </value>
+                </value>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>If the target has blood, drains it on hits to heal user's fresh wounds.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_MagicGoodSharp">
+        <defName>TI_SBloodSuck</defName>
+        <label>blood sucking</label>
+        <labelShort>blood</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.IfBioTargetHit">
+                <value Class="Infusion.OnHitWorkers.Sequence">
+                    <value>
+                        <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                            <def>BloodLoss</def>
+                            <amount>0.2</amount>
+                        </li>
+                        <li Class="Infusion.OnHitWorkers.ReduceSeverity">
+                            <def>BloodLoss</def>
+                            <amount>0.2</amount>
+                            <selfCast>true</selfCast>
+                        </li>
+                        <li Class="Infusion.OnHitWorkers.ThrowFleck">
+                            <def>HealingCross</def>
+                            <selfCast>true</selfCast>
+                        </li>
+                    </value>
+                </value>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Sucks blood from target into the user.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_MagicGoodRanged">
+        <defName>TI_RRandom</defName>
+        <label>random</label>
+        <labelShort>rndm</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>BloodLoss</def>
+                <amount>0.2</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
+                <def>BloodLoss</def>
+                <amount>0.2</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>ToxicBuildup</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+                <severityScaleBy>ToxicSensitivity</severityScaleBy>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
+                <def>ToxicBuildup</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>Hypothermia</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
+                <def>Hypothermia</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>HeatStroke</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
+                <def>HeatStroke</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Bomb</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Bomb</def>
+                <amount>0.1</amount>
+                <radius>3</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Flame</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Flame</def>
+                <amount>0.1</amount>
+                <radius>5</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.4</amount>
+                <radius>5</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.3</amount>
+                <radius>10</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Frostbite</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Burn</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stun</def>
+                <amount>1</amount>
+                <chance>0.1</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Applies random effects on hits.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged">
+        <defName>TI_RChaotic</defName>
+        <label>chaotic</label>
+        <labelShort>chaos</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>BloodLoss</def>
+                <amount>0.05</amount>
+                <chance>0.5</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>ToxicBuildup</def>
+                <amount>0.1</amount>
+                <chance>0.5</chance>
+                <severityScaleBy>ToxicSensitivity</severityScaleBy>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>Hypothermia</def>
+                <amount>0.1</amount>
+                <chance>0.5</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>HeatStroke</def>
+                <amount>0.1</amount>
+                <chance>0.5</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Bomb</def>
+                <amount>0.1</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Bomb</def>
+                <amount>0.1</amount>
+                <radius>3</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Flame</def>
+                <amount>0.1</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Flame</def>
+                <amount>0.1</amount>
+                <radius>5</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.1</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.1</amount>
+                <radius>5</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.1</amount>
+                <radius>10</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Frostbite</def>
+                <amount>0.1</amount>
+                <chance>0.5</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Burn</def>
+                <amount>0.1</amount>
+                <chance>0.5</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stun</def>
+                <amount>0.2</amount>
+                <chance>0.5</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Applies a bunch of small random effects on hit.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentMelee">
+        <defName>TI_MRandom</defName>
+        <label>random</label>
+        <labelShort>rndm</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>BloodLoss</def>
+                <amount>0.2</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
+                <def>BloodLoss</def>
+                <amount>0.2</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>ToxicBuildup</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+                <severityScaleBy>ToxicSensitivity</severityScaleBy>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
+                <def>ToxicBuildup</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>Hypothermia</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
+                <def>Hypothermia</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>HeatStroke</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
+                <def>HeatStroke</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Bomb</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Flame</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.4</amount>
+                <radius>5</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.3</amount>
+                <radius>10</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Frostbite</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Burn</def>
+                <amount>0.5</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stun</def>
+                <amount>1</amount>
+                <chance>0.1</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Applies random effects on hits.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentMelee">
+        <defName>TI_MChaotic</defName>
+        <label>chaotic</label>
+        <labelShort>chaos</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>BloodLoss</def>
+                <amount>0.05</amount>
+                <chance>0.5</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>ToxicBuildup</def>
+                <amount>0.1</amount>
+                <chance>0.5</chance>
+                <severityScaleBy>ToxicSensitivity</severityScaleBy>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>Hypothermia</def>
+                <amount>0.1</amount>
+                <chance>0.5</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>HeatStroke</def>
+                <amount>0.1</amount>
+                <chance>0.5</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Bomb</def>
+                <amount>0.1</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Flame</def>
+                <amount>0.1</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.1</amount>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.1</amount>
+                <radius>5</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.1</amount>
+                <radius>10</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Frostbite</def>
+                <amount>0.1</amount>
+                <chance>0.5</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Burn</def>
+                <amount>0.1</amount>
+                <chance>0.5</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stun</def>
+                <amount>0.2</amount>
+                <chance>0.5</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Applies a bunch of small random effects on hit.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+</Defs>
