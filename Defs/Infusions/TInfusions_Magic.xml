@@ -577,187 +577,256 @@
         <label>random</label>
         <labelShort>rndm</labelShort>
         <onHits>
+            <!-- hediffs -->
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>BloodLoss</def>
-                <amount>0.2</amount>
-                <chance>0.1</chance>
-            </li>
-            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
-                <def>BloodLoss</def>
-                <amount>0.2</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.05</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>ToxicBuildup</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.05</chance>
                 <severityScaleBy>ToxicSensitivity</severityScaleBy>
             </li>
-            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
-                <def>ToxicBuildup</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
-            </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>Hypothermia</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
-            </li>
-            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
-                <def>Hypothermia</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.05</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>Heatstroke</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.05</chance>
             </li>
-            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
-                <def>Heatstroke</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>Malnutrition</def>
+                <amount>1</amount>
+                <chance>0.05</chance>
             </li>
+
+            <!-- explosions -->
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
                 <amount>0.5</amount>
-                <chance>0.1</chance>
+                <chance>0.05</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
-                <amount>0.1</amount>
+                <amount>0.25</amount>
                 <radius>3</radius>
-                <chance>0.1</chance>
+                <chance>0.025</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Flame</def>
                 <amount>0.5</amount>
-                <chance>0.1</chance>
+                <chance>0.05</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Flame</def>
-                <amount>0.1</amount>
+                <amount>0.25</amount>
                 <radius>5</radius>
-                <chance>0.1</chance>
+                <chance>0.025</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>1</amount>
+                <chance>0.05</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.75</amount>
+                <radius>5</radius>
+                <chance>0.025</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>EMP</def>
                 <amount>0.5</amount>
-                <chance>0.1</chance>
-            </li>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>EMP</def>
-                <amount>0.4</amount>
-                <radius>5</radius>
-                <chance>0.1</chance>
-            </li>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>EMP</def>
-                <amount>0.3</amount>
                 <radius>10</radius>
-                <chance>0.1</chance>
+                <chance>0.0125</chance>
             </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>1</amount>
+                <chance>0.05</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>0.75</amount>
+                <radius>5</radius>
+                <chance>0.025</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>0.5</amount>
+                <radius>10</radius>
+                <chance>0.0125</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>1</amount>
+                <chance>0.05</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>0.75</amount>
+                <radius>5</radius>
+                <chance>0.025</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>0.5</amount>
+                <radius>10</radius>
+                <chance>0.0125</chance>
+            </li>
+
+            <!-- damage -->
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Frostbite</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.05</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Burn</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.05</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Stun</def>
                 <amount>1</amount>
-                <chance>0.1</chance>
+                <chance>0.05</chance>
             </li>
+
         </onHits>
         <extraDescriptions>
             <li>Applies random effects on hits.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    
+
     <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged">
         <defName>TI_RChaotic</defName>
         <label>chaotic</label>
         <labelShort>chaos</labelShort>
         <onHits>
+            <!-- hediffs -->
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>BloodLoss</def>
-                <amount>0.05</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>ToxicBuildup</def>
-                <amount>0.1</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
                 <severityScaleBy>ToxicSensitivity</severityScaleBy>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>Hypothermia</def>
-                <amount>0.1</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>Heatstroke</def>
-                <amount>0.1</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>Malnutrition</def>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
+            </li>
+
+            <!-- explosions -->
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Bomb</def>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
-                <amount>0.1</amount>
-                <chance>0.1</chance>
-            </li>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>Bomb</def>
-                <amount>0.1</amount>
+                <amount>0.25</amount>
                 <radius>3</radius>
                 <chance>0.1</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Flame</def>
-                <amount>0.1</amount>
-                <chance>0.1</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Flame</def>
-                <amount>0.1</amount>
+                <amount>0.25</amount>
                 <radius>5</radius>
                 <chance>0.1</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>EMP</def>
-                <amount>0.1</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>EMP</def>
-                <amount>0.1</amount>
+                <amount>0.75</amount>
                 <radius>5</radius>
                 <chance>0.1</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>EMP</def>
-                <amount>0.1</amount>
+                <amount>0.5</amount>
                 <radius>10</radius>
+                <chance>0.05</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>1</amount>
+                <chance>0.2</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>0.75</amount>
+                <radius>5</radius>
                 <chance>0.1</chance>
             </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>0.5</amount>
+                <radius>10</radius>
+                <chance>0.05</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>1</amount>
+                <chance>0.2</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>0.75</amount>
+                <radius>5</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>0.5</amount>
+                <radius>10</radius>
+                <chance>0.05</chance>
+            </li>
+
+            <!-- damage -->
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Frostbite</def>
-                <amount>0.1</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Burn</def>
-                <amount>0.1</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Stun</def>
-                <amount>0.2</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
         </onHits>
         <extraDescriptions>
@@ -770,167 +839,266 @@
         <label>random</label>
         <labelShort>rndm</labelShort>
         <onHits>
+            <!-- hediffs -->
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>BloodLoss</def>
-                <amount>0.2</amount>
-                <chance>0.1</chance>
-            </li>
-            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
-                <def>BloodLoss</def>
-                <amount>0.2</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.05</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>ToxicBuildup</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.05</chance>
                 <severityScaleBy>ToxicSensitivity</severityScaleBy>
             </li>
-            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
-                <def>ToxicBuildup</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
-            </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>Hypothermia</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
-            </li>
-            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
-                <def>Hypothermia</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.05</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>Heatstroke</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.05</chance>
             </li>
-            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
-                <def>Heatstroke</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>Malnutrition</def>
+                <amount>1</amount>
+                <chance>0.05</chance>
             </li>
+
+            <!-- explosions -->
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
                 <amount>0.5</amount>
-                <chance>0.1</chance>
+                <chance>0.05</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Flame</def>
                 <amount>0.5</amount>
-                <chance>0.1</chance>
+                <chance>0.05</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>1</amount>
+                <chance>0.05</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>EMP</def>
+                <amount>0.75</amount>
+                <radius>5</radius>
+                <chance>0.025</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>EMP</def>
                 <amount>0.5</amount>
-                <chance>0.1</chance>
-            </li>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>EMP</def>
-                <amount>0.4</amount>
-                <radius>5</radius>
-                <chance>0.1</chance>
-            </li>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>EMP</def>
-                <amount>0.3</amount>
                 <radius>10</radius>
-                <chance>0.1</chance>
+                <chance>0.0125</chance>
             </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>1</amount>
+                <chance>0.05</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>0.75</amount>
+                <radius>5</radius>
+                <chance>0.025</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>0.5</amount>
+                <radius>10</radius>
+                <chance>0.0125</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>1</amount>
+                <chance>0.05</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>0.75</amount>
+                <radius>5</radius>
+                <chance>0.025</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>0.5</amount>
+                <radius>10</radius>
+                <chance>0.0125</chance>
+            </li>
+
+            <!-- damage -->
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Frostbite</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.05</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Burn</def>
-                <amount>0.5</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.05</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Stun</def>
                 <amount>1</amount>
-                <chance>0.1</chance>
+                <chance>0.05</chance>
             </li>
+
         </onHits>
         <extraDescriptions>
             <li>Applies random effects on hits.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    
+
     <Infusion.InfusionDef ParentName="TI_MagicExcellentMelee">
         <defName>TI_MChaotic</defName>
         <label>chaotic</label>
         <labelShort>chaos</labelShort>
         <onHits>
+            <!-- hediffs -->
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>BloodLoss</def>
-                <amount>0.05</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>ToxicBuildup</def>
-                <amount>0.1</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
                 <severityScaleBy>ToxicSensitivity</severityScaleBy>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>Hypothermia</def>
-                <amount>0.1</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>Heatstroke</def>
-                <amount>0.1</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>Malnutrition</def>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
+            </li>
+
+            <!-- explosions -->
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
-                <amount>0.1</amount>
-                <chance>0.1</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Flame</def>
-                <amount>0.1</amount>
-                <chance>0.1</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>EMP</def>
-                <amount>0.1</amount>
-                <chance>0.1</chance>
+                <amount>1</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>EMP</def>
-                <amount>0.1</amount>
+                <amount>0.75</amount>
                 <radius>5</radius>
                 <chance>0.1</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>EMP</def>
-                <amount>0.1</amount>
+                <amount>0.5</amount>
                 <radius>10</radius>
+                <chance>0.05</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>1</amount>
+                <chance>0.2</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>0.75</amount>
+                <radius>5</radius>
                 <chance>0.1</chance>
             </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>0.5</amount>
+                <radius>10</radius>
+                <chance>0.05</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>1</amount>
+                <chance>0.2</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>0.75</amount>
+                <radius>5</radius>
+                <chance>0.1</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>0.5</amount>
+                <radius>10</radius>
+                <chance>0.05</chance>
+            </li>
+
+            <!-- damage -->
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Frostbite</def>
-                <amount>0.1</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Burn</def>
-                <amount>0.1</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Stun</def>
-                <amount>0.2</amount>
-                <chance>0.5</chance>
+                <amount>0.25</amount>
+                <chance>0.2</chance>
             </li>
         </onHits>
         <extraDescriptions>
             <li>Applies a bunch of small random effects on hit.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_MagicGoodSharp">
+        <defName>TI_SConsume</defName>
+        <label>consuming</label>
+        <labelShort>cnsm</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.IfBioTargetHit">
+                <value Class="Infusion.OnHitWorkers.Sequence">
+                    <value>
+                        <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                            <def>Malnutrition</def>
+                            <amount>0.2</amount>
+                        </li>
+                        <li Class="Infusion.OnHitWorkers.ReduceSeverity">
+                            <def>Malnutrition</def>
+                            <amount>0.2</amount>
+                            <selfCast>true</selfCast>
+                        </li>
+                        <li Class="Infusion.OnHitWorkers.ThrowFleck">
+                            <def>HealingCross</def>
+                            <selfCast>true</selfCast>
+                        </li>
+                    </value>
+                </value>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Causes maluntrition in target, and if the user has malnutrition, reduces it.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 

@@ -417,7 +417,7 @@
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
                 <value>
-                    <multiplier>-0.8</multiplier>
+                    <multiplier>-0.835</multiplier>
                 </value>
             </li>
             <li>
@@ -747,7 +747,7 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
-                <amount>0.5</amount>
+                <amount>0.8</amount>
                 <radius>1</radius>
             </li>
         </onHits>
@@ -755,13 +755,13 @@
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
-                    <multiplier>1</multiplier>
+                    <multiplier>0.6</multiplier>
                 </value>
             </li>
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <offset>1</offset>
+                    <offset>0.6</offset>
                 </value>
             </li>
             <li>
@@ -803,13 +803,13 @@
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
-                    <multiplier>1.6</multiplier>
+                    <multiplier>1.2</multiplier>
                 </value>
             </li>
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <offset>1.6</offset>
+                    <offset>1.2</offset>
                 </value>
             </li>
             <li>
@@ -840,7 +840,7 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
-                <amount>0.5</amount>
+                <amount>0.7</amount>
                 <radius>2</radius>
             </li>
         </onHits>
@@ -857,13 +857,13 @@
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
-                    <offset>1</offset>
+                    <offset>5</offset>
                 </value>
             </li>
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <offset>1</offset>
+                    <offset>2.4</offset>
                 </value>
             </li>
             <li>
@@ -894,8 +894,8 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
-                <amount>0.5</amount>
-                <radius>4</radius>
+                <amount>0.9</amount>
+                <radius>5</radius>
             </li>
         </onHits>
         <extraDescriptions>
@@ -1000,8 +1000,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_AlternateLegendaryRanged">
-        <defName>TI_RLuckyShot2</defName>
+    <Infusion.InfusionDef ParentName="TI_AlternateMasterworkRanged">
+        <defName>TI_RLuckyShot3</defName>
         <label>lucky shot 3</label>
         <labelShort>luck3</labelShort>
         <stats>

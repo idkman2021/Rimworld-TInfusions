@@ -162,6 +162,13 @@
     </Infusion.InfusionDef>
 
     <!-- melee -->
+    <Infusion.InfusionDef Abstract="True" Name="TI_CommonAwfulMelee" ParentName="TI_CommonAwful">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
     <Infusion.InfusionDef Abstract="True" Name="TI_CommonPoorMelee" ParentName="TI_CommonPoor">
         <matches>
             <li Class="Infusion.Matchers.EquipmentType">
@@ -285,6 +292,15 @@
 
 
     <!-- blunt -->
+    <Infusion.InfusionDef Abstract="True" Name="TI_CommonAwfulBlunt" ParentName="TI_CommonAwfulMelee">
+        <matches>
+            <li Class="Infusion.Matchers.WeaponClasses">
+                <defs>
+                    <li>MeleeBlunt</li>
+                </defs>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
     <Infusion.InfusionDef Abstract="True" Name="TI_CommonPoorBlunt" ParentName="TI_CommonPoorMelee">
         <matches>
             <li Class="Infusion.Matchers.WeaponClasses">
@@ -923,7 +939,7 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendaryArmor">
+    <Infusion.InfusionDef ParentName="TI_CommonMasterworkArmor">
         <defName>TI_ArmLight4</defName>
         <label>weightless</label>
         <labelShort>wless</labelShort>
@@ -1017,7 +1033,7 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkArmor">
+    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
         <defName>TI_ArmHeavy3</defName>
         <label>massive</label>
         <labelShort>mass</labelShort>
@@ -1775,7 +1791,7 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorBlunt">
+    <Infusion.InfusionDef ParentName="TI_CommonAwfulBlunt">
         <defName>TI_WSize0b</defName>
         <label>tiny</label>
         <labelShort>tiny</labelShort>
@@ -1810,7 +1826,7 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodSharp">
+    <Infusion.InfusionDef ParentName="TI_CommonNormalSharp">
         <defName>TI_PSize0b</defName>
         <label>tiny</label>
         <labelShort>tiny</labelShort>
@@ -1830,7 +1846,7 @@
             <li>
                 <key>MeleeWeapon_CooldownMultiplier</key>
                 <value>
-                    <multiplier>-0.6</multiplier>
+                    <multiplier>-0.7</multiplier>
                 </value>
             </li>
             <li>
@@ -3111,7 +3127,7 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <offset>-0.2</offset>
+                    <offset>-0.5</offset>
                 </value>
             </li>
             <li>
@@ -3653,4 +3669,5 @@
             <li>This weapon is almost silent. Animals are significantly less likely to notice the user.</li>
         </extraDescriptions>-->
     </Infusion.InfusionDef>
+    
 </Defs>

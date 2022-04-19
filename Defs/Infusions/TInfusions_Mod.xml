@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_ModAwful">
+        <tier>TI_ModAwful</tier>
+        <stats>
+            <li>
+                <key>MarketValue</key>
+                <value>
+                    <multiplier>-0.8</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_ModPoor">
+        <tier>TI_ModPoor</tier>
+    </Infusion.InfusionDef>
+
+
     <Infusion.InfusionDef Abstract="True" Name="TI_ModNormal">
         <tier>TI_ModNormal</tier>
         <stats>
@@ -8,7 +27,7 @@
                 <key>MarketValue</key>
                 <value>
                     <offset>150</offset>
-                    <multiplier>0.35</multiplier>
+                    <multiplier>0.2</multiplier>
                 </value>
             </li>
         </stats>
@@ -128,6 +147,24 @@
 
 
     <!-- melee -->
+
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_ModAwfulMelee" ParentName="TI_ModAwful">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_ModPoorMelee" ParentName="TI_ModPoor">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <melee>true</melee>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
 
 
     <Infusion.InfusionDef Abstract="True" Name="TI_ModNormalMelee" ParentName="TI_ModNormal">
@@ -268,6 +305,23 @@
 
     <!-- ranged -->
 
+    <Infusion.InfusionDef Abstract="True" Name="TI_ModAwfulRanged" ParentName="TI_ModAwful">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef Abstract="True" Name="TI_ModPoorRanged" ParentName="TI_ModPoor">
+        <matches>
+            <li Class="Infusion.Matchers.EquipmentType">
+                <ranged>true</ranged>
+            </li>
+        </matches>
+    </Infusion.InfusionDef>
+
     <Infusion.InfusionDef Abstract="True" Name="TI_ModNormalRanged" ParentName="TI_ModNormal">
         <matches>
             <li Class="Infusion.Matchers.EquipmentType">
@@ -367,6 +421,12 @@
         </stats>
     </Infusion.InfusionDef>
 
+    <DamageDef ParentName="Flame">
+        <defName>TI_FlameDamage</defName>
+        <defaultDamage>1</defaultDamage>
+        <explosionHeatEnergyPerCell>30</explosionHeatEnergyPerCell>
+    </DamageDef>
+
     <Infusion.InfusionDef ParentName="TI_ModGoodMelee">
         <defName>TI_MeleeHot</defName>
         <label>hot</label>
@@ -374,16 +434,16 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Burn</def>
-                <amount>0.5</amount>
+                <amount>0.2</amount>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>Flame</def>
-                <amount>0.5</amount>
-                <chance>0.2</chance>
+                <def>TI_FlameDamage</def>
+                <amount>1</amount>
+                <chance>0.4</chance>
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Deals additional burn damage and has a 20% chance to set the target on fire.</li>
+            <li>Deals additional burn damage and has a 40% chance to set the target on fire.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -394,11 +454,11 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Burn</def>
-                <amount>0.5</amount>
+                <amount>0.2</amount>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>Flame</def>
-                <amount>0.5</amount>
+                <def>TI_FlameDamage</def>
+                <amount>1</amount>
                 <chance>0.2</chance>
             </li>
         </onHits>
@@ -418,13 +478,13 @@
                 <chance>0.5</chance>
             </li>-->
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>Flame</def>
-                <amount>0.5</amount>
-                <chance>0.5</chance>
+                <def>TI_FlameDamage</def>
+                <amount>0.2</amount>
+                <chance>0.6</chance>
             </li>
         </onHits>
         <extraDescriptions>
-            <li>50% chance to set the target on fire.</li>
+            <li>60% chance to set the target on fire.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -440,8 +500,8 @@
                 <chance>0.5</chance>
             </li>-->
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>Flame</def>
-                <amount>0.5</amount>
+                <def>TI_FlameDamage</def>
+                <amount>0.2</amount>
                 <chance>0.5</chance>
             </li>
         </onHits>
@@ -503,8 +563,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-     <!-- rough -->
-     <Infusion.InfusionDef ParentName="TI_ModNormalSharp">
+    <!-- rough -->
+    <Infusion.InfusionDef ParentName="TI_ModNormalSharp">
         <defName>TI_PRough1</defName>
         <label>rough</label>
         <labelShort>rough</labelShort>
@@ -553,16 +613,21 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>TI_DamageBluntBullet</def>
-                <amount>0.6</amount>
+                <amount>12</amount>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Stun</def>
+                <amount>4</amount>
+                <chance>0.5</chance>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ReduceSeverity">
+                <def>BloodLoss</def>
                 <amount>1</amount>
                 <chance>0.5</chance>
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Projectiles deal blunt damage instead of sharp, cause significantly less bleeding and have 50% chance to stun target.</li>
+            <li>Projectiles deal blunt damage instead of sharp, cause no bleeding and have 50% chance to briefly stun target.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -589,12 +654,12 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Stun</def>
-                <amount>1</amount>
+                <amount>1.5</amount>
                 <chance>0.4</chance>
             </li>
         </onHits>
         <extraDescriptions>
-            <li>40% chance to stun target.</li>
+            <li>20% chance to stun target.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -605,11 +670,11 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Frostbite</def>
-                <amount>0.5</amount>
+                <amount>0.25</amount>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>Hypothermia</def>
-                <amount>0.5</amount>
+                <amount>0.6</amount>
             </li>
         </onHits>
         <extraDescriptions>
@@ -624,11 +689,11 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Frostbite</def>
-                <amount>0.5</amount>
+                <amount>0.25</amount>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>Hypothermia</def>
-                <amount>0.5</amount>
+                <amount>0.3</amount>
             </li>
         </onHits>
         <extraDescriptions>
@@ -643,7 +708,7 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>ToxicBuildup</def>
-                <amount>0.75</amount>
+                <amount>0.5</amount>
                 <severityScaleBy>ToxicSensitivity</severityScaleBy>
             </li>
         </onHits>
@@ -659,7 +724,7 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>ToxicBuildup</def>
-                <amount>0.5</amount>
+                <amount>0.2</amount>
                 <severityScaleBy>ToxicSensitivity</severityScaleBy>
             </li>
         </onHits>
@@ -773,7 +838,7 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
-                <amount>0.85</amount>
+                <amount>1</amount>
                 <chance>0.4</chance>
             </li>
         </onHits>
@@ -789,7 +854,7 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
-                <amount>0.5</amount>
+                <amount>0.25</amount>
             </li>
         </onHits>
         <stats>
@@ -862,8 +927,8 @@
         </stats>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModLegendaryRanged">
-        <defName>TI_RAutoAim</defName>
+    <Infusion.InfusionDef ParentName="TI_ModMasterworkRanged">
+        <defName>TI_RSeeking</defName>
         <label>seeking</label>
         <labelShort>seek</labelShort>
         <stats>
@@ -888,5 +953,392 @@
         </stats>
     </Infusion.InfusionDef>
 
+    <Infusion.InfusionDef ParentName="TI_ModPoorRanged">
+        <defName>TI_RangedSmoking</defName>
+        <label>smoking</label>
+        <labelShort>smoke</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>1</amount>
+                <chance>1</chance>
+                <radius>2</radius>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Projectiles release smoke on hits.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ModGoodMelee">
+        <defName>TI_MeleeSmoking</defName>
+        <label>smoking</label>
+        <labelShort>smoke</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Smoke</def>
+                <amount>1</amount>
+                <chance>1</chance>
+                <radius>2</radius>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Hitting releases smoke.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ModNormalRanged">
+        <defName>TI_RExtinguish</defName>
+        <label>extinguish</label>
+        <labelShort>extng</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>1</amount>
+                <chance>1</chance>
+                <radius>2</radius>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Projectiles extinguish fire.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ModPoorMelee">
+        <defName>TI_MExtinguish</defName>
+        <label>extinguish</label>
+        <labelShort>extng</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>1</amount>
+                <chance>1</chance>
+                <radius>2</radius>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Hitting releases fire extinguishing foam.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_ModGoodMelee" MayRequire="sarg.alphaanimals">
+        <defName>TI_AAMeleeAcid</defName>
+        <label>acid</label>
+        <labelShort>acid</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>AA_AcidSpit</def>
+                <amount>0.25</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Deals additional acid damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="sarg.alphaanimals">
+        <defName>TI_AARangedAcid</defName>
+        <label>acid</label>
+        <labelShort>acid</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>AA_AcidSpit</def>
+                <amount>0.15</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Deals additional acid damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+<!--
+    <Infusion.InfusionDef ParentName="TI_ModLegendaryRanged" MayRequire="sarg.alphaanimals">
+        <defName>TI_AARangedLuciferium</defName>
+        <label>luciferium</label>
+        <labelShort>luci</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>AA_LuciferiumExplosion</def>
+                <amount>1</amount>
+                <chance>1</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Injects luciferium into the target.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ModLegendaryMelee" MayRequire="sarg.alphaanimals">
+        <defName>TI_AAMeleeLuciferium</defName>
+        <label>luciferium</label>
+        <labelShort>luci</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>AA_LuciferiumExplosion</def>
+                <amount>1</amount>
+                <chance>1</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Injects luciferium into the target.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+
+    <Infusion.InfusionDef ParentName="TI_ModGoodRanged" MayRequire="sarg.alphaanimals">
+        <defName>TI_AARangedParalysis</defName>
+        <label>paralysing</label>
+        <labelShort>para</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>AA_Paralysis</def>
+                <amount>10</amount>
+                <chance>1</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Slows the target down a bit.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ModGoodMelee" MayRequire="sarg.alphaanimals">
+        <defName>TI_AAMeleeParalysis</defName>
+        <label>paralysing</label>
+        <labelShort>para</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyHediff">
+                <def>AA_Paralysis</def>
+                <amount>10</amount>
+                <chance>1</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Slows the target down a bit.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ModMasterworkRanged" MayRequire="sarg.alphaanimals">
+        <defName>TI_AARangedElectric</defName>
+        <label>electric</label>
+        <labelShort>elctr</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>AA_Electric</def>
+                <amount>0.15</amount>
+                <chance>1</chance>
+                <radius>1</radius>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Electrocutes the target.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ModExcellentMelee" MayRequire="sarg.alphaanimals">
+        <defName>TI_AAMeleeElectric</defName>
+        <label>electric</label>
+        <labelShort>elctr</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>AA_Electric</def>
+                <amount>0.25</amount>
+                <chance>1</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Electrocutes the target.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+<!--
+    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="sarg.alphaanimals">
+        <defName>TI_AARangedFrostBomb</defName>
+        <label>frost bomb</label>
+        <labelShort>frst</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>AA_FrostBomb</def>
+                <amount>0.15</amount>
+                <chance>1</chance>
+                <radius>1</radius>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Projectiles cause freezing explosions.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+    <Infusion.InfusionDef ParentName="TI_ModAwfulRanged">
+        <defName>TI_RangedToy</defName>
+        <label>toy</label>
+        <labelShort>toy</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.9</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>-0.8</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ModAwfulMelee">
+        <defName>TI_MeleeToy</defName>
+        <label>toy</label>
+        <labelShort>toy</labelShort>
+        <stats>
+            <li>
+                <key>MeleeWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.9</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>-0.7</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ModAwfulRanged">
+        <defName>TI_RangedBroken</defName>
+        <label>broken</label>
+        <labelShort>broken</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>HuntingStealth</key>
+                <value>
+                    <offset>-0.5</offset>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>0.3</offset>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>0.3</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!--
+    <Infusion.InfusionDef ParentName="TI_ModAwfulRanged">
+        <defName>TI_RangedPaintball</defName>
+        <label>paintball</label>
+        <labelShort>paint</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.8</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>AA_FrostBomb</def>
+                <amount>1</amount>
+                <chance>1</chance>
+                <radius>1</radius>
+            </li>
+        </onHits>
+    </Infusion.InfusionDef>
+-->
 
 </Defs>
