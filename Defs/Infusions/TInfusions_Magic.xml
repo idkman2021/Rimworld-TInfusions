@@ -1071,7 +1071,7 @@
             <li>Applies a bunch of small random effects on hit.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-
+    <!--
     <Infusion.InfusionDef ParentName="TI_MagicGoodSharp">
         <defName>TI_SConsume</defName>
         <label>consuming</label>
@@ -1101,5 +1101,292 @@
             <li>Causes maluntrition in target, and if the user has malnutrition, reduces it.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
+-->
+
+    <!-- TESING -->
+
+    <!--
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="Scurvyez.Bastyon">
+        <defName>TI_RangedBastyonBlisteringWind</defName>
+        <label>of blistering wind</label>
+        <position>Suffix</position>
+        <labelShort>wind</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Bast_BlisteringWindExtinguish</def>
+                <amount>0.15</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Affects the target with a blistering freezing wind.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+-->
+
+<!-- !!!-->
+    <Infusion.InfusionDef ParentName="TI_MagicMasterworkRanged" MayRequire="sarg.magicalmenagerie">
+        <defName>TI_RangedMMPetrifying</defName>
+        <label>petrifying</label>
+        <labelShort>petrf</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>MM_PetrifyingGaze</def>
+                <amount>0.0035</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Petrifies the target.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentMelee" MayRequire="sarg.magicalmenagerie">
+        <defName>TI_MeleeMMPetrifying</defName>
+        <label>petrifying</label>
+        <labelShort>petrf</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>MM_PetrifyingGaze</def>
+                <amount>0.006</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Petrifies the target.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+<!-- !!!! -->
+<!--
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="mooloh.dndmenagerie">
+        <defName>TI_RangedDnDMedusaRay</defName>
+        <label>of stone</label>
+        <position>Suffix</position>
+        <labelShort>stone</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>DND_DmgDef_MedusaRay</def>
+                <amount>10</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Turns the target into stone.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+
+<!--
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="mooloh.dndmenagerie">
+        <defName>TI_RangedDnDBeholderRay</defName>
+        <label>beaming</label>
+        <labelShort>beam</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>DND_DmgDef_BeholderRay</def>
+                <amount>0.15</amount>
+                <radius>1</radius>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Beams the target with magical rays.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+
+    <!--
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="mooloh.dndmenagerie">
+        <defName>TI_RangedDnD_BeholderDeathRay</defName>
+        <label>necrosis1</label>
+        <labelShort>ncrs1</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>DND_DmgDef_BeholderDeathRay</def>
+                <amount>0.15</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Causes necrosis.1</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="mooloh.dndmenagerie">
+        <defName>TI_RangedDnD_BeholderEnervationRay</defName>
+        <label>necrosis</label>
+        <labelShort>ncrs</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>DND_DmgDef_BeholderEnervationRay</def>
+                <amount>11.5</amount>
+            </li>
+        </onHits>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.9</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Causes large selections of tissue to decay on the body, which is more likely to get infected and more painful. Deals about 115% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_MagicGoodSharp" MayRequire="mooloh.dndmenagerie">
+        <defName>TI_MeleeSharpDnD_BeholderEnervationRay</defName>
+        <label>necrosis</label>
+        <labelShort>ncrs</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>DND_DmgDef_BeholderEnervationRay</def>
+                <amount>11.5</amount>
+            </li>
+        </onHits>
+        <stats>
+            <li>
+                <key>MeleeWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.9</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Causes large selections of tissue to decay on the body, which is more likely to get infected and more painful. Deals about 115% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+    <!--
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="mooloh.dndmenagerie">
+        <defName>TI_RangedDnD_BeholderDisintegrationRay</defName>
+        <label>disintegrating1</label>
+        <labelShort>disint1</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>DND_DmgDef_BeholderDisintegrationRay</def>
+                <amount>0.15</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Disintegrates the target.1</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+<!--
+    <Infusion.InfusionDef ParentName="TI_MagicGoodRanged" MayRequire="mooloh.dndmenagerie">
+        <defName>TI_RangedDnD_Disintegration</defName>
+        <label>disintegrating</label>
+        <labelShort>disint</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>DND_DmgDef_Disintegration</def>
+                <amount>12.5</amount>
+            </li>
+        </onHits>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.9</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Disintegrates the target, dealing about 125% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_MagicGoodMelee" MayRequire="mooloh.dndmenagerie">
+        <defName>TI_RangedDnD_Disintegration</defName>
+        <label>disintegrating</label>
+        <labelShort>disint</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>DND_DmgDef_Disintegration</def>
+                <amount>12.5</amount>
+            </li>
+        </onHits>
+        <stats>
+            <li>
+                <key>MeleeWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.9</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Disintegrates the target, dealing about 125% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+<!--
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="mooloh.dndmenagerie">
+        <defName>TI_RangedDnD_BodyRusting</defName>
+        <label>rusting</label>
+        <labelShort>rust</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>DND_DmgDef_BodyRusting</def>
+                <amount>0.15</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Rusts the target.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+<!--
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="com.RimWorld.Nales.UtilityWeapons">
+        <defName>TI_RangedUW_Healing</defName>
+        <label>healing</label>
+        <labelShort>heal</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>UTWE_GreenHeal</def>
+                <amount>0.15</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Heals the target. Can close non-permanent, fresh wounds, but increases hunger and rest needs.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="com.RimWorld.Nales.UtilityWeapons">
+        <defName>TI_RangedUW_Healing2</defName>
+        <label>healing2</label>
+        <labelShort>heal2</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>UTWE_GreenHeal</def>
+                <amount>1.5</amount>
+            </li>
+        </onHits>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.9</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Heals the target. Can close non-permanent, fresh wounds, but increases hunger and rest needs.2</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+<!--
+
+    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="com.RimWorld.Nales.UtilityWeapons">
+        <defName>TI_RangedUW_Weaken</defName>
+        <label>weakening</label>
+        <labelShort>wkn</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>UTWE_BlueWeaken</def>
+                <amount>0.15</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Weakens the target.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
 
 </Defs>

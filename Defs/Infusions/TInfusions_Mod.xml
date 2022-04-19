@@ -1022,18 +1022,18 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodMelee" MayRequire="sarg.alphaanimals">
+    <Infusion.InfusionDef ParentName="TI_ModExcellentMelee" MayRequire="sarg.alphaanimals">
         <defName>TI_AAMeleeAcid</defName>
         <label>acid</label>
         <labelShort>acid</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>AA_AcidSpit</def>
-                <amount>0.25</amount>
+                <amount>0.5</amount>
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Deals additional acid damage.</li>
+            <li>Dissolves the target with acid.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -1044,14 +1044,14 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>AA_AcidSpit</def>
-                <amount>0.15</amount>
+                <amount>0.25</amount>
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Deals additional acid damage.</li>
+            <li>Dissolves the target with acid.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-<!--
+    <!--
     <Infusion.InfusionDef ParentName="TI_ModLegendaryRanged" MayRequire="sarg.alphaanimals">
         <defName>TI_AARangedLuciferium</defName>
         <label>luciferium</label>
@@ -1084,7 +1084,7 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 -->
-
+<!--
     <Infusion.InfusionDef ParentName="TI_ModGoodRanged" MayRequire="sarg.alphaanimals">
         <defName>TI_AARangedParalysis</defName>
         <label>paralysing</label>
@@ -1100,7 +1100,8 @@
             <li>Slows the target down a bit.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-
+-->
+<!--
     <Infusion.InfusionDef ParentName="TI_ModGoodMelee" MayRequire="sarg.alphaanimals">
         <defName>TI_AAMeleeParalysis</defName>
         <label>paralysing</label>
@@ -1116,7 +1117,7 @@
             <li>Slows the target down a bit.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-
+-->
     <Infusion.InfusionDef ParentName="TI_ModMasterworkRanged" MayRequire="sarg.alphaanimals">
         <defName>TI_AARangedElectric</defName>
         <label>electric</label>
@@ -1126,7 +1127,6 @@
                 <def>AA_Electric</def>
                 <amount>0.15</amount>
                 <chance>1</chance>
-                <radius>1</radius>
             </li>
         </onHits>
         <extraDescriptions>
@@ -1149,7 +1149,7 @@
             <li>Electrocutes the target.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-<!--
+    <!--
     <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="sarg.alphaanimals">
         <defName>TI_AARangedFrostBomb</defName>
         <label>frost bomb</label>
@@ -1287,6 +1287,8 @@
         </stats>
     </Infusion.InfusionDef>
 
+
+    <!-- TODO -->
     <!--
     <Infusion.InfusionDef ParentName="TI_ModAwfulRanged">
         <defName>TI_RangedPaintball</defName>
@@ -1340,5 +1342,187 @@
         </onHits>
     </Infusion.InfusionDef>
 -->
+
+
+    <!-- TESTING -->
+<!--
+    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="VanillaExpanded.VWE">
+        <defName>TI_RangedVWE_Shock</defName>
+        <label>shocking</label>
+        <labelShort>shock</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>VWE_Shock</def>
+                <amount>0.15</amount>
+                <radius>1</radius>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Electrocutes the target.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+<!--
+    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="VanillaExpanded.VWE">
+        <defName>TI_RangedVWE_Toxin</defName>
+        <label>toxin gas</label>
+        <labelShort>toxin</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Dam_OPToxin</def>
+                <amount>1</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Releases explosions of toxin gas.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+<!--
+    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <defName>TI_RangedVEF_Acid</defName>
+        <label>acidic</label>
+        <labelShort>acdc</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>VEF_SecondaryAcidBurn</def>
+                <amount>0.15</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Causes acid burns.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+
+    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="VanillaExpanded.VWENL">
+        <defName>TI_RangedVWENL_AnaestheticDart</defName>
+        <label>anasthetic</label>
+        <labelShort>anae</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>VWE_AnestheticDart</def>
+                <amount>0.01</amount>
+                <chance>0.1</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>10% chance to sedate the target with anaestetics.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ModGoodSharp" MayRequire="VanillaExpanded.VWENL">
+        <defName>TI_MeleeVWENL_AnaestheticDart</defName>
+        <label>anasthetic</label>
+        <labelShort>anae</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>VWE_AnestheticDart</def>
+                <amount>0.01</amount>
+                <chance>0.15</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>15% chance to sedate the target with anaestetics.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+    <!--
+    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="VanillaExpanded.VFEA">
+        <defName>TI_RangedVFEA_AcidBreath</defName>
+        <label>dissolving</label>
+        <labelShort>dsslv</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>VFEA_AcidBreath</def>
+                <amount>0.15</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Dissolves targets with acid.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+
+    <!--
+    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="Scurvyez.Bastyon">
+        <defName>TI_RangedBastyon_AcidSpew</defName>
+        <label>corroding</label>
+        <labelShort>crrd</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Bast_AcidStream</def>
+                <amount>0.15</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Corrodes targets with acid.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+        <!--
+    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="Scurvyez.Bastyon">
+        <defName>TI_RangedBastyon_Electric</defName>
+        <label>electrocuting</label>
+        <labelShort>elct</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Bast_Electric</def>
+                <amount>0.15</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Causes electrocution.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+<!--
+    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="sarg.magicalmenagerie">
+        <defName>TI_RangedMM_Grapple</defName>
+        <label>grappling</label>
+        <labelShort>grap</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>MM_Grapple</def>
+                <amount>0.15</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Grapples the target.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+-->
+
+    <Infusion.InfusionDef ParentName="TI_ModMasterworkRanged" MayRequire="com.RimWorld.Nales.UtilityWeapons">
+        <defName>TI_RangedUW_Corroding</defName>
+        <label>corroding</label>
+        <labelShort>corr</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>UTWE_RedCorrosion</def>
+                <amount>0.5</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Reduces enemy armor with each hit, whether it's natural armor or from gear.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ModMasterworkMelee" MayRequire="com.RimWorld.Nales.UtilityWeapons">
+        <defName>TI_MeleeUW_Corroding</defName>
+        <label>corroding</label>
+        <labelShort>corr</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>UTWE_RedCorrosion</def>
+                <amount>1</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Reduces enemy armor with each hit, whether it's natural armor or from gear.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+
 
 </Defs>

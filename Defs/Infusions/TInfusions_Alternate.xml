@@ -632,7 +632,7 @@
 
     <Infusion.InfusionDef ParentName="TI_AlternateExcellentArmor">
         <defName>TI_ArmBlunt1</defName>
-        <label>blunt protection</label>
+        <label>Blunt Protection</label>
         <labelShort>bluntp</labelShort>
         <stats>
             <li>
@@ -664,7 +664,7 @@
 
     <Infusion.InfusionDef ParentName="TI_AlternateExcellentArmor">
         <defName>TI_ArmSharp1</defName>
-        <label>sharp protection</label>
+        <label>Sharp Protection</label>
         <labelShort>sharpp</labelShort>
         <stats>
             <li>
@@ -697,7 +697,7 @@
 
     <Infusion.InfusionDef ParentName="TI_AlternateExcellentArmor">
         <defName>TI_ArmHeat1</defName>
-        <label>heat protection</label>
+        <label>Heat Protection</label>
         <labelShort>heatp</labelShort>
         <stats>
             <li>
@@ -736,6 +736,63 @@
         </stats>
         <extraDescriptions>
             <li>Significantly better protection from heat, but worse protection from sharp and blunt.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_AlternateExcellentArmor">
+        <defName>TI_ArmorTank</defName>
+        <label>Tank</label>
+        <labelShort>tank</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>0.25</offset>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <offset>0.25</offset>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Heat</key>
+                <value>
+                    <offset>0.25</offset>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Insulation_Heat</key>
+                <value>
+                    <offset>25</offset>
+                </value>
+            </li>
+            <li>
+                <key>Insulation_Cold</key>
+                <value>
+                    <offset>25</offset>
+                </value>
+            </li>
+            <li>
+                <key>Flammability</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <offset>-1</offset>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Offers huge protection but slows the user down significantly.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
