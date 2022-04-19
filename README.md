@@ -7,5 +7,3 @@ Examples of already implemented infusions:
 - a huge amount of more common infusions like small/big/large, slow/fast, blunt/sharp, short/long, light/heavy, cold/warm, uncomfortable/comfortable, ugly/cute/pretty, etc.
 
 There are currently over 150 new infusions in the mod.
-
-![image](https://user-images.githubusercontent.com/76593873/160841026-ef2a1638-d23a-4724-9bac-0a98f0a13d59.png)
