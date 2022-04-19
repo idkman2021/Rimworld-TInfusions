@@ -7,3 +7,5 @@ Examples of already implemented infusions:
 - a huge amount of more common infusions like small/big/large, slow/fast, blunt/sharp, short/long, light/heavy, cold/warm, uncomfortable/comfortable, ugly/cute/pretty, etc.
 
 There are currently over 150 new infusions in the mod.
+
+A few additional infusions will be added if Alpha Animals is loaded.
