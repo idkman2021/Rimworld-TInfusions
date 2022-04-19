@@ -8,4 +8,4 @@ Examples of already implemented infusions:
 
 There are currently over 150 new infusions in the mod.
 
-A few additional infusions will be added if Alpha Animals is loaded.
+Has a few intergrations with mods like Alpha Animals, adding infusions with modded damage types if the required mods are loaded.
