@@ -19,6 +19,14 @@
     <loadAfter>
         <li>latta.infusion</li>
         <li>sarg.alphaanimals</li>
+        <li>Scurvyez.Bastyon</li>
+        <li>sarg.magicalmenagerie</li>
+        <li>mooloh.dndmenagerie</li>
+        <li>VanillaExpanded.VFEA</li>
+        <li>VanillaExpanded.VWENL</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+        <li>VanillaExpanded.VWE</li>
+        <li>com.RimWorld.Nales.UtilityWeapons</li>
     </loadAfter>
 
 </ModMetaData>
