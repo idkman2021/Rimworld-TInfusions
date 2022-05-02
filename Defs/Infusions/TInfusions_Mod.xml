@@ -407,9 +407,10 @@
 
 -->
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodArmor">
+    <Infusion.InfusionDef ParentName="TI_ModMasterworkArmor">
         <defName>TI_ArmAntibact</defName>
         <label>antibacterial coating</label>
+        <position>Suffix</position>
         <labelShort>antib</labelShort>
         <stats>
             <li>

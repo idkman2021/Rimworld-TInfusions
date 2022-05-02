@@ -2958,7 +2958,7 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkBullet">
+    <Infusion.InfusionDef ParentName="TI_CommonLegendaryRanged">
         <defName>TI_RSpeed3</defName>
         <label>overclocked</label>
         <labelShort>oclck</labelShort>
@@ -3627,7 +3627,7 @@
             <li>
                 <key>HuntingStealth</key>
                 <value>
-                    <offset>-0.3</offset>
+                    <offset>-0.4</offset>
                 </value>
             </li>
         </stats>
@@ -3644,7 +3644,7 @@
             <li>
                 <key>HuntingStealth</key>
                 <value>
-                    <offset>0.2</offset>
+                    <offset>0.4</offset>
                 </value>
             </li>
         </stats>
@@ -3661,7 +3661,7 @@
             <li>
                 <key>HuntingStealth</key>
                 <value>
-                    <offset>0.4</offset>
+                    <offset>1</offset>
                 </value>
             </li>
         </stats>
