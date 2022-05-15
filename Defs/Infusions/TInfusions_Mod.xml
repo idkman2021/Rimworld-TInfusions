@@ -1126,7 +1126,7 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>AA_Electric</def>
-                <amount>0.15</amount>
+                <amount>0.5</amount>
                 <chance>1</chance>
             </li>
         </onHits>
@@ -1142,7 +1142,7 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>AA_Electric</def>
-                <amount>0.25</amount>
+                <amount>1</amount>
                 <chance>1</chance>
             </li>
         </onHits>

@@ -879,7 +879,7 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendaryArmor">
+    <Infusion.InfusionDef ParentName="TI_CommonMasterworkArmor">
         <defName>TI_ArmReinforced3</defName>
         <label>armored</label>
         <labelShort>armor</labelShort>
@@ -1122,7 +1122,7 @@
             <li>
                 <key>MoveSpeed</key>
                 <value>
-                    <offset>0.15</offset>
+                    <offset>0.05</offset>
                 </value>
             </li>
             <li>
@@ -1138,7 +1138,7 @@
     </Infusion.InfusionDef>
 
     <!-- beauty -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorApparel">
+    <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
         <defName>TI_ArmBeauty0</defName>
         <label>ugly</label>
         <labelShort>ugly</labelShort>
@@ -1155,7 +1155,7 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodApparel">
+    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
         <defName>TI_ArmBeauty1</defName>
         <label>pretty</label>
         <labelShort>pretty</labelShort>
@@ -1172,7 +1172,7 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodApparel">
+    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
         <defName>TI_ArmBeauty1b</defName>
         <label>decorated</label>
         <labelShort>decor</labelShort>
@@ -1195,7 +1195,7 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodApparel">
+    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
         <defName>TI_ArmBeauty1c</defName>
         <label>shiny</label>
         <labelShort>shiny</labelShort>
@@ -1218,7 +1218,7 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodApparel">
+    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
         <defName>TI_ArmBeauty1d</defName>
         <label>glittering</label>
         <labelShort>glitter</labelShort>
@@ -1241,7 +1241,7 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentApparel">
+    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
         <defName>TI_ArmBeauty2</defName>
         <label>beautiful</label>
         <labelShort>beaut</labelShort>
@@ -1258,7 +1258,7 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentApparel">
+    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
         <defName>TI_ArmBeauty2b</defName>
         <label>cute</label>
         <labelShort>cute</labelShort>
@@ -1282,7 +1282,7 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentApparel">
+    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
         <defName>TI_ArmBeauty2c</defName>
         <label>stylish</label>
         <labelShort>style</labelShort>
@@ -1306,7 +1306,7 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkApparel">
+    <Infusion.InfusionDef ParentName="TI_CommonMasterworkArmor">
         <defName>TI_ArmBeauty3</defName>
         <label>gorgeous</label>
         <labelShort>gorg</labelShort>
@@ -1460,7 +1460,7 @@
 
     <!-- clean -->
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorApparel">
+    <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
         <defName>TI_Clean0</defName>
         <label>dirty</label>
         <labelShort>dirt</labelShort>
@@ -1599,7 +1599,7 @@
             <li>This apparel was made in a rush and as a result it is slightly worse in most ways.</li>
         </extraDescriptions>-->
     </Infusion.InfusionDef>
-    <!--
+
     <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
         <defName>TI_ArmQuality0b</defName>
         <label>primitive</label>
@@ -1612,32 +1612,26 @@
                 </value>
             </li>
             <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>-0.3</multiplier>
-                </value>
-            </li>
-            <li>
                 <key>ArmorRating_Sharp</key>
                 <value>
-                    <offset>-0.015</offset>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <offset>-0.015</offset>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
             <li>
                 <key>MaxHitPoints</key>
                 <value>
-                    <multiplier>-0.1</multiplier>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
         </stats>
     </Infusion.InfusionDef>
--->
+
     <!--
     <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
         <defName>TI_ArmQuality1</defName>
@@ -2978,25 +2972,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>-0.04</offset>
+                    <multiplier>-0.2</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>-0.09</offset>
+                    <multiplier>-0.3</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>-0.13</offset>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>-0.16</offset>
+                    <multiplier>-0.6</multiplier>
                 </value>
             </li>
         </stats>
@@ -3038,6 +3032,44 @@
         <!--<extraDescriptions>
             <li>This weapon fires bigger projectiles with stronger force, dealing more damage.</li>
         </extraDescriptions>-->
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_CommonLegendaryRanged">
+        <defName>TI_RPower3</defName>
+        <label>high power</label>
+        <labelShort>hpow</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>0.65</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <offset>-0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <offset>-0.16</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <offset>-0.3</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <offset>-0.36</offset>
+                </value>
+            </li>
+        </stats>
     </Infusion.InfusionDef>
 
     <!-- weight -->
@@ -3274,7 +3306,7 @@
 
     <!-- size -->
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodRanged">
+    <Infusion.InfusionDef ParentName="TI_CommonNormalRanged">
         <defName>TI_RSize1</defName>
         <label>small</label>
         <labelShort>small</labelShort>
@@ -3288,13 +3320,13 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <offset>-0.15</offset>
+                    <offset>-0.1</offset>
                 </value>
             </li>
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
-                    <multiplier>-0.35</multiplier>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
         </stats>
@@ -3317,13 +3349,13 @@
             <li>
                 <key>AimingDelayFactor</key>
                 <value>
-                    <offset>-0.35</offset>
+                    <offset>-0.2</offset>
                 </value>
             </li>
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
-                    <multiplier>-0.65</multiplier>
+                    <multiplier>-0.8</multiplier>
                 </value>
             </li>
             
@@ -3478,6 +3510,23 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
+    <Infusion.InfusionDef ParentName="TI_CommonLegendaryShield">
+        <defName>TI_SCapacity4</defName>
+        <label>ultra high capacity</label>
+        <labelShort>ultra-c</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>1</multiplier>
+                </value>
+            </li>
+        </stats>
+        <!--<extraDescriptions>
+            <li>This shield can hold more energy.</li>
+        </extraDescriptions>-->
+    </Infusion.InfusionDef>
+
     <!-- recharge -->
 
     <Infusion.InfusionDef ParentName="TI_CommonPoorShield">
@@ -3557,7 +3606,7 @@
             <li>
                 <key>EnergyShieldRechargeRate</key>
                 <value>
-                    <multiplier>0.5</multiplier>
+                    <multiplier>1</multiplier>
                 </value>
             </li>
             <li>
@@ -3653,7 +3702,7 @@
         </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkBullet">
+    <Infusion.InfusionDef ParentName="TI_CommonExcellentBullet">
         <defName>TI_BSound3</defName>
         <label>silent</label>
         <labelShort>sil</labelShort>
