@@ -2,415 +2,10 @@
 <Defs>
 
 
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModAwful">
-        <tier>TI_ModAwful</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>-0.8</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModPoor">
-        <tier>TI_ModPoor</tier>
-    </Infusion.InfusionDef>
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModNormal">
-        <tier>TI_ModNormal</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <offset>150</offset>
-                    <multiplier>0.2</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModGood">
-        <tier>TI_ModGood</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <offset>150</offset>
-                    <multiplier>0.35</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModExcellent">
-        <tier>TI_ModExcellent</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>0.5</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModMasterwork">
-        <tier>TI_ModMasterwork</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>0.9</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModLegendary">
-        <tier>TI_ModLegendary</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>1.3</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-
-    <!-- apparels -->
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModGoodApparel" ParentName="TI_ModGood">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModExcellentApparel" ParentName="TI_ModExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModMasterworkApparel" ParentName="TI_ModMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModLegendaryApparel" ParentName="TI_ModLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- armors must cover a body part-->
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModGoodArmor" ParentName="TI_ModGoodApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModExcellentArmor" ParentName="TI_ModExcellentApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModMasterworkArmor" ParentName="TI_ModMasterworkApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModLegendaryArmor" ParentName="TI_ModLegendaryApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- melee -->
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModAwfulMelee" ParentName="TI_ModAwful">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModPoorMelee" ParentName="TI_ModPoor">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModNormalMelee" ParentName="TI_ModNormal">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModGoodMelee" ParentName="TI_ModGood">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModExcellentMelee" ParentName="TI_ModExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModMasterworkMelee" ParentName="TI_ModMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModLegendaryMelee" ParentName="TI_ModLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <!-- blunt -->
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModGoodBlunt" ParentName="TI_ModGoodMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModExcellentBlunt" ParentName="TI_ModExcellentMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModMasterworkBlunt" ParentName="TI_ModMasterworkMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModLegendaryBlunt" ParentName="TI_ModLegendaryMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- piercer -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModNormalSharp" ParentName="TI_ModNormalMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModGoodSharp" ParentName="TI_ModGoodMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModExcellentSharp" ParentName="TI_ModExcellentMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModMasterworkSharp" ParentName="TI_ModMasterworkMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModLegendarySharp" ParentName="TI_ModLegendaryMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- ranged -->
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModAwfulRanged" ParentName="TI_ModAwful">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModPoorRanged" ParentName="TI_ModPoor">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModNormalRanged" ParentName="TI_ModNormal">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModGoodRanged" ParentName="TI_ModGood">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModExcellentRanged" ParentName="TI_ModExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModMasterworkRanged" ParentName="TI_ModMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModLegendaryRanged" ParentName="TI_ModLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- shields -->
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModGoodShield" ParentName="TI_ModGood">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModExcellentShield" ParentName="TI_ModExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModMasterworkShield" ParentName="TI_ModMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_ModLegendaryShield" ParentName="TI_ModLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <!--
-    <Infusion.InfusionDef ParentName="TI_CommonGood">
-        <defName>_______</defName>
-        <label>_______</label>
-        <labelShort>_______</labelShort>
-        <stats>
-            <li>
-            <key>ArmorRating_Blunt</key>
-                <value>
-                    <offset>_______</offset>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef> 
-
--->
-
-    <Infusion.InfusionDef ParentName="TI_ModMasterworkArmor">
-        <defName>TI_ArmAntibact</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorModMasterwork">
+        <defName>TI_ArmorModMasterwork_AntibacterialCoating</defName>
         <label>antibacterial coating</label>
-        <position>Suffix</position>
+        <!--<position>Suffix</position>-->
         <labelShort>antib</labelShort>
         <stats>
             <li>
@@ -428,8 +23,8 @@
         <explosionHeatEnergyPerCell>30</explosionHeatEnergyPerCell>
     </DamageDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodMelee">
-        <defName>TI_MeleeHot</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeModGood">
+        <defName>TI_MeleeModGood_Hot</defName>
         <label>hot</label>
         <labelShort>hot</labelShort>
         <onHits>
@@ -448,8 +43,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged">
-        <defName>TI_RangedHot</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModExcellent">
+        <defName>TI_RangedModExcellent_Hot</defName>
         <label>hot</label>
         <labelShort>hot</labelShort>
         <onHits>
@@ -468,8 +63,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModExcellentMelee">
-        <defName>TI_MeleeBurning</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeModExcellent">
+        <defName>TI_MeleeModExcellent_Burning</defName>
         <label>burning</label>
         <labelShort>burn</labelShort>
         <onHits>
@@ -489,8 +84,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModMasterworkRanged">
-        <defName>TI_RangeBurning</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModMasterwork">
+        <defName>TI_RangedModMasterwork_Burning</defName>
         <label>burning</label>
         <labelShort>burn</labelShort>
         <onHits>
@@ -511,8 +106,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodBlunt">
-        <defName>TI_BSpiked</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntModGood">
+        <defName>TI_BluntModGood_Spiked</defName>
         <label>spiked</label>
         <labelShort>spike</labelShort>
         <stats>
@@ -535,8 +130,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodSharp">
-        <defName>TI_PSerrated1</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpModGood">
+        <defName>TI_SharpModGood_Serrated</defName>
         <label>serrated</label>
         <labelShort>saw</labelShort>
         <stats>
@@ -565,8 +160,8 @@
     </Infusion.InfusionDef>
 
     <!-- rough -->
-    <Infusion.InfusionDef ParentName="TI_ModNormalSharp">
-        <defName>TI_PRough1</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpModNormal">
+        <defName>TI_SharpModNormal_Rough</defName>
         <label>rough</label>
         <labelShort>rough</labelShort>
         <stats>
@@ -599,8 +194,8 @@
         <deathMessage>{0} has been shot to death.</deathMessage>
     </DamageDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModNormalRanged">
-        <defName>TI_RConcussive</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModNormal">
+        <defName>TI_RangedModNormal_Concussive</defName>
         <label>concussive</label>
         <labelShort>conc</labelShort>
         <stats>
@@ -632,8 +227,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodMelee">
-        <defName>TI_MeleeElectro</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeModGood">
+        <defName>TI_MeleeModGood_Electro</defName>
         <label>electro</label>
         <labelShort>electr</labelShort>
         <onHits>
@@ -648,8 +243,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodRanged">
-        <defName>TI_RangedTaser</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModGood">
+        <defName>TI_RangedModGood_Taser</defName>
         <label>taser</label>
         <labelShort>tsr</labelShort>
         <onHits>
@@ -664,8 +259,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModExcellentSharp">
-        <defName>TI_SharpFreezing</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpModExcellent">
+        <defName>TI_SharpModExcellent_Freezing</defName>
         <label>freezing</label>
         <labelShort>frz</labelShort>
         <onHits>
@@ -683,8 +278,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged">
-        <defName>TI_RangedFreezing</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModExcellent">
+        <defName>TI_RangedModExcellent_Freezing</defName>
         <label>freezing</label>
         <labelShort>frz</labelShort>
         <onHits>
@@ -702,8 +297,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodSharp">
-        <defName>TI_SharpToxic</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpModGood">
+        <defName>TI_SharpModGood_Toxic</defName>
         <label>toxic</label>
         <labelShort>toxic</labelShort>
         <onHits>
@@ -718,8 +313,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodRanged">
-        <defName>TI_RangedToxic</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModGood">
+        <defName>TI_RangedModGood_Toxic</defName>
         <label>toxic</label>
         <labelShort>toxic</labelShort>
         <onHits>
@@ -734,14 +329,14 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodMelee">
-        <defName>TI_MeleeEMP</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeModGood">
+        <defName>TI_MeleeModGood_EMP</defName>
         <label>EMP</label>
         <labelShort>EMP</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>EMP</def>
-                <amount>1</amount>
+                <amount>2</amount>
             </li>
         </onHits>
         <extraDescriptions>
@@ -749,8 +344,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodMelee">
-        <defName>TI_MeleeEMP2</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeModGood">
+        <defName>TI_MeleeModGood_EMP2A</defName>
         <label>EMP 2</label>
         <labelShort>EMP2</labelShort>
         <onHits>
@@ -765,8 +360,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModExcellentMelee">
-        <defName>TI_MeleeEMP3</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeModExcellent">
+        <defName>TI_MeleeModExcellent_EMP3A</defName>
         <label>EMP 3</label>
         <labelShort>EMP3</labelShort>
         <onHits>
@@ -783,8 +378,8 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodRanged">
-        <defName>TI_RangeEMP</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModGood">
+        <defName>TI_RangedModGood_EMP</defName>
         <label>EMP</label>
         <labelShort>EMP</labelShort>
         <onHits>
@@ -798,8 +393,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged">
-        <defName>TI_RangeEMP2</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModExcellent">
+        <defName>TI_RangedModExcellent_EMP2A</defName>
         <label>EMP 2</label>
         <labelShort>EMP2</labelShort>
         <onHits>
@@ -814,8 +409,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModMasterworkRanged">
-        <defName>TI_RangeEMP3</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModMasterwork">
+        <defName>TI_RangedModMasterwork_EMP3A</defName>
         <label>EMP 3</label>
         <labelShort>EMP3</labelShort>
         <onHits>
@@ -832,8 +427,8 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_ModExcellentMelee">
-        <defName>TI_MExplosive</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeModExcellent">
+        <defName>TI_MeleeModExcellent_Explosive</defName>
         <label>explosive</label>
         <labelShort>expl</labelShort>
         <onHits>
@@ -848,8 +443,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodRanged">
-        <defName>TI_RExplosive</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModGood">
+        <defName>TI_RangedModGood_Explosive</defName>
         <label>explosive</label>
         <labelShort>expl</labelShort>
         <onHits>
@@ -890,8 +485,8 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_ModMasterworkRanged">
-        <defName>TI_RAutoAim</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModMasterwork">
+        <defName>TI_RangedModMasterwork_AutoAim</defName>
         <label>auto aim</label>
         <labelShort>aim</labelShort>
         <stats>
@@ -928,8 +523,8 @@
         </stats>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModMasterworkRanged">
-        <defName>TI_RSeeking</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModMasterwork">
+        <defName>TI_RangedModMasterwork_Seeking</defName>
         <label>seeking</label>
         <labelShort>seek</labelShort>
         <stats>
@@ -954,8 +549,8 @@
         </stats>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModPoorRanged">
-        <defName>TI_RangedSmoking</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModPoor">
+        <defName>TI_RangedModPoor_Smoking</defName>
         <label>smoking</label>
         <labelShort>smoke</labelShort>
         <onHits>
@@ -971,8 +566,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodMelee">
-        <defName>TI_MeleeSmoking</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeModGood">
+        <defName>TI_MeleeModGood_Smoking</defName>
         <label>smoking</label>
         <labelShort>smoke</labelShort>
         <onHits>
@@ -988,8 +583,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModNormalRanged">
-        <defName>TI_RExtinguish</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModNormal">
+        <defName>TI_RangedModNormal_Extinguish</defName>
         <label>extinguish</label>
         <labelShort>extng</labelShort>
         <onHits>
@@ -1005,8 +600,33 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModPoorMelee">
-        <defName>TI_MExtinguish</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModExcellent">
+        <defName>TI_RangedModNormal_Extinguish2A</defName>
+        <label>extinguish 2</label>
+        <labelShort>extng2</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.99</multiplier>
+                </value>
+            </li>
+        </stats>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.CreateExplosion">
+                <def>Extinguish</def>
+                <amount>1000</amount>
+                <chance>1</chance>
+                <radius>10</radius>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Projectiles deal almost no damage to enemies and buildings, but fire stands no chance against this weapon.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_MeleeModPoor">
+        <defName>TI_MeleeModPoor_Extinguish</defName>
         <label>extinguish</label>
         <labelShort>extng</labelShort>
         <onHits>
@@ -1014,7 +634,7 @@
                 <def>Extinguish</def>
                 <amount>1</amount>
                 <chance>1</chance>
-                <radius>2</radius>
+                <radius>3</radius>
             </li>
         </onHits>
         <extraDescriptions>
@@ -1023,8 +643,8 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_ModExcellentMelee" MayRequire="sarg.alphaanimals">
-        <defName>TI_AAMeleeAcid</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeModExcellent" MayRequire="sarg.alphaanimals">
+        <defName>TI_MeleeModExcellent_AlphaAnimalsAcid</defName>
         <label>acid</label>
         <labelShort>acid</labelShort>
         <onHits>
@@ -1038,8 +658,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="sarg.alphaanimals">
-        <defName>TI_AARangedAcid</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModExcellent" MayRequire="sarg.alphaanimals">
+        <defName>TI_RangedModExcellent_AlphaAnimalsAcid</defName>
         <label>acid</label>
         <labelShort>acid</labelShort>
         <onHits>
@@ -1052,75 +672,9 @@
             <li>Dissolves the target with acid.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-    <!--
-    <Infusion.InfusionDef ParentName="TI_ModLegendaryRanged" MayRequire="sarg.alphaanimals">
-        <defName>TI_AARangedLuciferium</defName>
-        <label>luciferium</label>
-        <labelShort>luci</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>AA_LuciferiumExplosion</def>
-                <amount>1</amount>
-                <chance>1</chance>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Injects luciferium into the target.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef ParentName="TI_ModLegendaryMelee" MayRequire="sarg.alphaanimals">
-        <defName>TI_AAMeleeLuciferium</defName>
-        <label>luciferium</label>
-        <labelShort>luci</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyDamage">
-                <def>AA_LuciferiumExplosion</def>
-                <amount>1</amount>
-                <chance>1</chance>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Injects luciferium into the target.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-<!--
-    <Infusion.InfusionDef ParentName="TI_ModGoodRanged" MayRequire="sarg.alphaanimals">
-        <defName>TI_AARangedParalysis</defName>
-        <label>paralysing</label>
-        <labelShort>para</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyHediff">
-                <def>AA_Paralysis</def>
-                <amount>10</amount>
-                <chance>1</chance>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Slows the target down a bit.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-<!--
-    <Infusion.InfusionDef ParentName="TI_ModGoodMelee" MayRequire="sarg.alphaanimals">
-        <defName>TI_AAMeleeParalysis</defName>
-        <label>paralysing</label>
-        <labelShort>para</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyHediff">
-                <def>AA_Paralysis</def>
-                <amount>10</amount>
-                <chance>1</chance>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Slows the target down a bit.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-    <Infusion.InfusionDef ParentName="TI_ModMasterworkRanged" MayRequire="sarg.alphaanimals">
-        <defName>TI_AARangedElectric</defName>
+   
+    <Infusion.InfusionDef ParentName="TI_RangedModMasterwork" MayRequire="sarg.alphaanimals">
+        <defName>TI_RangedModMasterwork_AlphaAnimalsElectric</defName>
         <label>electric</label>
         <labelShort>elctr</labelShort>
         <onHits>
@@ -1135,8 +689,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModExcellentMelee" MayRequire="sarg.alphaanimals">
-        <defName>TI_AAMeleeElectric</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeModExcellent" MayRequire="sarg.alphaanimals">
+        <defName>TI_MeleeModExcellent_AlphaAnimalsElectric</defName>
         <label>electric</label>
         <labelShort>elctr</labelShort>
         <onHits>
@@ -1150,26 +704,10 @@
             <li>Electrocutes the target.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-    <!--
-    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="sarg.alphaanimals">
-        <defName>TI_AARangedFrostBomb</defName>
-        <label>frost bomb</label>
-        <labelShort>frst</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>AA_FrostBomb</def>
-                <amount>0.15</amount>
-                <chance>1</chance>
-                <radius>1</radius>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Projectiles cause freezing explosions.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-    <Infusion.InfusionDef ParentName="TI_ModAwfulRanged">
-        <defName>TI_RangedToy</defName>
+
+    
+    <Infusion.InfusionDef ParentName="TI_RangedModAwful">
+        <defName>TI_RangedModAwful_Toy</defName>
         <label>toy</label>
         <labelShort>toy</labelShort>
         <stats>
@@ -1212,8 +750,8 @@
         </stats>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModAwfulMelee">
-        <defName>TI_MeleeToy</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeModAwful">
+        <defName>TI_MeleeModAwful_Toy</defName>
         <label>toy</label>
         <labelShort>toy</labelShort>
         <stats>
@@ -1232,8 +770,8 @@
         </stats>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModAwfulRanged">
-        <defName>TI_RangedBroken</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModAwful">
+        <defName>TI_RangedModAwful_Broken</defName>
         <label>broken</label>
         <labelShort>broken</labelShort>
         <stats>
@@ -1291,7 +829,7 @@
 
     <!-- TODO -->
     <!--
-    <Infusion.InfusionDef ParentName="TI_ModAwfulRanged">
+    <Infusion.InfusionDef ParentName="TI_RangedModAwful">
         <defName>TI_RangedPaintball</defName>
         <label>paintball</label>
         <labelShort>paint</labelShort>
@@ -1345,59 +883,8 @@
 -->
 
 
-    <!-- TESTING -->
-<!--
-    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="VanillaExpanded.VWE">
-        <defName>TI_RangedVWE_Shock</defName>
-        <label>shocking</label>
-        <labelShort>shock</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>VWE_Shock</def>
-                <amount>0.15</amount>
-                <radius>1</radius>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Electrocutes the target.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-<!--
-    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="VanillaExpanded.VWE">
-        <defName>TI_RangedVWE_Toxin</defName>
-        <label>toxin gas</label>
-        <labelShort>toxin</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyDamage">
-                <def>Dam_OPToxin</def>
-                <amount>1</amount>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Releases explosions of toxin gas.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-<!--
-    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-        <defName>TI_RangedVEF_Acid</defName>
-        <label>acidic</label>
-        <labelShort>acdc</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyDamage">
-                <def>VEF_SecondaryAcidBurn</def>
-                <amount>0.15</amount>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Causes acid burns.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-
-    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="VanillaExpanded.VWENL">
-        <defName>TI_RangedVWENL_AnaestheticDart</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModGood" MayRequire="VanillaExpanded.VWENL">
+        <defName>TI_RangedModExcellent_VWENLAnaestetic</defName>
         <label>anasthetic</label>
         <labelShort>anae</labelShort>
         <onHits>
@@ -1412,89 +899,25 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModGoodSharp" MayRequire="VanillaExpanded.VWENL">
-        <defName>TI_MeleeVWENL_AnaestheticDart</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpModGood" MayRequire="VanillaExpanded.VWENL">
+        <defName>TI_SharpModGood_VWENLAnaestetic</defName>
         <label>anasthetic</label>
         <labelShort>anae</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>VWE_AnestheticDart</def>
                 <amount>0.01</amount>
-                <chance>0.15</chance>
+                <chance>0.25</chance>
             </li>
         </onHits>
         <extraDescriptions>
-            <li>15% chance to sedate the target with anaestetics.</li>
+            <li>25% chance to sedate the target with anaestetics.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-    <!--
-    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="VanillaExpanded.VFEA">
-        <defName>TI_RangedVFEA_AcidBreath</defName>
-        <label>dissolving</label>
-        <labelShort>dsslv</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>VFEA_AcidBreath</def>
-                <amount>0.15</amount>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Dissolves targets with acid.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
+    
 
-    <!--
-    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="Scurvyez.Bastyon">
-        <defName>TI_RangedBastyon_AcidSpew</defName>
-        <label>corroding</label>
-        <labelShort>crrd</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>Bast_AcidStream</def>
-                <amount>0.15</amount>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Corrodes targets with acid.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-        <!--
-    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="Scurvyez.Bastyon">
-        <defName>TI_RangedBastyon_Electric</defName>
-        <label>electrocuting</label>
-        <labelShort>elct</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>Bast_Electric</def>
-                <amount>0.15</amount>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Causes electrocution.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-<!--
-    <Infusion.InfusionDef ParentName="TI_ModExcellentRanged" MayRequire="sarg.magicalmenagerie">
-        <defName>TI_RangedMM_Grapple</defName>
-        <label>grappling</label>
-        <labelShort>grap</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyDamage">
-                <def>MM_Grapple</def>
-                <amount>0.15</amount>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Grapples the target.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-
-    <Infusion.InfusionDef ParentName="TI_ModMasterworkRanged" MayRequire="com.RimWorld.Nales.UtilityWeapons">
-        <defName>TI_RangedUW_Corroding</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedModMasterwork" MayRequire="com.RimWorld.Nales.UtilityWeapons">
+        <defName>TI_RangedModMasterwork_Corroding</defName>
         <label>corroding</label>
         <labelShort>corr</labelShort>
         <onHits>
@@ -1508,8 +931,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_ModMasterworkMelee" MayRequire="com.RimWorld.Nales.UtilityWeapons">
-        <defName>TI_MeleeUW_Corroding</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeModMasterwork" MayRequire="com.RimWorld.Nales.UtilityWeapons">
+        <defName>TI_MeleeModMasterwork_Corroding</defName>
         <label>corroding</label>
         <labelShort>corr</labelShort>
         <onHits>
@@ -1522,8 +945,6 @@
             <li>Reduces enemy armor with each hit, whether it's natural armor or from gear.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-
-
 
 
 </Defs>

@@ -1,520 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonAwful">
-        <tier>TI_CommonAwful</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>-0.5</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonPoor">
-        <tier>TI_CommonPoor</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>-0.3</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonNormal">
-        <tier>TI_CommonNormal</tier>
-        <!--<stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>0.1</multiplier>
-                </value>
-            </li>
-        </stats>-->
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonGood">
-        <tier>TI_CommonGood</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <offset>50</offset>
-                    <multiplier>0.1</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonExcellent">
-        <tier>TI_CommonExcellent</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <offset>100</offset>
-                    <multiplier>0.2</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonMasterwork">
-        <tier>TI_CommonMasterwork</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <offset>200</offset>
-                    <multiplier>0.3</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonLegendary">
-        <tier>TI_CommonLegendary</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <offset>300</offset>
-                    <multiplier>0.5</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-
-    <!-- apparels -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonPoorApparel" ParentName="TI_CommonPoor">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonNormalApparel" ParentName="TI_CommonNormal">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonGoodApparel" ParentName="TI_CommonGood">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonExcellentApparel" ParentName="TI_CommonExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonMasterworkApparel" ParentName="TI_CommonMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonLegendaryApparel" ParentName="TI_CommonLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <!-- armors must cover a body part-->
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonPoorArmor" ParentName="TI_CommonPoorApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonNormalArmor" ParentName="TI_CommonNormalApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonGoodArmor" ParentName="TI_CommonGoodApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonExcellentArmor" ParentName="TI_CommonExcellentApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonMasterworkArmor" ParentName="TI_CommonMasterworkApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonLegendaryArmor" ParentName="TI_CommonLegendaryApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <!-- melee -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonAwfulMelee" ParentName="TI_CommonAwful">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonPoorMelee" ParentName="TI_CommonPoor">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonNormalMelee" ParentName="TI_CommonNormal">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonGoodMelee" ParentName="TI_CommonGood">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonExcellentMelee" ParentName="TI_CommonExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonMasterworkMelee" ParentName="TI_CommonMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonLegendaryMelee" ParentName="TI_CommonLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- ranged -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonPoorRanged" ParentName="TI_CommonPoor">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonNormalRanged" ParentName="TI_CommonNormal">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonGoodRanged" ParentName="TI_CommonGood">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonExcellentRanged" ParentName="TI_CommonExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonMasterworkRanged" ParentName="TI_CommonMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonLegendaryRanged" ParentName="TI_CommonLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- shields -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonPoorShield" ParentName="TI_CommonPoor">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonNormalShield" ParentName="TI_CommonNormal">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonGoodShield" ParentName="TI_CommonGood">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonExcellentShield" ParentName="TI_CommonExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonMasterworkShield" ParentName="TI_CommonMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonLegendaryShield" ParentName="TI_CommonLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- blunt -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonAwfulBlunt" ParentName="TI_CommonAwfulMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonPoorBlunt" ParentName="TI_CommonPoorMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonNormalBlunt" ParentName="TI_CommonNormalMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonGoodBlunt" ParentName="TI_CommonGoodMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonExcellentBlunt" ParentName="TI_CommonExcellentMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonMasterworkBlunt" ParentName="TI_CommonMasterworkMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonLegendaryBlunt" ParentName="TI_CommonLegendaryMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- sharp -->
-    <!--
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonPoorSharp" ParentName="TI_CommonPoorMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeSharp</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonGoodSharp" ParentName="TI_CommonGoodMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeSharp</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonExcellentSharp" ParentName="TI_CommonExcellentMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeSharp</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonMasterworkSharp" ParentName="TI_CommonMasterworkMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeSharp</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonLegendarySharp" ParentName="TI_CommonLegendaryMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeSharp</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
--->
-
-    <!-- piercer -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonPoorSharp" ParentName="TI_CommonPoorMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonNormalSharp" ParentName="TI_CommonNormalMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonGoodSharp" ParentName="TI_CommonGoodMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonExcellentSharp" ParentName="TI_CommonExcellentMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonMasterworkSharp" ParentName="TI_CommonMasterworkMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonLegendarySharp" ParentName="TI_CommonLegendaryMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- bullet -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonPoorBullet" ParentName="TI_CommonPoorRanged">
-        <matches>
-            <li Class="Infusion.Matchers.ProjectileBullet" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonNormalBullet" ParentName="TI_CommonNormalRanged">
-        <matches>
-            <li Class="Infusion.Matchers.ProjectileBullet" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonGoodBullet" ParentName="TI_CommonGoodRanged">
-        <matches>
-            <li Class="Infusion.Matchers.ProjectileBullet" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonExcellentBullet" ParentName="TI_CommonExcellentRanged">
-        <matches>
-            <li Class="Infusion.Matchers.ProjectileBullet" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonMasterworkBullet" ParentName="TI_CommonMasterworkRanged">
-        <matches>
-            <li Class="Infusion.Matchers.ProjectileBullet" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_CommonLegendaryBullet" ParentName="TI_CommonLegendaryRanged">
-        <matches>
-            <li Class="Infusion.Matchers.ProjectileBullet" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <!--
-    <Infusion.InfusionDef ParentName="TI_CommonGood">
-        <defName>_______</defName>
-        <label>_______</label>
-        <labelShort>_______</labelShort>
-        <stats>
-            <li>
-            <key>ArmorRating_Blunt</key>
-                <value>
-                    <offset>_______</offset>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef> 
-
--->
 
     <!-- thickness -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
-        <defName>TI_ArmThickness0</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonPoor">
+        <defName>TI_ArmorCommonPoor_Thin</defName>
         <label>thin</label>
         <labelShort>thin</labelShort>
         <stats>
@@ -557,8 +48,8 @@
         </stats>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
-        <defName>TI_ArmThickness1</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonGood">
+        <defName>TI_ArmorCommonGood_Thick</defName>
         <label>thick</label>
         <labelShort>thick</labelShort>
         <stats>
@@ -599,58 +90,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is quite thick. It has additional cold insulation, and it is harder to penetrate.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
-    <!--
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
-        <defName>TI_ArmThickness2</defName>
-        <label>chunky</label>
-        <labelShort>chunky</labelShort>
-        <stats>
-            <li>
-                <key>ArmorRating_Blunt</key>
-                <value>
-                    <offset>0.05</offset>
-                </value>
-            </li>
-            <li>
-                <key>ArmorRating_Sharp</key>
-                <value>
-                    <offset>0.05</offset>
-                </value>
-            </li>
-            <li>
-                <key>ArmorRating_Heat</key>
-                <value>
-                    <offset>4</offset>
-                </value>
-            </li>
-            <li>
-                <key>Insulation_Cold</key>
-                <value>
-                    <offset>4</offset>
-                </value>
-            </li>
-            <li>
-                <key>Mass</key>
-                <value>
-                    <multiplier>0.3</multiplier>
-                </value>
-            </li>
-            <li>
-                <key>MaxHitPoints</key>
-                <value>
-                    <multiplier>0.2</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
--->
+
     <!-- toughness -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
-        <defName>TI_ArmToughness0</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonPoor">
+        <defName>TI_ArmorCommonPoor_Flimsy</defName>
         <label>flimsy</label>
         <labelShort>flimsy</labelShort>
         <stats>
@@ -673,13 +117,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is quite flimsy. It looks like it can easily be torn apart.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
-        <defName>TI_ArmToughness1</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonGood">
+        <defName>TI_ArmorCommonGood_Tough</defName>
         <label>tough</label>
         <labelShort>tough</labelShort>
         <stats>
@@ -702,13 +143,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is quite tough and harder to tear apart.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
-        <defName>TI_ArmToughness2</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonExcellent">
+        <defName>TI_ArmorCommonExcellent_Durable</defName>
         <label>durable</label>
         <labelShort>dur</labelShort>
         <stats>
@@ -731,15 +169,12 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is very tough and much harder to tear apart.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
 
     <!-- flexibility -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
-        <defName>TI_ArmFlexibility0</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonPoor">
+        <defName>TI_ArmorCommonPoor_Stiff</defName>
         <label>stiff</label>
         <labelShort>stiff</labelShort>
         <stats>
@@ -768,13 +203,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is quite stiff and rigid. It restricts movement, but protects slightly against blunt attacks.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
-        <defName>TI_ArmFlexibility1</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonGood">
+        <defName>TI_ArmorCommonGood_Flexible</defName>
         <label>flexible</label>
         <labelShort>flex</labelShort>
         <stats>
@@ -803,14 +235,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is quite flexible and it doesn't restrict movement.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- reinforced -->
-    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
-        <defName>TI_ArmReinforced1</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonGood">
+        <defName>TI_ArmorCommonGood_Strengthened</defName>
         <label>strengthened</label>
         <labelShort>strng</labelShort>
         <stats>
@@ -839,13 +268,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel was strengthened to make it a bit more protective.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
-        <defName>TI_ArmReinforced2</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonExcellent">
+        <defName>TI_ArmorCommonExcellent_Reinforced</defName>
         <label>reinforced</label>
         <labelShort>reinf</labelShort>
         <stats>
@@ -874,13 +300,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel was reinforced with additional material to enchance its protection.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkArmor">
-        <defName>TI_ArmReinforced3</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonMasterwork">
+        <defName>TI_ArmorCommonMasterwork_Armored</defName>
         <label>armored</label>
         <labelShort>armor</labelShort>
         <stats>
@@ -909,15 +332,12 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel was reinforced with additional material and it offers significantly more protection.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
 
     <!-- light -->
-    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
-        <defName>TI_ArmLight1</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonGood">
+        <defName>TI_ArmorCommonGood_Light</defName>
         <label>light</label>
         <labelShort>light</labelShort>
         <stats>
@@ -934,13 +354,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is quite lightweight.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkArmor">
-        <defName>TI_ArmLight4</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonMasterwork">
+        <defName>TI_ArmorCommonMasterwork_Weightless</defName>
         <label>weightless</label>
         <labelShort>wless</labelShort>
         <stats>
@@ -957,14 +374,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is so incredibly lightweight that you almost can't feel it during movement.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- heavy -->
-    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
-        <defName>TI_ArmHeavy1</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonGood">
+        <defName>TI_ArmorCommonGood_Weighty</defName>
         <label>weighty</label>
         <labelShort>wght</labelShort>
         <stats>
@@ -993,13 +407,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is slightly more heavy. It slows you down a little bit but offers a small amount of additional protection.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
-        <defName>TI_ArmHeavy2</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonExcellent">
+        <defName>TI_ArmorCommonExcellent_Heavy</defName>
         <label>heavy</label>
         <labelShort>heavy</labelShort>
         <stats>
@@ -1028,13 +439,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is quite heavy. While it may slow you down, it offers additional protection.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
-        <defName>TI_ArmHeavy3</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonExcellent">
+        <defName>TI_ArmorCommonExcellent_Massive</defName>
         <label>massive</label>
         <labelShort>mass</labelShort>
         <stats>
@@ -1063,66 +471,30 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is very heavy and will slow you down, but it protects well, especially from blunt attacks.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
-    <!--
-    <Infusion.InfusionDef ParentName="TI_CommonLegendaryArmor">
-        <defName>TI_ArmHeavy4</defName>
-        <label>overweight</label>
-        <labelShort>owght</labelShort>
-        <stats>
-            <li>
-                <key>ArmorRating_Sharp</key>
-                <value>
-                    <offset>0.12</offset>
-                </value>
-            </li>
-            <li>
-                <key>ArmorRating_Blunt</key>
-                <value>
-                    <offset>0.26</offset>
-                </value>
-            </li>
-            <li>
-                <key>MoveSpeed</key>
-                <value>
-                    <offset>-0.15</offset>
-                </value>
-            </li>
-            <li>
-                <key>Mass</key>
-                <value>
-                    <multiplier>1.5</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
--->
 
     <!-- small -->
-    <Infusion.InfusionDef ParentName="TI_CommonNormalArmor">
-        <defName>TI_ArmSmall1</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonNormal">
+        <defName>TI_ArmorCommonNormal_Mini</defName>
         <label>mini</label>
         <labelShort>mini</labelShort>
         <stats>
             <li>
                 <key>ArmorRating_Sharp</key>
                 <value>
-                    <multiplier>-0.1</multiplier>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
             <li>
                 <key>ArmorRating_Blunt</key>
                 <value>
-                    <multiplier>-0.1</multiplier>
+                    <multiplier>-0.4</multiplier>
                 </value>
             </li>
             <li>
                 <key>MoveSpeed</key>
                 <value>
-                    <offset>0.05</offset>
+                    <offset>0.075</offset>
                 </value>
             </li>
             <li>
@@ -1132,14 +504,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>The mini version is lighter and less protective.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- beauty -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
-        <defName>TI_ArmBeauty0</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonPoor">
+        <defName>TI_ArmorCommonPoor_Ugly</defName>
         <label>ugly</label>
         <labelShort>ugly</labelShort>
         <stats>
@@ -1150,13 +519,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is quite ugly and makes people less attractive.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
-        <defName>TI_ArmBeauty1</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonGood">
+        <defName>TI_ArmorCommonGood_Pretty</defName>
         <label>pretty</label>
         <labelShort>pretty</labelShort>
         <stats>
@@ -1167,13 +533,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel looks pretty and might make the user a bit more attractive.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
-        <defName>TI_ArmBeauty1b</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonGood">
+        <defName>TI_ArmorCommonGood_Decorated</defName>
         <label>decorated</label>
         <labelShort>decor</labelShort>
         <stats>
@@ -1190,13 +553,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel was decorated with a pattern. It looks pretty and makes the user a bit more attractive.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
-        <defName>TI_ArmBeauty1c</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonGood">
+        <defName>TI_ArmorCommonGood_Shiny</defName>
         <label>shiny</label>
         <labelShort>shiny</labelShort>
         <stats>
@@ -1213,13 +573,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel shines in light. It looks pretty and people tend to pay more attention to the user.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
-        <defName>TI_ArmBeauty1d</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonGood">
+        <defName>TI_ArmorCommonGood_Glittering</defName>
         <label>glittering</label>
         <labelShort>glitter</labelShort>
         <stats>
@@ -1236,13 +593,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is decorated with glitter to look prettier. It sparkles on light, attracting attention.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
-        <defName>TI_ArmBeauty2</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonExcellent">
+        <defName>TI_ArmorCommonExcellent_Beautiful</defName>
         <label>beautiful</label>
         <labelShort>beaut</labelShort>
         <stats>
@@ -1253,13 +607,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is beautiful and makes the user look more attractive.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
-        <defName>TI_ArmBeauty2b</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonExcellent">
+        <defName>TI_ArmorCommonExcellent_Cute</defName>
         <label>cute</label>
         <labelShort>cute</labelShort>
         <stats>
@@ -1276,14 +627,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel looks cute.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
-        <defName>TI_ArmBeauty2c</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonExcellent">
+        <defName>TI_ArmorCommonExcellent_Stylish</defName>
         <label>stylish</label>
         <labelShort>style</labelShort>
         <stats>
@@ -1300,14 +648,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is stylish.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkArmor">
-        <defName>TI_ArmBeauty3</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonMasterwork">
+        <defName>TI_ArmorCommonMasterwork_Gorgeous</defName>
         <label>gorgeous</label>
         <labelShort>gorg</labelShort>
         <stats>
@@ -1318,14 +663,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is goregous and makes the user look very attractive.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- comfort -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
-        <defName>TI_Comfort0</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonPoor">
+        <defName>TI_ArmorCommonPoor_Uncomfortable</defName>
         <label>uncomfortable</label>
         <labelShort>uncomf</labelShort>
         <stats>
@@ -1342,13 +684,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is quite uncomfortable and not very pleasant to walk in.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
-        <defName>TI_Comfort2</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonExcellent">
+        <defName>TI_ArmorCommonExcellent_Comfortable</defName>
         <label>comfortable</label>
         <labelShort>comfy</labelShort>
         <stats>
@@ -1365,13 +704,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is quite comfortable and pleasant to walk in.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
-        <defName>TI_Comfort2b</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonExcellent">
+        <defName>TI_ArmorCommonExcellent_Cosy</defName>
         <label>cosy</label>
         <labelShort>cosy</labelShort>
         <stats>
@@ -1394,15 +730,12 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is warm and cosy.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- warm -->
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
-        <defName>TI_Warm0</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonPoor">
+        <defName>TI_ArmorCommonPoor_Cold</defName>
         <label>cold</label>
         <labelShort>cold</labelShort>
         <stats>
@@ -1413,13 +746,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel isn't as good for cold insulation.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
-        <defName>TI_Warm1</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonGood">
+        <defName>TI_ArmorCommonGood_Warm</defName>
         <label>warm</label>
         <labelShort>warm</labelShort>
         <stats>
@@ -1430,13 +760,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel insulates from cold a bit better.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
-        <defName>TI_Warm2</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonExcellent">
+        <defName>TI_ArmorCommonExcellent_Insulating</defName>
         <label>insulating</label>
         <labelShort>insl</labelShort>
         <stats>
@@ -1453,15 +780,12 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is good at insulating from cold and heat.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- clean -->
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
-        <defName>TI_Clean0</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonPoor">
+        <defName>TI_ArmorCommonPoor_Dirty</defName>
         <label>dirty</label>
         <labelShort>dirt</labelShort>
         <stats>
@@ -1478,13 +802,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is quite dirty and covered in germs.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
-        <defName>TI_Clean1</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonGood">
+        <defName>TI_ArmorCommonGood_Clean</defName>
         <label>clean</label>
         <labelShort>clean</labelShort>
         <stats>
@@ -1501,13 +822,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is very clean. It is pleasant to look at and doesn't catch germs as easily.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentArmor">
-        <defName>TI_Clean2</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonExcellent">
+        <defName>TI_ArmorCommonExcellent_Sanitary</defName>
         <label>sanitary</label>
         <labelShort>sntr</labelShort>
         <stats>
@@ -1518,13 +836,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel was sanitized for better hygiene.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkArmor">
-        <defName>TI_Clean3</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonMasterwork">
+        <defName>TI_ArmorCommonMasterwork_Disinfected</defName>
         <label>disinfected</label>
         <labelShort>dsnf</labelShort>
         <stats>
@@ -1535,13 +850,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel was disinfected from germs.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendaryArmor">
-        <defName>TI_Clean4</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonLegendary">
+        <defName>TI_ArmorCommonLegendary_Sterile</defName>
         <label>sterile</label>
         <labelShort>strl</labelShort>
         <stats>
@@ -1552,15 +864,12 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is completely sterile and free from germs.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- quality -->
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
-        <defName>TI_ArmQuality0</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonPoor">
+        <defName>TI_ArmorCommonPoor_Crude</defName>
         <label>crude</label>
         <labelShort>crude</labelShort>
         <stats>
@@ -1595,13 +904,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel was made in a rush and as a result it is slightly worse in most ways.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
-        <defName>TI_ArmQuality0b</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonPoor">
+        <defName>TI_ArmorCommonPoor_Primitive</defName>
         <label>primitive</label>
         <labelShort>prmtv</labelShort>
         <stats>
@@ -1632,37 +938,11 @@
         </stats>
     </Infusion.InfusionDef>
 
-    <!--
-    <Infusion.InfusionDef ParentName="TI_CommonGoodArmor">
-        <defName>TI_ArmQuality1</defName>
-        <label>high quality</label>
-        <labelShort>hq</labelShort>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>0.3</multiplier>
-                </value>
-            </li>
-            <li>
-                <key>MentalBreakThreshold</key>
-                <value>
-                    <offset>-0.003</offset>
-                </value>
-            </li>
-            <li>
-                <key>MaxHitPoints</key>
-                <value>
-                    <multiplier>0.05</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
--->
+
     <!-- fitting -->
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
-        <defName>TI_ArmFit0</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonPoor">
+        <defName>TI_ArmorCommonPoor_Tight</defName>
         <label>tight</label>
         <labelShort>tight</labelShort>
         <stats>
@@ -1685,13 +965,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is very tight-fitting. It can be uncomfortable to wear and doesn't dampen blunt damage, but you can move faster in it.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorArmor">
-        <defName>TI_ArmFit0b</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorCommonPoor">
+        <defName>TI_ArmorCommonPoor_Baggy</defName>
         <label>baggy</label>
         <labelShort>bag</labelShort>
         <stats>
@@ -1708,15 +985,12 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This apparel is too loose and baggy.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
 
     <!-- MELEE -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorBlunt">
-        <defName>TI_WSize0</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonPoor">
+        <defName>TI_BluntCommonPoor_Small</defName>
         <label>small</label>
         <labelShort>small</labelShort>
         <stats>
@@ -1745,13 +1019,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite small and deals less damage, but is slightly easier to handle, although size makes it harder to hit.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodSharp">
-        <defName>TI_PSize0</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonNormal">
+        <defName>TI_SharpCommonNormal_Small</defName>
         <label>small</label>
         <labelShort>small</labelShort>
         <stats>
@@ -1780,13 +1051,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite small and slightly harder to hit with due to smaller reach, but it is a bit easier to handle.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonAwfulBlunt">
-        <defName>TI_WSize0b</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonAwful">
+        <defName>TI_BluntCommonAwful_Tiny</defName>
         <label>tiny</label>
         <labelShort>tiny</labelShort>
         <stats>
@@ -1815,13 +1083,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is tiny and can barely do any damage.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonNormalSharp">
-        <defName>TI_PSize0b</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonNormal">
+        <defName>TI_SharpCommonNormal_Tiny</defName>
         <label>tiny</label>
         <labelShort>tiny</labelShort>
         <stats>
@@ -1850,67 +1115,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is tiny and does less damage, but you can hit rapidly.</li>
-        </extraDescriptions>-->
-    </Infusion.InfusionDef>
-    <!--
-    <Infusion.InfusionDef ParentName="TI_CommonGoodBlunt">
-        <defName>TI_WSize1</defName>
-        <label>enlarged</label>
-        <labelShort>enlrg</labelShort>
-        <stats>
-            <li>
-                <key>MeleeWeapon_DamageMultiplier</key>
-                <value>
-                    <multiplier>0.1</multiplier>
-                </value>
-            </li>
-            <li>
-                <key>Mass</key>
-                <value>
-                    <multiplier>0.1</multiplier>
-                </value>
-            </li>
-            <li>
-                <key>MeleeWeapon_CooldownMultiplier</key>
-                <value>
-                    <multiplier>0.05</multiplier>
-                </value>
-            </li>
-        </stats>
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodSharp">
-        <defName>TI_PSize1</defName>
-        <label>enlarged</label>
-        <labelShort>enlrg</labelShort>
-        <stats>
-            <li>
-                <key>MeleeWeapon_DamageMultiplier</key>
-                <value>
-                    <multiplier>0.05</multiplier>
-                </value>
-            </li>
-            <li>
-                <key>Mass</key>
-                <value>
-                    <multiplier>0.1</multiplier>
-                </value>
-            </li>
-            <li>
-                <key>MeleeHitChance</key>
-                <value>
-                    <offset>1</offset>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
--->
-
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentBlunt">
-        <defName>TI_WSize2</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonExcellent">
+        <defName>TI_BluntCommonExcellent_Big</defName>
         <label>big</label>
         <labelShort>big</labelShort>
         <stats>
@@ -1933,14 +1142,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite big and does more damage but it is harder to handle.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentSharp">
-        <defName>TI_PSize2</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonExcellent">
+        <defName>TI_SharpCommonExcellent_Big</defName>
         <label>big</label>
         <labelShort>big</labelShort>
         <stats>
@@ -1969,13 +1175,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite big and the increased reach makes it easier to land hits.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkBlunt">
-        <defName>TI_WSize3</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonMasterwork">
+        <defName>TI_BluntCommonMasterwork_Large</defName>
         <label>large</label>
         <labelShort>large</labelShort>
         <stats>
@@ -1998,13 +1201,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is large, dealing a lot damage, although it is very heavy and hard to handle.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkSharp">
-        <defName>TI_PSize3</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonMasterwork">
+        <defName>TI_SharpCommonMasterwork_Large</defName>
         <label>large</label>
         <labelShort>large</labelShort>
         <stats>
@@ -2033,15 +1233,12 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is large and the increased reach makes it easier to land hits, but the weight makes attacks slower.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendaryBlunt">
-        <defName>TI_WSize4</defName>
-        <label>enormous</label>
-        <labelShort>enrm</labelShort>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonLegendary">
+        <defName>TI_BluntCommonLegendary_Giant</defName>
+        <label>giant</label>
+        <labelShort>giant</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2074,15 +1271,12 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is enormous and can do significant amounts of damage. While it has longer reach, it is very hard to handle due to huge weight.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendarySharp">
-        <defName>TI_PSize4</defName>
-        <label>enormous</label>
-        <labelShort>enrm</labelShort>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonLegendary">
+        <defName>TI_SharpCommonLegendary_Giant</defName>
+        <label>giant</label>
+        <labelShort>giant</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2115,16 +1309,13 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is enormous and the increased reach makes it easier to land hits, but the weight makes attacks much slower.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendaryBlunt">
-        <defName>TI_WSize4b</defName>
-        <label>gigantic</label>
-        <labelShort>giant</labelShort>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonLegendary">
+        <defName>TI_BluntCommonLegendary_Enormous</defName>
+        <label>enormous</label>
+        <labelShort>enrm</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2157,16 +1348,13 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon looks like it was made for giants. It can do extreme damage due to the huge weight, but its is extremely slow to swing and hard to carry.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendarySharp">
-        <defName>TI_PSize4b</defName>
-        <label>gigantic</label>
-        <labelShort>giant</labelShort>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonLegendary">
+        <defName>TI_SharpCommonLegendary_Enormous</defName>
+        <label>enormous</label>
+        <labelShort>enrm</labelShort>
         <stats>
             <li>
                 <key>MeleeWeapon_DamageMultiplier</key>
@@ -2199,14 +1387,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon looks like it was made for giants. It can do major damage due to huge weight and the increased reach makes it easier to land hits, but its is extremely slow to swing and hard to carry.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- weight -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorBlunt">
-        <defName>TI_WWeight0</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonPoor">
+        <defName>TI_BluntCommonPoor_Light</defName>
         <label>light</label>
         <labelShort>light</labelShort>
         <stats>
@@ -2235,13 +1420,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is lightweight and does less damage, but it is easier to handle.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodSharp">
-        <defName>TI_PWeight1</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonGood">
+        <defName>TI_SharpCommonGood_Light</defName>
         <label>light</label>
         <labelShort>light</labelShort>
         <stats>
@@ -2270,13 +1452,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is lightweight and easy to handle.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorBlunt">
-        <defName>TI_WWeight0b</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonPoor">
+        <defName>TI_BluntCommonPoor_Weightless</defName>
         <label>weightless</label>
         <labelShort>wless</labelShort>
         <stats>
@@ -2305,13 +1484,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon weighs almost nothing and can barely do any damage despite being able to hit very rapidly.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendarySharp">
-        <defName>TI_PWeight4b</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonLegendary">
+        <defName>TI_SharpCommonLegendary_Weightless</defName>
         <label>weightless</label>
         <labelShort>wless</labelShort>
         <stats>
@@ -2340,13 +1516,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon weighs almost nothing and it is significantly easier to handle and swing, allowing to attack very rapidly.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodBlunt">
-        <defName>TI_WWeight1</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonGood">
+        <defName>TI_BluntCommonGood_Weighty</defName>
         <label>weighty</label>
         <labelShort>wght</labelShort>
         <stats>
@@ -2369,13 +1542,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is slightly heavier can do more damage.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorSharp">
-        <defName>TI_PWeight1b</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonPoor">
+        <defName>TI_SharpCommonPoor_Weighty</defName>
         <label>weighty</label>
         <labelShort>wght</labelShort>
         <stats>
@@ -2398,13 +1568,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is slightly heavier than usual and harder to handle.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentBlunt">
-        <defName>TI_WWeight2</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonExcellent">
+        <defName>TI_BluntCommonExcellent_Heavy</defName>
         <label>heavy</label>
         <labelShort>heavy</labelShort>
         <stats>
@@ -2427,13 +1594,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite heavy and can do more damage.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorSharp">
-        <defName>TI_PWeight0c</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonPoor">
+        <defName>TI_SharpCommonPoor_Heavy</defName>
         <label>heavy</label>
         <labelShort>heavy</labelShort>
         <stats>
@@ -2456,13 +1620,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon too heavy. While it might do sligtly more damage, it is hard to swing.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendaryBlunt">
-        <defName>TI_WWeight4</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonLegendary">
+        <defName>TI_BluntCommonLegendary_Massive</defName>
         <label>massive</label>
         <labelShort>mass</labelShort>
         <stats>
@@ -2491,13 +1652,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is extremely heavy and can do massive damage, although it isn't easy to handle</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorBlunt">
-        <defName>TI_WWeight0c</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonPoor">
+        <defName>TI_BluntCommonPoor_Cumbersome</defName>
         <label>cumbersome</label>
         <labelShort>cumb</labelShort>
         <stats>
@@ -2532,13 +1690,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon was made too heavy and hard to handle due to weird shape. While it might do more damage on hit, landing a hit will be very hard.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorSharp">
-        <defName>TI_PWeight0e</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonPoor">
+        <defName>TI_SharpCommonPoor_Cumbersome</defName>
         <label>cumbersome</label>
         <labelShort>cumb</labelShort>
         <stats>
@@ -2573,14 +1728,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon was made too heavy and hard to handle.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- wield -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorBlunt">
-        <defName>TI_WWield0</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonPoor">
+        <defName>TI_BluntCommonPoor_Unwieldy</defName>
         <label>unwieldy</label>
         <labelShort>unwld</labelShort>
         <stats>
@@ -2603,13 +1755,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon has a weird shape and it is harder to handle.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorSharp">
-        <defName>TI_PWield0</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonPoor">
+        <defName>TI_SharpCommonPoor_Unwieldy</defName>
         <label>unwieldy</label>
         <labelShort>unwld</labelShort>
         <stats>
@@ -2632,13 +1781,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon has a weirdly shaped handle and it is hard to grip.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodBlunt">
-        <defName>TI_WWield2</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonGood">
+        <defName>TI_BluntCommonGood_Wieldy</defName>
         <label>wieldy</label>
         <labelShort>wld</labelShort>
         <stats>
@@ -2661,14 +1807,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite easy to grip and handle.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentSharp">
-        <defName>TI_PWield2</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonExcellent">
+        <defName>TI_SharpCommonExcellent_Wieldy</defName>
         <label>wieldy</label>
         <labelShort>wld</labelShort>
         <stats>
@@ -2691,14 +1834,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite easy to grip and handle.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- length -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorBlunt">
-        <defName>TI_WLength0</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonPoor">
+        <defName>TI_BluntCommonPoor_Short</defName>
         <label>short</label>
         <labelShort>short</labelShort>
         <stats>
@@ -2709,13 +1849,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite short, making it harder to reach and hit with and it.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorSharp">
-        <defName>TI_PLength0</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonPoor">
+        <defName>TI_SharpCommonPoor_Short</defName>
         <label>short</label>
         <labelShort>short</labelShort>
         <stats>
@@ -2726,13 +1863,24 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite short, making it harder to reach and hit with.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodBlunt">
-        <defName>TI_WLength1</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonGood">
+        <defName>TI_BluntCommonGood_Enlarged</defName>
+        <label>enlarged</label>
+        <labelShort>enlrg</labelShort>
+        <stats>
+            <li>
+                <key>MeleeHitChance</key>
+                <value>
+                    <offset>1</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_SharpCommonGood">
+        <defName>TI_SharpCommonGood_Extended</defName>
         <label>extended</label>
         <labelShort>extnd</labelShort>
         <stats>
@@ -2743,30 +1891,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is slightly longer, making it a bit easier to reach and hit with.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodSharp">
-        <defName>TI_PLength1</defName>
-        <label>extended</label>
-        <labelShort>extnd</labelShort>
-        <stats>
-            <li>
-                <key>MeleeHitChance</key>
-                <value>
-                    <offset>1</offset>
-                </value>
-            </li>
-        </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is slightly longer, making it a bit easier to reach and hit with.</li>
-        </extraDescriptions>-->
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentBlunt">
-        <defName>TI_WLength2</defName>
+    <Infusion.InfusionDef ParentName="TI_BluntCommonExcellent">
+        <defName>TI_BluntCommonExcellent_Long</defName>
         <label>long</label>
         <labelShort>long</labelShort>
         <stats>
@@ -2777,13 +1905,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite long, making it easier to reach and hit with.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkSharp">
-        <defName>TI_PLength2</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonMasterwork">
+        <defName>TI_SharpCommonMasterwork_Long</defName>
         <label>long</label>
         <labelShort>long</labelShort>
         <stats>
@@ -2794,15 +1919,12 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite long, making it easier to reach and hit with.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- sharpness -->
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorSharp">
-        <defName>TI_PSharpness0</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonPoor">
+        <defName>TI_SharpCommonPoor_Blunt</defName>
         <label>blunt</label>
         <labelShort>blunt</labelShort>
         <stats>
@@ -2816,17 +1938,17 @@
         <onHits>
             <li Class="Infusion.OnHitWorkers.ApplyDamage">
                 <def>Blunt</def>
-                <chance>0.4</chance>
-                <amount>0.4</amount>
+                <chance>0.5</chance>
+                <amount>0.5</amount>
             </li>
         </onHits>
-        <!--<extraDescriptions>
-            <li>This weapon is too blunt and does less damage. Sometimes it will cause blunt damage.</li>
-        </extraDescriptions>-->
+        <extraDescriptions>
+            <li>Sometimes causes additional blunt damage.</li>
+        </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodSharp">
-        <defName>TI_PSharpness1</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonGood">
+        <defName>TI_SharpCommonGood_Sharpened</defName>
         <label>sharpened</label>
         <labelShort>shrp-</labelShort>
         <stats>
@@ -2837,13 +1959,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon was sharpened and does a bit more damage.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentSharp">
-        <defName>TI_PSharpness2</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonExcellent">
+        <defName>TI_SharpCommonExcellent_Sharp</defName>
         <label>sharp</label>
         <labelShort>shrp</labelShort>
         <stats>
@@ -2854,13 +1973,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite sharp and does more damage.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkSharp">
-        <defName>TI_PSharpness3</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpCommonMasterwork">
+        <defName>TI_SharpCommonMasterwork_RazorSharp</defName>
         <label>razor-sharp</label>
         <labelShort>shrp+</labelShort>
         <stats>
@@ -2871,20 +1987,14 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is very sharp and does much more damage.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- serrated -->
-    
-
-       
 
 
     <!-- ranged -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorRanged">
-        <defName>TI_RSpeed0</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonPoor">
+        <defName>TI_RangedCommonPoor_Slow</defName>
         <label>slow</label>
         <labelShort>slow</labelShort>
         <stats>
@@ -2901,13 +2011,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon has a decreased rate of fire.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodRanged">
-        <defName>TI_RSpeed1</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonGood">
+        <defName>TI_RangedCommonGood_Fast</defName>
         <label>fast</label>
         <labelShort>fast</labelShort>
         <stats>
@@ -2924,13 +2031,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon has a slightly increased rate of fire.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentRanged">
-        <defName>TI_RSpeed2</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonExcellent">
+        <defName>TI_RangedCommonExcellent_RapidFiring</defName>
         <label>rapid firing</label>
         <labelShort>rapid</labelShort>
         <stats>
@@ -2947,13 +2051,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon has a moderately increased rate of fire.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendaryRanged">
-        <defName>TI_RSpeed3</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonLegendary">
+        <defName>TI_RangedCommonLegendary_Overclocked</defName>
         <label>overclocked</label>
         <labelShort>oclck</labelShort>
         <stats>
@@ -2994,14 +2095,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon was overclocked and has significantly increased rate of fire, however overclocking reduces accuracy.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- power -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorRanged">
-        <defName>TI_RPower0</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonPoor">
+        <defName>TI_RangedCommonPoor_Weak</defName>
         <label>weak</label>
         <labelShort>weak</labelShort>
         <stats>
@@ -3012,13 +2110,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon fires weaker projectiles with smaller force, dealing less damage.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentRanged">
-        <defName>TI_RPower2</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonExcellent">
+        <defName>TI_RangedCommonExcellent_Powerful</defName>
         <label>powerful</label>
         <labelShort>pow</labelShort>
         <stats>
@@ -3029,13 +2124,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon fires bigger projectiles with stronger force, dealing more damage.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendaryRanged">
-        <defName>TI_RPower3</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonLegendary">
+        <defName>TI_RangedCommonLegendary_HighPower</defName>
         <label>high power</label>
         <labelShort>hpow</labelShort>
         <stats>
@@ -3048,25 +2140,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>-0.1</offset>
+                    <multiplier>-0.09</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>-0.16</offset>
+                    <multiplier>-0.18</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>-0.3</offset>
+                    <multiplier>-0.32</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>-0.36</offset>
+                    <multiplier>-0.46</multiplier>
                 </value>
             </li>
         </stats>
@@ -3074,8 +2166,8 @@
 
     <!-- weight -->
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodRanged">
-        <defName>TI_RWeight1a</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonGood">
+        <defName>TI_RangedCommonGood_Light</defName>
         <label>light</label>
         <labelShort>light</labelShort>
         <stats>
@@ -3116,13 +2208,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite light and does less damage, but it is easier to handle.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentRanged">
-        <defName>TI_RWeight2</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonExcellent">
+        <defName>TI_RangedCommonExcellent_Heavy</defName>
         <label>heavy</label>
         <labelShort>heavy</labelShort>
         <stats>
@@ -3139,14 +2228,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite heavy and does more damage, but it takes more time to aim.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- length -->
-    <Infusion.InfusionDef ParentName="TI_CommonGoodRanged">
-        <defName>TI_RShort</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonGood">
+        <defName>TI_RangedCommonGood_Short</defName>
         <label>short</label>
         <labelShort>short</labelShort>
         <stats>
@@ -3187,13 +2273,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon was shortened, making it more effective up-close and less effective at distance.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodRanged">
-        <defName>TI_RLong</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonGood">
+        <defName>TI_RangedCommonGood_Long</defName>
         <label>long</label>
         <labelShort>long</labelShort>
         <stats>
@@ -3228,14 +2311,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon was elongated, making it more effective at distance and less effective up-close.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- accuracy -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorRanged">
-        <defName>TI_RAccuracy0</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonPoor">
+        <defName>TI_RangedCommonPoor_Inaccurate</defName>
         <label>inaccurate</label>
         <labelShort>inacc</labelShort>
         <stats>
@@ -3264,13 +2344,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite inaccurate and hard to land shots with.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentRanged">
-        <defName>TI_RAccuracy2</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonExcellent">
+        <defName>TI_RangedCommonExcellent_Accurate</defName>
         <label>accurate</label>
         <labelShort>accur</labelShort>
         <stats>
@@ -3299,15 +2376,12 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite accurate and easy to land shots with.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- size -->
 
-    <Infusion.InfusionDef ParentName="TI_CommonNormalRanged">
-        <defName>TI_RSize1</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonNormal">
+        <defName>TI_RangedCommonNormal_Small</defName>
         <label>small</label>
         <labelShort>small</labelShort>
         <stats>
@@ -3330,13 +2404,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon quite small and does less damage, but it fires quicker.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorRanged">
-        <defName>TI_RSize0b</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonPoor">
+        <defName>TI_RangedCommonPoor_Tiny</defName>
         <label>tiny</label>
         <labelShort>tiny</labelShort>
         <stats>
@@ -3358,15 +2429,12 @@
                     <multiplier>-0.8</multiplier>
                 </value>
             </li>
-            
+
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon too small and does little damage, although it fires quite fast.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodRanged">
-        <defName>TI_RSize1c</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonGood">
+        <defName>TI_RangedCommonGood_Big</defName>
         <label>big</label>
         <labelShort>big</labelShort>
         <stats>
@@ -3389,13 +2457,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is quite big and does more damage, but fires slower.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkRanged">
-        <defName>TI_RSize2</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonMasterwork">
+        <defName>TI_RangedCommonMasterwork_Large</defName>
         <label>large</label>
         <labelShort>large</labelShort>
         <stats>
@@ -3418,13 +2483,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is large and does more damage, but fires slower.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendaryRanged">
-        <defName>TI_RSize3</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedCommonLegendary">
+        <defName>TI_RangedCommonLegendary_Enormous</defName>
         <label>enormous</label>
         <labelShort>enrm</labelShort>
         <stats>
@@ -3453,16 +2515,13 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is enormous and does more damage, but it is hard to handle and fires significantly slower.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- shields -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorShield">
-        <defName>TI_SCapacity0</defName>
+    <Infusion.InfusionDef ParentName="TI_ShieldCommonPoor">
+        <defName>TI_ShieldCommonPoor_LowCapacity</defName>
         <label>low capacity</label>
-        <labelShort>low-c</labelShort>
+        <labelShort>lowcap</labelShort>
         <stats>
             <li>
                 <key>EnergyShieldEnergyMax</key>
@@ -3471,15 +2530,12 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This shield can't hold as much energy.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodShield">
-        <defName>TI_SCapacity1</defName>
+    <Infusion.InfusionDef ParentName="TI_ShieldCommonGood">
+        <defName>TI_ShieldCommonGood_HigherCapacity</defName>
         <label>higher capacity</label>
-        <labelShort>hghr-c</labelShort>
+        <labelShort>cap+</labelShort>
         <stats>
             <li>
                 <key>EnergyShieldEnergyMax</key>
@@ -3488,15 +2544,12 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This shield can hold slightly more energy.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentShield">
-        <defName>TI_SCapacity2</defName>
+    <Infusion.InfusionDef ParentName="TI_ShieldCommonExcellent">
+        <defName>TI_ShieldCommonExcellent_HighCapacity</defName>
         <label>high capacity</label>
-        <labelShort>high-c</labelShort>
+        <labelShort>hghcap</labelShort>
         <stats>
             <li>
                 <key>EnergyShieldEnergyMax</key>
@@ -3505,13 +2558,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This shield can hold more energy.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendaryShield">
-        <defName>TI_SCapacity4</defName>
+    <Infusion.InfusionDef ParentName="TI_ShieldCommonLegendary">
+        <defName>TI_ShieldCommonLegendary_UltraHighCapacity</defName>
         <label>ultra high capacity</label>
         <labelShort>ultra-c</labelShort>
         <stats>
@@ -3522,15 +2572,12 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This shield can hold more energy.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- recharge -->
 
-    <Infusion.InfusionDef ParentName="TI_CommonPoorShield">
-        <defName>TI_SRecharge0</defName>
+    <Infusion.InfusionDef ParentName="TI_ShieldCommonPoor">
+        <defName>TI_ShieldCommonPoor_SlowCharging</defName>
         <label>slow-charging</label>
         <labelShort>slow-ch</labelShort>
         <stats>
@@ -3541,13 +2588,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This shield recharges slower.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodShield">
-        <defName>TI_SRecharge1</defName>
+    <Infusion.InfusionDef ParentName="TI_ShieldCommonGood">
+        <defName>TI_ShieldCommonGood_FastCharging</defName>
         <label>fast-charging</label>
         <labelShort>fast-ch</labelShort>
         <stats>
@@ -3558,13 +2602,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This shield recharges slightly faster.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkShield">
-        <defName>TI_SRecharge3</defName>
+    <Infusion.InfusionDef ParentName="TI_ShieldCommonMasterwork">
+        <defName>TI_ShieldCommonMasterwork_QuickCharging</defName>
         <label>quick-charging</label>
         <labelShort>qck-ch</labelShort>
         <stats>
@@ -3575,13 +2616,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This shield uses quick-charge technology to recharge faster.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonLegendaryShield">
-        <defName>TI_SRecharge4</defName>
+    <Infusion.InfusionDef ParentName="TI_ShieldCommonLegendary">
+        <defName>TI_ShieldCommonLegendary_RapidCharging</defName>
         <label>rapid-charging</label>
         <labelShort>rpd-ch</labelShort>
         <stats>
@@ -3592,14 +2630,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This shield can recharge very fast.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- size -->
-    <Infusion.InfusionDef ParentName="TI_CommonGoodShield">
-        <defName>TI_SSize1a</defName>
+    <Infusion.InfusionDef ParentName="TI_ShieldCommonGood">
+        <defName>TI_ShieldCommonGood_Light</defName>
         <label>light</label>
         <labelShort>light</labelShort>
         <stats>
@@ -3616,13 +2651,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This shield is lighter and holds less energy but recharges faster.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodShield">
-        <defName>TI_SSize1b</defName>
+    <Infusion.InfusionDef ParentName="TI_ShieldCommonGood">
+        <defName>TI_ShieldCommonGood_Heavy</defName>
         <label>heavy</label>
         <labelShort>heavy</labelShort>
         <stats>
@@ -3639,13 +2671,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This shield is heavier and holds more energy but recharges slower.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonMasterworkShield">
-        <defName>TI_SSize3</defName>
+    <Infusion.InfusionDef ParentName="TI_ShieldCommonMasterwork">
+        <defName>TI_ShieldCommonMasterwork_HeavyDuty</defName>
         <label>heavy duty</label>
         <labelShort>heavy</labelShort>
         <stats>
@@ -3662,14 +2691,11 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This shield is designed for heavy duty tasks and holds twice as much energy, but recharges much slower.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
     <!-- sound -->
-    <Infusion.InfusionDef ParentName="TI_CommonPoorBullet">
-        <defName>TI_BSound0</defName>
+    <Infusion.InfusionDef ParentName="TI_BulletCommonPoor">
+        <defName>TI_BulletCommonPoor_Loud</defName>
         <label>loud</label>
         <labelShort>loud</labelShort>
         <stats>
@@ -3680,13 +2706,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is too loud and scares animals away.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonGoodBullet">
-        <defName>TI_BSound1</defName>
+    <Infusion.InfusionDef ParentName="TI_BulletCommonGood">
+        <defName>TI_BulletCommonGood_Muffled</defName>
         <label>muffled</label>
         <labelShort>muffl</labelShort>
         <stats>
@@ -3697,13 +2720,10 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon fires with less sound. Animals are less likely to notice the user.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_CommonExcellentBullet">
-        <defName>TI_BSound3</defName>
+    <Infusion.InfusionDef ParentName="TI_BulletCommonExcellent">
+        <defName>TI_BulletCommonExcellent_Silent</defName>
         <label>silent</label>
         <labelShort>sil</labelShort>
         <stats>
@@ -3714,9 +2734,6 @@
                 </value>
             </li>
         </stats>
-        <!--<extraDescriptions>
-            <li>This weapon is almost silent. Animals are significantly less likely to notice the user.</li>
-        </extraDescriptions>-->
     </Infusion.InfusionDef>
-    
+
 </Defs>

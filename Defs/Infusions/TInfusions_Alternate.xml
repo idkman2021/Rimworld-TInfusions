@@ -1,321 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGood">
-        <tier>TI_AlternateGood</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <offset>150</offset>
-                    <multiplier>0.35</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellent">
-        <tier>TI_AlternateExcellent</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>0.5</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterwork">
-        <tier>TI_AlternateMasterwork</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>0.9</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendary">
-        <tier>TI_AlternateLegendary</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>1.3</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-
-    <!-- apparels -->
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodApparel" ParentName="TI_AlternateGood">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentApparel" ParentName="TI_AlternateExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkApparel" ParentName="TI_AlternateMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendaryApparel" ParentName="TI_AlternateLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- armors must cover a body part-->
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodArmor" ParentName="TI_AlternateGoodApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentArmor" ParentName="TI_AlternateExcellentApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkArmor" ParentName="TI_AlternateMasterworkApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendaryArmor" ParentName="TI_AlternateLegendaryApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- melee -->
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodMelee" ParentName="TI_AlternateGood">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentMelee" ParentName="TI_AlternateExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkMelee" ParentName="TI_AlternateMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendaryMelee" ParentName="TI_AlternateLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <!-- blunt -->
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodBlunt" ParentName="TI_AlternateGoodMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentBlunt" ParentName="TI_AlternateExcellentMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkBlunt" ParentName="TI_AlternateMasterworkMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendaryBlunt" ParentName="TI_AlternateLegendaryMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- piercer -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodSharp" ParentName="TI_AlternateGoodMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentSharp" ParentName="TI_AlternateExcellentMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkSharp" ParentName="TI_AlternateMasterworkMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendarySharp" ParentName="TI_AlternateLegendaryMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- ranged -->
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodRanged" ParentName="TI_AlternateGood">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentRanged" ParentName="TI_AlternateExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkRanged" ParentName="TI_AlternateMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendaryRanged" ParentName="TI_AlternateLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-
-    <!-- shields -->
-
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateGoodShield" ParentName="TI_AlternateGood">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateExcellentShield" ParentName="TI_AlternateExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateMasterworkShield" ParentName="TI_AlternateMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_AlternateLegendaryShield" ParentName="TI_AlternateLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <!--
-    <Infusion.InfusionDef ParentName="TI_CommonGood">
-        <defName>_______</defName>
-        <label>_______</label>
-        <labelShort>_______</labelShort>
-        <stats>
-            <li>
-            <key>ArmorRating_Blunt</key>
-                <value>
-                    <offset>_______</offset>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef> 
-
--->
-
-    <Infusion.InfusionDef ParentName="TI_AlternateGoodRanged">
-        <defName>TI_RRapidFire1</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedAlternateGood">
+        <defName>TI_RangedAlternateGood_RapidFire1A</defName>
         <label>Rapid Fire 1</label>
         <labelShort>rfire1</labelShort>
         <stats>
@@ -344,8 +31,8 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_AlternateMasterworkRanged">
-        <defName>TI_RRapidFire2</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedAlternateMasterwork">
+        <defName>TI_RangedAlternateMasterwork_RapidFire2A</defName>
         <label>Rapid Fire 2</label>
         <labelShort>rfire2</labelShort>
         <stats>
@@ -397,8 +84,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_AlternateLegendaryRanged">
-        <defName>TI_RRapidFire3</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedAlternateLegendary">
+        <defName>TI_RangedAlternateLegendary_RapidFire3A</defName>
         <label>Rapid Fire 3</label>
         <labelShort>rfire3</labelShort>
         <stats>
@@ -452,8 +139,8 @@
   
     <!-- sniper -->
 
-    <Infusion.InfusionDef ParentName="TI_AlternateGoodRanged">
-        <defName>TI_RSniper1</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedAlternateGood">
+        <defName>TI_RangedAlternateGood_Sniper1A</defName>
         <label>Sniper 1</label>
         <labelShort>snipe1</labelShort>
         <stats>
@@ -512,8 +199,8 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_AlternateMasterworkRanged">
-        <defName>TI_RSniper2</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedAlternateMasterwork">
+        <defName>TI_RangedAlternateMasterwork_Sniper2A</defName>
         <label>Sniper 2</label>
         <labelShort>snipe2</labelShort>
         <stats>
@@ -571,8 +258,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_AlternateLegendaryRanged">
-        <defName>TI_RSniper3</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedAlternateLegendary">
+        <defName>TI_RangedAlternateLegendary_Sniper3A</defName>
         <label>Sniper 3</label>
         <labelShort>snipe3</labelShort>
         <stats>
@@ -630,8 +317,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_AlternateExcellentArmor">
-        <defName>TI_ArmBlunt1</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorAlternateExcellent">
+        <defName>TI_ArmorAlternateExcellent_BluntProtection</defName>
         <label>Blunt Protection</label>
         <labelShort>bluntp</labelShort>
         <stats>
@@ -662,8 +349,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_AlternateExcellentArmor">
-        <defName>TI_ArmSharp1</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorAlternateExcellent">
+        <defName>TI_ArmorAlternateExcellent_SharpProtection</defName>
         <label>Sharp Protection</label>
         <labelShort>sharpp</labelShort>
         <stats>
@@ -695,8 +382,8 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_AlternateExcellentArmor">
-        <defName>TI_ArmHeat1</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorAlternateExcellent">
+        <defName>TI_ArmorAlternateExcellent_HeatProtection</defName>
         <label>Heat Protection</label>
         <labelShort>heatp</labelShort>
         <stats>
@@ -739,8 +426,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_AlternateExcellentArmor">
-        <defName>TI_ArmorTank</defName>
+    <Infusion.InfusionDef ParentName="TI_ArmorAlternateExcellent">
+        <defName>TI_ArmorAlternateExcellent_Tank</defName>
         <label>Tank</label>
         <labelShort>tank</labelShort>
         <stats>
@@ -797,8 +484,8 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_AlternateGoodRanged">
-        <defName>TI_RExplosive2</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedAlternateGood">
+        <defName>TI_RangedAlternateGood_Explosive2A</defName>
         <label>explosive 2</label>
         <labelShort>expl2</labelShort>
         <onHits>
@@ -852,8 +539,8 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_AlternateMasterworkRanged">
-        <defName>TI_RExplosive3</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedAlternateMasterwork">
+        <defName>TI_RangedAlternateMasterwork_Explosive3A</defName>
         <label>explosive 3</label>
         <labelShort>expl3</labelShort>
         <stats>
@@ -906,8 +593,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_AlternateLegendaryRanged">
-        <defName>TI_RExplosive4</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedAlternateLegendary">
+        <defName>TI_RangedAlternateLegendary_Explosive4A</defName>
         <label>explosive 4</label>
         <labelShort>expl4</labelShort>
         <stats>
@@ -962,8 +649,8 @@
 
       <!-- lucky shot -->
 
-      <Infusion.InfusionDef ParentName="TI_AlternateGoodRanged">
-        <defName>TI_RLuckyShot1</defName>
+      <Infusion.InfusionDef ParentName="TI_RangedAlternateGood">
+        <defName>TI_RangedAlternateGood_LuckyShot1A</defName>
         <label>lucky shot 1</label>
         <labelShort>luck1</labelShort>
         <stats>
@@ -1010,8 +697,8 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_AlternateExcellentRanged">
-        <defName>TI_RLuckyShot2</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedAlternateExcellent">
+        <defName>TI_RangedAlternateExcellent_LuckyShot2A</defName>
         <label>lucky shot 2</label>
         <labelShort>luck2</labelShort>
         <stats>
@@ -1057,8 +744,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_AlternateMasterworkRanged">
-        <defName>TI_RLuckyShot3</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedAlternateMasterwork">
+        <defName>TI_RangedAlternateMasterwork_LuckyShot3A</defName>
         <label>lucky shot 3</label>
         <labelShort>luck3</labelShort>
         <stats>

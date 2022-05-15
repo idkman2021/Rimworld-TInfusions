@@ -2,453 +2,8 @@
 <Defs>
 
 
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicAwful">
-        <tier>TI_MagicAwful</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>-0.5</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoor">
-        <tier>TI_MagicPoor</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>-0.3</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormal">
-        <tier>TI_MagicNormal</tier>
-        <!--<stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <multiplier>0.1</multiplier>
-                </value>
-            </li>
-        </stats>-->
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGood">
-        <tier>TI_MagicGood</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <offset>50</offset>
-                    <multiplier>0.1</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellent">
-        <tier>TI_MagicExcellent</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <offset>100</offset>
-                    <multiplier>0.2</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterwork">
-        <tier>TI_MagicMasterwork</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <offset>200</offset>
-                    <multiplier>0.3</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendary">
-        <tier>TI_MagicLegendary</tier>
-        <stats>
-            <li>
-                <key>MarketValue</key>
-                <value>
-                    <offset>300</offset>
-                    <multiplier>0.5</multiplier>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef>
-
-    <!-- apparels -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorApparel" ParentName="TI_MagicPoor">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalApparel" ParentName="TI_MagicNormal">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodApparel" ParentName="TI_MagicGood">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentApparel" ParentName="TI_MagicExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkApparel" ParentName="TI_MagicMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryApparel" ParentName="TI_MagicLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <apparel>true</apparel>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-    <!-- armors must cover a body part-->
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorArmor" ParentName="TI_MagicPoorApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalArmor" ParentName="TI_MagicNormalApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodArmor" ParentName="TI_MagicGoodApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentArmor" ParentName="TI_MagicExcellentApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkArmor" ParentName="TI_MagicMasterworkApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryArmor" ParentName="TI_MagicLegendaryApparel">
-        <matches>
-            <li Class="Infusion.Matchers.NotUtility" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <!-- melee -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorMelee" ParentName="TI_MagicPoor">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalMelee" ParentName="TI_MagicNormal">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodMelee" ParentName="TI_MagicGood">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentMelee" ParentName="TI_MagicExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkMelee" ParentName="TI_MagicMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryMelee" ParentName="TI_MagicLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <melee>true</melee>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- ranged -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorRanged" ParentName="TI_MagicPoor">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalRanged" ParentName="TI_MagicNormal">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodRanged" ParentName="TI_MagicGood">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentRanged" ParentName="TI_MagicExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkRanged" ParentName="TI_MagicMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryRanged" ParentName="TI_MagicLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.EquipmentType">
-                <ranged>true</ranged>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- shields -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorShield" ParentName="TI_MagicPoor">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalShield" ParentName="TI_MagicNormal">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodShield" ParentName="TI_MagicGood">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentShield" ParentName="TI_MagicExcellent">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkShield" ParentName="TI_MagicMasterwork">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryShield" ParentName="TI_MagicLegendary">
-        <matches>
-            <li Class="Infusion.Matchers.ShieldBelt" />
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- blunt -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorBlunt" ParentName="TI_MagicPoorMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalBlunt" ParentName="TI_MagicNormalMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodBlunt" ParentName="TI_MagicGoodMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentBlunt" ParentName="TI_MagicExcellentMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkBlunt" ParentName="TI_MagicMasterworkMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryBlunt" ParentName="TI_MagicLegendaryMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleeBlunt</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- piercer -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorSharp" ParentName="TI_MagicPoorMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalSharp" ParentName="TI_MagicNormalMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodSharp" ParentName="TI_MagicGoodMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentSharp" ParentName="TI_MagicExcellentMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkSharp" ParentName="TI_MagicMasterworkMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendarySharp" ParentName="TI_MagicLegendaryMelee">
-        <matches>
-            <li Class="Infusion.Matchers.WeaponClasses">
-                <defs>
-                    <li>MeleePiercer</li>
-                </defs>
-            </li>
-        </matches>
-    </Infusion.InfusionDef>
-
-
-    <!-- bullet -->
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicPoorBullet" ParentName="TI_MagicPoorRanged">
-        <matches>
-            <li Class="Infusion.Matchers.ProjectileBullet" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicNormalBullet" ParentName="TI_MagicNormalRanged">
-        <matches>
-            <li Class="Infusion.Matchers.ProjectileBullet" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicGoodBullet" ParentName="TI_MagicGoodRanged">
-        <matches>
-            <li Class="Infusion.Matchers.ProjectileBullet" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicExcellentBullet" ParentName="TI_MagicExcellentRanged">
-        <matches>
-            <li Class="Infusion.Matchers.ProjectileBullet" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicMasterworkBullet" ParentName="TI_MagicMasterworkRanged">
-        <matches>
-            <li Class="Infusion.Matchers.ProjectileBullet" />
-        </matches>
-    </Infusion.InfusionDef>
-    <Infusion.InfusionDef Abstract="True" Name="TI_MagicLegendaryBullet" ParentName="TI_MagicLegendaryRanged">
-        <matches>
-            <li Class="Infusion.Matchers.ProjectileBullet" />
-        </matches>
-    </Infusion.InfusionDef>
-
-    <!--
-    <Infusion.InfusionDef ParentName="TI_MagicGood">
-        <defName>_______</defName>
-        <label>_______</label>
-        <labelShort>_______</labelShort>
-        <stats>
-            <li>
-            <key>ArmorRating_Blunt</key>
-                <value>
-                    <offset>_______</offset>
-                </value>
-            </li>
-        </stats>
-    </Infusion.InfusionDef> 
-
--->
-
-    <Infusion.InfusionDef ParentName="TI_MagicMasterworkMelee">
-        <defName>TI_MHealing</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeMagicMasterwork">
+        <defName>TI_MeleeMagicMasterwork_Healing</defName>
         <label>healing</label>
         <labelShort>heal</labelShort>
         <onHits>
@@ -465,8 +20,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_MagicMasterworkSharp">
-        <defName>TI_SLeaching</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpMagicMasterwork">
+        <defName>TI_SharpMagicMasterwork_Leeching</defName>
         <label>leaching</label>
         <labelShort>leach</labelShort>
         <onHits>
@@ -493,8 +48,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_MagicMasterworkRanged">
-        <defName>TI_RHealing</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedMagicMasterwork">
+        <defName>TI_RangedMagicMasterwork_Healing</defName>
         <label>healing</label>
         <labelShort>heal</labelShort>
         <onHits>
@@ -512,8 +67,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_MagicLegendaryRanged">
-        <defName>TI_RLeaching</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedMagicLegendary">
+        <defName>TI_RangedMagicLegendary_Leaching</defName>
         <label>leaching</label>
         <labelShort>leach</labelShort>
         <onHits>
@@ -541,8 +96,8 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_MagicGoodSharp">
-        <defName>TI_SBloodSuck</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpMagicGood">
+        <defName>TI_SharpMagicGood_BloodSucking</defName>
         <label>blood sucking</label>
         <labelShort>blood</labelShort>
         <onHits>
@@ -571,9 +126,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-
-    <Infusion.InfusionDef ParentName="TI_MagicGoodRanged">
-        <defName>TI_RRandom</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedMagicGood">
+        <defName>TI_RangedMagicGood_Random</defName>
         <label>random</label>
         <labelShort>rndm</labelShort>
         <onHits>
@@ -704,8 +258,8 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged">
-        <defName>TI_RChaotic</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedMagicExcellent">
+        <defName>TI_RangedMagicExcellent_Chaotic</defName>
         <label>chaotic</label>
         <labelShort>chaos</labelShort>
         <onHits>
@@ -834,8 +388,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentMelee">
-        <defName>TI_MRandom</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeMagicExcellent">
+        <defName>TI_MeleeMagicExcellent_Random</defName>
         <label>random</label>
         <labelShort>rndm</labelShort>
         <onHits>
@@ -954,8 +508,8 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentMelee">
-        <defName>TI_MChaotic</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeMagicExcellent">
+        <defName>TI_MeleeMagicExcellent_Chaotic</defName>
         <label>chaotic</label>
         <labelShort>chaos</labelShort>
         <onHits>
@@ -1071,62 +625,11 @@
             <li>Applies a bunch of small random effects on hit.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-    <!--
-    <Infusion.InfusionDef ParentName="TI_MagicGoodSharp">
-        <defName>TI_SConsume</defName>
-        <label>consuming</label>
-        <labelShort>cnsm</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.IfBioTargetHit">
-                <value Class="Infusion.OnHitWorkers.Sequence">
-                    <value>
-                        <li Class="Infusion.OnHitWorkers.ApplyHediff">
-                            <def>Malnutrition</def>
-                            <amount>0.2</amount>
-                        </li>
-                        <li Class="Infusion.OnHitWorkers.ReduceSeverity">
-                            <def>Malnutrition</def>
-                            <amount>0.2</amount>
-                            <selfCast>true</selfCast>
-                        </li>
-                        <li Class="Infusion.OnHitWorkers.ThrowFleck">
-                            <def>HealingCross</def>
-                            <selfCast>true</selfCast>
-                        </li>
-                    </value>
-                </value>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Causes maluntrition in target, and if the user has malnutrition, reduces it.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
 
-    <!-- TESING -->
 
-    <!--
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="Scurvyez.Bastyon">
-        <defName>TI_RangedBastyonBlisteringWind</defName>
-        <label>of blistering wind</label>
-        <position>Suffix</position>
-        <labelShort>wind</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>Bast_BlisteringWindExtinguish</def>
-                <amount>0.15</amount>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Affects the target with a blistering freezing wind.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
-
--->
-
-<!-- !!!-->
-    <Infusion.InfusionDef ParentName="TI_MagicMasterworkRanged" MayRequire="sarg.magicalmenagerie">
-        <defName>TI_RangedMMPetrifying</defName>
+    <!-- !!!-->
+    <Infusion.InfusionDef ParentName="TI_RangedMagicMasterwork" MayRequire="sarg.magicalmenagerie">
+        <defName>TI_RangedMagicMasterwork_MagicalMenageriePetrifying</defName>
         <label>petrifying</label>
         <labelShort>petrf</labelShort>
         <onHits>
@@ -1140,8 +643,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentMelee" MayRequire="sarg.magicalmenagerie">
-        <defName>TI_MeleeMMPetrifying</defName>
+    <Infusion.InfusionDef ParentName="TI_MeleeMagicExcellent" MayRequire="sarg.magicalmenagerie">
+        <defName>TI_MeleeMagicExcellent_MagialMenageriePetrifying</defName>
         <label>petrifying</label>
         <labelShort>petrf</labelShort>
         <onHits>
@@ -1155,61 +658,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-<!-- !!!! -->
-<!--
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="mooloh.dndmenagerie">
-        <defName>TI_RangedDnDMedusaRay</defName>
-        <label>of stone</label>
-        <position>Suffix</position>
-        <labelShort>stone</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>DND_DmgDef_MedusaRay</def>
-                <amount>10</amount>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Turns the target into stone.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-
-<!--
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="mooloh.dndmenagerie">
-        <defName>TI_RangedDnDBeholderRay</defName>
-        <label>beaming</label>
-        <labelShort>beam</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.CreateExplosion">
-                <def>DND_DmgDef_BeholderRay</def>
-                <amount>0.15</amount>
-                <radius>1</radius>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Beams the target with magical rays.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-
-    <!--
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="mooloh.dndmenagerie">
-        <defName>TI_RangedDnD_BeholderDeathRay</defName>
-        <label>necrosis1</label>
-        <labelShort>ncrs1</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyDamage">
-                <def>DND_DmgDef_BeholderDeathRay</def>
-                <amount>0.15</amount>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Causes necrosis.1</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="mooloh.dndmenagerie">
-        <defName>TI_RangedDnD_BeholderEnervationRay</defName>
+    <Infusion.InfusionDef ParentName="TI_RangedMagicExcellent" MayRequire="mooloh.dndmenagerie">
+        <defName>TI_RangedMagicExcellent_DnDMenagerieNecrosis</defName>
         <label>necrosis</label>
         <labelShort>ncrs</labelShort>
         <onHits>
@@ -1231,8 +681,8 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    <Infusion.InfusionDef ParentName="TI_MagicGoodSharp" MayRequire="mooloh.dndmenagerie">
-        <defName>TI_MeleeSharpDnD_BeholderEnervationRay</defName>
+    <Infusion.InfusionDef ParentName="TI_SharpMagicGood" MayRequire="mooloh.dndmenagerie">
+        <defName>TI_SharpMagicGood_DnDMenagerieNecrosis</defName>
         <label>necrosis</label>
         <labelShort>ncrs</labelShort>
         <onHits>
@@ -1253,140 +703,5 @@
             <li>Causes large selections of tissue to decay on the body, which is more likely to get infected and more painful. Deals about 115% damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
-    <!--
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="mooloh.dndmenagerie">
-        <defName>TI_RangedDnD_BeholderDisintegrationRay</defName>
-        <label>disintegrating1</label>
-        <labelShort>disint1</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyDamage">
-                <def>DND_DmgDef_BeholderDisintegrationRay</def>
-                <amount>0.15</amount>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Disintegrates the target.1</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-<!--
-    <Infusion.InfusionDef ParentName="TI_MagicGoodRanged" MayRequire="mooloh.dndmenagerie">
-        <defName>TI_RangedDnD_Disintegration</defName>
-        <label>disintegrating</label>
-        <labelShort>disint</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyDamage">
-                <def>DND_DmgDef_Disintegration</def>
-                <amount>12.5</amount>
-            </li>
-        </onHits>
-        <stats>
-            <li>
-                <key>RangedWeapon_DamageMultiplier</key>
-                <value>
-                    <multiplier>-0.9</multiplier>
-                </value>
-            </li>
-        </stats>
-        <extraDescriptions>
-            <li>Disintegrates the target, dealing about 125% damage.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef ParentName="TI_MagicGoodMelee" MayRequire="mooloh.dndmenagerie">
-        <defName>TI_RangedDnD_Disintegration</defName>
-        <label>disintegrating</label>
-        <labelShort>disint</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyDamage">
-                <def>DND_DmgDef_Disintegration</def>
-                <amount>12.5</amount>
-            </li>
-        </onHits>
-        <stats>
-            <li>
-                <key>MeleeWeapon_DamageMultiplier</key>
-                <value>
-                    <multiplier>-0.9</multiplier>
-                </value>
-            </li>
-        </stats>
-        <extraDescriptions>
-            <li>Disintegrates the target, dealing about 125% damage.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-<!--
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="mooloh.dndmenagerie">
-        <defName>TI_RangedDnD_BodyRusting</defName>
-        <label>rusting</label>
-        <labelShort>rust</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyDamage">
-                <def>DND_DmgDef_BodyRusting</def>
-                <amount>0.15</amount>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Rusts the target.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-<!--
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="com.RimWorld.Nales.UtilityWeapons">
-        <defName>TI_RangedUW_Healing</defName>
-        <label>healing</label>
-        <labelShort>heal</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyDamage">
-                <def>UTWE_GreenHeal</def>
-                <amount>0.15</amount>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Heals the target. Can close non-permanent, fresh wounds, but increases hunger and rest needs.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
-
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="com.RimWorld.Nales.UtilityWeapons">
-        <defName>TI_RangedUW_Healing2</defName>
-        <label>healing2</label>
-        <labelShort>heal2</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyDamage">
-                <def>UTWE_GreenHeal</def>
-                <amount>1.5</amount>
-            </li>
-        </onHits>
-        <stats>
-            <li>
-                <key>RangedWeapon_DamageMultiplier</key>
-                <value>
-                    <multiplier>-0.9</multiplier>
-                </value>
-            </li>
-        </stats>
-        <extraDescriptions>
-            <li>Heals the target. Can close non-permanent, fresh wounds, but increases hunger and rest needs.2</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
-<!--
-
-    <Infusion.InfusionDef ParentName="TI_MagicExcellentRanged" MayRequire="com.RimWorld.Nales.UtilityWeapons">
-        <defName>TI_RangedUW_Weaken</defName>
-        <label>weakening</label>
-        <labelShort>wkn</labelShort>
-        <onHits>
-            <li Class="Infusion.OnHitWorkers.ApplyDamage">
-                <def>UTWE_BlueWeaken</def>
-                <amount>0.15</amount>
-            </li>
-        </onHits>
-        <extraDescriptions>
-            <li>Weakens the target.</li>
-        </extraDescriptions>
-    </Infusion.InfusionDef>
--->
 
 </Defs>

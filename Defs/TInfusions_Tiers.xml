@@ -1,9 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+  <!-- 
+<![CDATA[<color=#ff0000ff>awful</color>]]>
+<![CDATA[<color=#bfaaaaff>poor</color>]]>
+<![CDATA[<color=#ffffffff>normal</color>]]>
+<![CDATA[<color=#b8fcbbff>good</color>]]>
+<![CDATA[<color=#5cff63ff>excellent</color>]]>
+<![CDATA[<color=#ff9900ff>masterwork</color>]]>
+<![CDATA[<color=#ffff00ff>legendary</color>]]>
+<![CDATA[<color=#fa77fcff>mystical</color>]]>
+-->
+  <Infusion.InfusionDef Abstract="True" Name="TI_Apparel">
+    <matches>
+      <li Class="Infusion.Matchers.EquipmentType">
+        <apparel>true</apparel>
+      </li>
+    </matches>
+  </Infusion.InfusionDef>
 
-  <Infusion.TierDef>
+  <Infusion.InfusionDef Abstract="True" Name="TI_Armor" ParentName="TI_Apparel">
+    <matches>
+      <li Class="Infusion.Matchers.NotUtility" />
+    </matches>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" Name="TI_Melee">
+    <matches>
+      <li Class="Infusion.Matchers.EquipmentType">
+        <melee>true</melee>
+      </li>
+    </matches>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" Name="TI_Blunt" ParentName="TI_Melee">
+    <matches>
+      <li Class="Infusion.Matchers.WeaponClasses">
+        <defs>
+          <li>MeleeBlunt</li>
+        </defs>
+      </li>
+    </matches>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" Name="TI_Sharp" ParentName="TI_Melee">
+    <matches>
+      <li Class="Infusion.Matchers.WeaponClasses">
+        <defs>
+          <li>MeleePiercer</li>
+        </defs>
+      </li>
+    </matches>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" Name="TI_Ranged">
+    <matches>
+      <li Class="Infusion.Matchers.EquipmentType">
+        <ranged>true</ranged>
+      </li>
+    </matches>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" Name="TI_Bullet" ParentName="TI_Ranged">
+    <matches>
+      <li Class="Infusion.Matchers.ProjectileBullet" />
+    </matches>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" Name="TI_Shield">
+    <matches>
+      <li Class="Infusion.Matchers.ShieldBelt" />
+    </matches>
+  </Infusion.InfusionDef>
+
+  <!-- 
+    
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_Melee123456">
+    <defName>TI_123456</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_Blunt123456">
+    <defName>TI_123456</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_Sharp123456">
+    <defName>TI_123456</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_Ranged123456">
+    <defName>TI_123456</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_Bullet123456">
+    <defName>TI_123456</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_Apparel123456">
+    <tier>TI_Apparel123456</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_Armor123456">
+    <tier>TI_Apparel123456</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_Shield123456">
+    <tier>TI_Apparel123456</tier>
+  </Infusion.InfusionDef>
+
+-->
+
+  <Infusion.TierDef Name="TI_CommonAwful">
     <defName>TI_CommonAwful</defName>
-    <label>common (awful)</label>
+    <label>
+      <![CDATA[common - <color=#ff0000ff>awful</color>]]>
+    </label>
     <priority>10</priority>
     <color>(0.7, 0, 0)</color>
     <infuserValue>50</infuserValue>
@@ -28,9 +140,46 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeCommonAwful">
+    <defName>TI_CommonAwful</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntCommonAwful">
+    <defName>TI_CommonAwful</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpCommonAwful">
+    <defName>TI_CommonAwful</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedCommonAwful">
+    <defName>TI_CommonAwful</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletCommonAwful">
+    <defName>TI_CommonAwful</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelCommonAwful">
+    <tier>TI_ApparelCommonAwful</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorCommonAwful">
+    <tier>TI_ApparelCommonAwful</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldCommonAwful">
+    <tier>TI_ApparelCommonAwful</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_CommonPoor">
     <defName>TI_CommonPoor</defName>
-    <label>common (poor)</label>
+    <label>
+      <![CDATA[common - <color=#bfaaaaff>poor</color>]]>
+    </label>
     <priority>10</priority>
     <color>(1, 0.5, 0.5)</color>
     <infuserValue>100</infuserValue>
@@ -55,9 +204,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeCommonPoor">
+    <defName>TI_CommonPoor</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntCommonPoor">
+    <defName>TI_CommonPoor</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpCommonPoor">
+    <defName>TI_CommonPoor</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedCommonPoor">
+    <defName>TI_CommonPoor</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletCommonPoor">
+    <defName>TI_CommonPoor</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelCommonPoor">
+    <tier>TI_ApparelCommonPoor</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorCommonPoor">
+    <tier>TI_ApparelCommonPoor</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldCommonPoor">
+    <tier>TI_ApparelCommonPoor</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_CommonNormal">
     <defName>TI_CommonNormal</defName>
-    <label>common (normal)</label>
+    <label>
+      <![CDATA[common - <color=#ffffffff>normal</color>]]>
+    </label>
     <priority>10</priority>
     <color>(1, 1, 1)</color>
     <infuserValue>100</infuserValue>
@@ -82,9 +269,46 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeCommonNormal">
+    <defName>TI_CommonNormal</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntCommonNormal">
+    <defName>TI_CommonNormal</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpCommonNormal">
+    <defName>TI_CommonNormal</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedCommonNormal">
+    <defName>TI_CommonNormal</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletCommonNormal">
+    <defName>TI_CommonNormal</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelCommonNormal">
+    <tier>TI_ApparelCommonNormal</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorCommonNormal">
+    <tier>TI_ApparelCommonNormal</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldCommonNormal">
+    <tier>TI_ApparelCommonNormal</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_CommonGood">
     <defName>TI_CommonGood</defName>
-    <label>common (good)</label>
+    <label>
+      <![CDATA[common - <color=#b8fcbbff>good</color>]]>
+    </label>
     <priority>10</priority>
     <color>(0.75, 1, 0.75)</color>
     <infuserValue>150</infuserValue>
@@ -109,9 +333,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeCommonGood">
+    <defName>TI_CommonGood</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntCommonGood">
+    <defName>TI_CommonGood</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpCommonGood">
+    <defName>TI_CommonGood</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedCommonGood">
+    <defName>TI_CommonGood</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletCommonGood">
+    <defName>TI_CommonGood</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelCommonGood">
+    <tier>TI_ApparelCommonGood</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorCommonGood">
+    <tier>TI_ApparelCommonGood</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldCommonGood">
+    <tier>TI_ApparelCommonGood</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_CommonExcellent">
     <defName>TI_CommonExcellent</defName>
-    <label>common (excellent)</label>
+    <label>
+      <![CDATA[common - <color=#5cff63ff>excellent</color>]]>
+    </label>
     <priority>10</priority>
     <color>(0.5, 1, 0.5)</color>
     <infuserValue>200</infuserValue>
@@ -136,9 +398,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeCommonExcellent">
+    <defName>TI_CommonExcellent</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntCommonExcellent">
+    <defName>TI_CommonExcellent</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpCommonExcellent">
+    <defName>TI_CommonExcellent</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedCommonExcellent">
+    <defName>TI_CommonExcellent</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletCommonExcellent">
+    <defName>TI_CommonExcellent</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelCommonExcellent">
+    <tier>TI_ApparelCommonExcellent</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorCommonExcellent">
+    <tier>TI_ApparelCommonExcellent</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldCommonExcellent">
+    <tier>TI_ApparelCommonExcellent</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_CommonMasterwork">
     <defName>TI_CommonMasterwork</defName>
-    <label>common (masterwork)</label>
+    <label>
+      <![CDATA[common - <color=#ff9900ff>masterwork</color>]]>
+    </label>
     <priority>10</priority>
     <color>(0.25, 1, 0.25)</color>
     <infuserValue>500</infuserValue>
@@ -163,9 +463,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeCommonMasterwork">
+    <defName>TI_CommonMasterwork</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntCommonMasterwork">
+    <defName>TI_CommonMasterwork</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpCommonMasterwork">
+    <defName>TI_CommonMasterwork</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedCommonMasterwork">
+    <defName>TI_CommonMasterwork</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletCommonMasterwork">
+    <defName>TI_CommonMasterwork</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelCommonMasterwork">
+    <tier>TI_ApparelCommonMasterwork</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorCommonMasterwork">
+    <tier>TI_ApparelCommonMasterwork</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldCommonMasterwork">
+    <tier>TI_ApparelCommonMasterwork</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_CommonLegendary">
     <defName>TI_CommonLegendary</defName>
-    <label>common (legendary)</label>
+    <label>
+      <![CDATA[common - <color=#ffff00ff>legendary</color>]]>
+    </label>
     <priority>10</priority>
     <color>(0, 1, 0)</color>
     <infuserValue>750</infuserValue>
@@ -190,9 +528,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeCommonLegendary">
+    <defName>TI_CommonLegendary</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntCommonLegendary">
+    <defName>TI_CommonLegendary</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpCommonLegendary">
+    <defName>TI_CommonLegendary</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedCommonLegendary">
+    <defName>TI_CommonLegendary</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletCommonLegendary">
+    <defName>TI_CommonLegendary</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelCommonLegendary">
+    <tier>TI_ApparelCommonLegendary</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorCommonLegendary">
+    <tier>TI_ApparelCommonLegendary</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldCommonLegendary">
+    <tier>TI_ApparelCommonLegendary</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_ModAwful">
     <defName>TI_ModAwful</defName>
-    <label>mod (awful)</label>
+    <label>
+      <![CDATA[mod - <color=#ff0000ff>awful</color>]]>
+    </label>
     <priority>10</priority>
     <color>(0.7, 0.1, 0.4)</color>
     <infuserValue>50</infuserValue>
@@ -217,9 +593,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeModAwful">
+    <defName>TI_ModAwful</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntModAwful">
+    <defName>TI_ModAwful</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpModAwful">
+    <defName>TI_ModAwful</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedModAwful">
+    <defName>TI_ModAwful</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletModAwful">
+    <defName>TI_ModAwful</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelModAwful">
+    <tier>TI_ApparelModAwful</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorModAwful">
+    <tier>TI_ApparelModAwful</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldModAwful">
+    <tier>TI_ApparelModAwful</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_ModPoor">
     <defName>TI_ModPoor</defName>
-    <label>mod (poor)</label>
+    <label>
+      <![CDATA[mod - <color=#bfaaaaff>poor</color>]]>
+    </label>
     <priority>10</priority>
     <color>(1, 0.35, 0.65)</color>
     <infuserValue>100</infuserValue>
@@ -244,9 +658,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeModPoor">
+    <defName>TI_ModPoor</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntModPoor">
+    <defName>TI_ModPoor</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpModPoor">
+    <defName>TI_ModPoor</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedModPoor">
+    <defName>TI_ModPoor</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletModPoor">
+    <defName>TI_ModPoor</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelModPoor">
+    <tier>TI_ApparelModPoor</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorModPoor">
+    <tier>TI_ApparelModPoor</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldModPoor">
+    <tier>TI_ApparelModPoor</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_ModNormal">
     <defName>TI_ModNormal</defName>
-    <label>mod (normal)</label>
+    <label>
+      <![CDATA[mod - <color=#ffffffff>normal</color>]]>
+    </label>
     <priority>10</priority>
     <color>(0.8, 0.8, 1)</color>
     <infuserValue>200</infuserValue>
@@ -271,9 +723,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeModNormal">
+    <defName>TI_ModNormal</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntModNormal">
+    <defName>TI_ModNormal</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpModNormal">
+    <defName>TI_ModNormal</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedModNormal">
+    <defName>TI_ModNormal</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletModNormal">
+    <defName>TI_ModNormal</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelModNormal">
+    <tier>TI_ApparelModNormal</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorModNormal">
+    <tier>TI_ApparelModNormal</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldModNormal">
+    <tier>TI_ApparelModNormal</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_ModGood">
     <defName>TI_ModGood</defName>
-    <label>mod (good)</label>
+    <label>
+      <![CDATA[mod - <color=#b8fcbbff>good</color>]]>
+    </label>
     <priority>10</priority>
     <color>(0.6, 0.6, 1)</color>
     <infuserValue>300</infuserValue>
@@ -298,9 +788,46 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeModGood">
+    <defName>TI_ModGood</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntModGood">
+    <defName>TI_ModGood</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpModGood">
+    <defName>TI_ModGood</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedModGood">
+    <defName>TI_ModGood</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletModGood">
+    <defName>TI_ModGood</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelModGood">
+    <tier>TI_ApparelModGood</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorModGood">
+    <tier>TI_ApparelModGood</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldModGood">
+    <tier>TI_ApparelModGood</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_ModExcellent">
     <defName>TI_ModExcellent</defName>
-    <label>mod (excellent)</label>
+    <label>
+      <![CDATA[mod - <color=#5cff63ff>excellent</color>]]>
+    </label>
     <priority>10</priority>
     <color>(0.4, 0.4, 1)</color>
     <infuserValue>500</infuserValue>
@@ -325,10 +852,47 @@
     </chances>
   </Infusion.TierDef>
 
-  
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeModExcellent">
+    <defName>TI_ModExcellent</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntModExcellent">
+    <defName>TI_ModExcellent</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpModExcellent">
+    <defName>TI_ModExcellent</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedModExcellent">
+    <defName>TI_ModExcellent</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletModExcellent">
+    <defName>TI_ModExcellent</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelModExcellent">
+    <tier>TI_ApparelModExcellent</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorModExcellent">
+    <tier>TI_ApparelModExcellent</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldModExcellent">
+    <tier>TI_ApparelModExcellent</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_ModMasterwork">
     <defName>TI_ModMasterwork</defName>
-    <label>mod (masterwork)</label>
+    <label>
+      <![CDATA[mod - <color=#ff9900ff>masterwork</color>]]>
+    </label>
     <priority>10</priority>
     <color>(0.2, 0.2, 1)</color>
     <infuserValue>700</infuserValue>
@@ -353,10 +917,47 @@
     </chances>
   </Infusion.TierDef>
 
-    
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeModMasterwork">
+    <defName>TI_ModMasterwork</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntModMasterwork">
+    <defName>TI_ModMasterwork</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpModMasterwork">
+    <defName>TI_ModMasterwork</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedModMasterwork">
+    <defName>TI_ModMasterwork</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletModMasterwork">
+    <defName>TI_ModMasterwork</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelModMasterwork">
+    <tier>TI_ApparelModMasterwork</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorModMasterwork">
+    <tier>TI_ApparelModMasterwork</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldModMasterwork">
+    <tier>TI_ApparelModMasterwork</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_ModLegendary">
     <defName>TI_ModLegendary</defName>
-    <label>mod (legendary)</label>
+    <label>
+      <![CDATA[mod - <color=#ffff00ff>legendary</color>]]>
+    </label>
     <priority>10</priority>
     <color>(0, 0, 1)</color>
     <infuserValue>1200</infuserValue>
@@ -381,9 +982,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeModLegendary">
+    <defName>TI_ModLegendary</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntModLegendary">
+    <defName>TI_ModLegendary</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpModLegendary">
+    <defName>TI_ModLegendary</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedModLegendary">
+    <defName>TI_ModLegendary</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletModLegendary">
+    <defName>TI_ModLegendary</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelModLegendary">
+    <tier>TI_ApparelModLegendary</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorModLegendary">
+    <tier>TI_ApparelModLegendary</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldModLegendary">
+    <tier>TI_ApparelModLegendary</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_AlternateNormal">
     <defName>TI_AlternateNormal</defName>
-    <label>alternate (normal)</label>
+    <label>
+      <![CDATA[alternate - <color=#ffffffff>normal</color>]]>
+    </label>
     <priority>10</priority>
     <color>(1, 1, 0.8)</color>
     <infuserValue>800</infuserValue>
@@ -408,9 +1047,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeAlternateNormal">
+    <defName>TI_AlternateNormal</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntAlternateNormal">
+    <defName>TI_AlternateNormal</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpAlternateNormal">
+    <defName>TI_AlternateNormal</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedAlternateNormal">
+    <defName>TI_AlternateNormal</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletAlternateNormal">
+    <defName>TI_AlternateNormal</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelAlternateNormal">
+    <tier>TI_ApparelAlternateNormal</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorAlternateNormal">
+    <tier>TI_ApparelAlternateNormal</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldAlternateNormal">
+    <tier>TI_ApparelAlternateNormal</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_AlternateGood">
     <defName>TI_AlternateGood</defName>
-    <label>alternate (good)</label>
+    <label>
+      <![CDATA[alternate - <color=#b8fcbbff>good</color>]]>
+    </label>
     <priority>10</priority>
     <color>(1, 1, 0.6)</color>
     <infuserValue>1200</infuserValue>
@@ -435,9 +1112,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeAlternateGood">
+    <defName>TI_AlternateGood</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntAlternateGood">
+    <defName>TI_AlternateGood</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpAlternateGood">
+    <defName>TI_AlternateGood</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedAlternateGood">
+    <defName>TI_AlternateGood</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletAlternateGood">
+    <defName>TI_AlternateGood</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelAlternateGood">
+    <tier>TI_ApparelAlternateGood</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorAlternateGood">
+    <tier>TI_ApparelAlternateGood</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldAlternateGood">
+    <tier>TI_ApparelAlternateGood</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_AlternateExcellent">
     <defName>TI_AlternateExcellent</defName>
-    <label>alternate (excellent)</label>
+    <label>
+      <![CDATA[alternate - <color=#5cff63ff>excellent</color>]]>
+    </label>
     <priority>10</priority>
     <color>(1, 1, 0.4)</color>
     <infuserValue>1600</infuserValue>
@@ -462,10 +1177,47 @@
     </chances>
   </Infusion.TierDef>
 
-  
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeAlternateExcellent">
+    <defName>TI_AlternateExcellent</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntAlternateExcellent">
+    <defName>TI_AlternateExcellent</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpAlternateExcellent">
+    <defName>TI_AlternateExcellent</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedAlternateExcellent">
+    <defName>TI_AlternateExcellent</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletAlternateExcellent">
+    <defName>TI_AlternateExcellent</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelAlternateExcellent">
+    <tier>TI_ApparelAlternateExcellent</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorAlternateExcellent">
+    <tier>TI_ApparelAlternateExcellent</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldAlternateExcellent">
+    <tier>TI_ApparelAlternateExcellent</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_AlternateMasterwork">
     <defName>TI_AlternateMasterwork</defName>
-    <label>alternate (masterwork)</label>
+    <label>
+      <![CDATA[alternate - <color=#ff9900ff>masterwork</color>]]>
+    </label>
     <priority>10</priority>
     <color>(1, 1, 0.2)</color>
     <infuserValue>2400</infuserValue>
@@ -490,10 +1242,47 @@
     </chances>
   </Infusion.TierDef>
 
-    
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeAlternateMasterwork">
+    <defName>TI_AlternateMasterwork</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntAlternateMasterwork">
+    <defName>TI_AlternateMasterwork</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpAlternateMasterwork">
+    <defName>TI_AlternateMasterwork</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedAlternateMasterwork">
+    <defName>TI_AlternateMasterwork</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletAlternateMasterwork">
+    <defName>TI_AlternateMasterwork</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelAlternateMasterwork">
+    <tier>TI_ApparelAlternateMasterwork</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorAlternateMasterwork">
+    <tier>TI_ApparelAlternateMasterwork</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldAlternateMasterwork">
+    <tier>TI_ApparelAlternateMasterwork</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_AlternateLegendary">
     <defName>TI_AlternateLegendary</defName>
-    <label>alternate (legendary)</label>
+    <label>
+      <![CDATA[alternate - <color=#ffff00ff>legendary</color>]]>
+    </label>
     <priority>10</priority>
     <color>(1, 1, 0)</color>
     <infuserValue>4800</infuserValue>
@@ -518,9 +1307,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeAlternateLegendary">
+    <defName>TI_AlternateLegendary</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntAlternateLegendary">
+    <defName>TI_AlternateLegendary</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpAlternateLegendary">
+    <defName>TI_AlternateLegendary</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedAlternateLegendary">
+    <defName>TI_AlternateLegendary</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletAlternateLegendary">
+    <defName>TI_AlternateLegendary</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelAlternateLegendary">
+    <tier>TI_ApparelAlternateLegendary</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorAlternateLegendary">
+    <tier>TI_ApparelAlternateLegendary</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldAlternateLegendary">
+    <tier>TI_ApparelAlternateLegendary</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_MagicNormal">
     <defName>TI_MagicNormal</defName>
-    <label>magic (normal)</label>
+    <label>
+      <![CDATA[magic - <color=#ffffffff>normal</color>]]>
+    </label>
     <priority>10</priority>
     <color>(1, 0.8, 1)</color>
     <infuserValue>300</infuserValue>
@@ -545,9 +1372,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeMagicNormal">
+    <defName>TI_MagicNormal</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntMagicNormal">
+    <defName>TI_MagicNormal</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpMagicNormal">
+    <defName>TI_MagicNormal</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedMagicNormal">
+    <defName>TI_MagicNormal</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletMagicNormal">
+    <defName>TI_MagicNormal</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelMagicNormal">
+    <tier>TI_ApparelMagicNormal</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorMagicNormal">
+    <tier>TI_ApparelMagicNormal</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldMagicNormal">
+    <tier>TI_ApparelMagicNormal</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_MagicGood">
     <defName>TI_MagicGood</defName>
-    <label>magic (good)</label>
+    <label>
+      <![CDATA[magic - <color=#b8fcbbff>good</color>]]>
+    </label>
     <priority>10</priority>
     <color>(1, 0.6, 1)</color>
     <infuserValue>500</infuserValue>
@@ -572,9 +1437,47 @@
     </chances>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeMagicGood">
+    <defName>TI_MagicGood</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntMagicGood">
+    <defName>TI_MagicGood</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpMagicGood">
+    <defName>TI_MagicGood</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedMagicGood">
+    <defName>TI_MagicGood</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletMagicGood">
+    <defName>TI_MagicGood</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelMagicGood">
+    <tier>TI_ApparelMagicGood</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorMagicGood">
+    <tier>TI_ApparelMagicGood</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldMagicGood">
+    <tier>TI_ApparelMagicGood</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_MagicExcellent">
     <defName>TI_MagicExcellent</defName>
-    <label>magic (excellent)</label>
+    <label>
+      <![CDATA[magic - <color=#5cff63ff>excellent</color>]]>
+    </label>
     <priority>10</priority>
     <color>(1, 0.4, 1)</color>
     <infuserValue>900</infuserValue>
@@ -599,10 +1502,47 @@
     </chances>
   </Infusion.TierDef>
 
-  
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeMagicExcellent">
+    <defName>TI_MagicExcellent</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntMagicExcellent">
+    <defName>TI_MagicExcellent</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpMagicExcellent">
+    <defName>TI_MagicExcellent</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedMagicExcellent">
+    <defName>TI_MagicExcellent</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletMagicExcellent">
+    <defName>TI_MagicExcellent</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelMagicExcellent">
+    <tier>TI_ApparelMagicExcellent</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorMagicExcellent">
+    <tier>TI_ApparelMagicExcellent</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldMagicExcellent">
+    <tier>TI_ApparelMagicExcellent</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_MagicMasterwork">
     <defName>TI_MagicMasterwork</defName>
-    <label>magic (masterwork)</label>
+    <label>
+      <![CDATA[magic - <color=#ff9900ff>masterwork</color>]]>
+    </label>
     <priority>10</priority>
     <color>(1, 0.2, 1)</color>
     <infuserValue>1400</infuserValue>
@@ -627,10 +1567,47 @@
     </chances>
   </Infusion.TierDef>
 
-    
-  <Infusion.TierDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeMagicMasterwork">
+    <defName>TI_MagicMasterwork</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntMagicMasterwork">
+    <defName>TI_MagicMasterwork</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpMagicMasterwork">
+    <defName>TI_MagicMasterwork</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedMagicMasterwork">
+    <defName>TI_MagicMasterwork</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletMagicMasterwork">
+    <defName>TI_MagicMasterwork</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelMagicMasterwork">
+    <tier>TI_ApparelMagicMasterwork</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorMagicMasterwork">
+    <tier>TI_ApparelMagicMasterwork</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldMagicMasterwork">
+    <tier>TI_ApparelMagicMasterwork</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef Name="TI_MagicLegendary">
     <defName>TI_MagicLegendary</defName>
-    <label>magic (legendary)</label>
+    <label>
+      <![CDATA[magic - <color=#ffff00ff>legendary</color>]]>
+    </label>
     <priority>10</priority>
     <color>(1, 0, 1)</color>
     <infuserValue>2300</infuserValue>
@@ -655,195 +1632,137 @@
     </chances>
   </Infusion.TierDef>
 
-<!--
-  <Infusion.TierDef>
-    <defName>TI_RepurposedT4</defName>
-    <label>repurposed T4</label>
-    <priority>57</priority>
-    <color>(0.3, 0.3, 1)</color>
-    <infuserValue>10000</infuserValue>
-    <extractionChance>0.1</extractionChance>
-    <weights>
-      <awful>1</awful>
-      <poor>1</poor>
-      <normal>1</normal>
-      <good>1</good>
-      <excellent>1</excellent>
-      <masterwork>1</masterwork>
-      <legendary>1</legendary>
-    </weights>
-    <chances>
-      <awful>0</awful>
-      <poor>0</poor>
-      <normal>0.0025</normal>
-      <good>0.005</good>
-      <excellent>0.01</excellent>
-      <masterwork>0.02</masterwork>
-      <legendary>0.05</legendary>
-    </chances>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Melee" Name="TI_MeleeMagicLegendary">
+    <defName>TI_MagicLegendary</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Blunt" Name="TI_BluntMagicLegendary">
+    <defName>TI_MagicLegendary</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Sharp" Name="TI_SharpMagicLegendary">
+    <defName>TI_MagicLegendary</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Ranged" Name="TI_RangedMagicLegendary">
+    <defName>TI_MagicLegendary</defName>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Bullet" Name="TI_BulletMagicLegendary">
+    <defName>TI_MagicLegendary</defName>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Apparel" Name="TI_ApparelMagicLegendary">
+    <tier>TI_ApparelMagicLegendary</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Armor" Name="TI_ArmorMagicLegendary">
+    <tier>TI_ApparelMagicLegendary</tier>
+  </Infusion.InfusionDef>
+
+  <Infusion.InfusionDef Abstract="True" ParentName="TI_Shield" Name="TI_ShieldMagicLegendary">
+    <tier>TI_ApparelMagicLegendary</tier>
+  </Infusion.InfusionDef>
+
+
+  <Infusion.TierDef ParentName="TI_CommonAwful">
+    <defName>TI_ApparelCommonAwful</defName>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
-    <defName>TI_RepurposedT5</defName>
-    <label>repurposed T5</label>
-    <priority>58</priority>
-    <color>(0.3, 0.3, 1)</color>
-    <infuserValue>14000</infuserValue>
-    <extractionChance>0.1</extractionChance>
-    <weights>
-      <awful>1</awful>
-      <poor>1</poor>
-      <normal>1</normal>
-      <good>1</good>
-      <excellent>1</excellent>
-      <masterwork>1</masterwork>
-      <legendary>1</legendary>
-    </weights>
-    <chances>
-      <awful>0</awful>
-      <poor>0</poor>
-      <normal>0.00125</normal>
-      <good>0.0025</good>
-      <excellent>0.005</excellent>
-      <masterwork>0.01</masterwork>
-      <legendary>0.02</legendary>
-    </chances>
+  <Infusion.TierDef ParentName="TI_CommonPoor">
+    <defName>TI_ApparelCommonPoor</defName>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
-    <defName>TI_RepurposedT6</defName>
-    <label>repurposed T6</label>
-    <priority>59</priority>
-    <color>(0.3, 0.3, 1)</color>
-    <infuserValue>20000</infuserValue>
-    <extractionChance>0.1</extractionChance>
-    <weights>
-      <awful>1</awful>
-      <poor>1</poor>
-      <normal>1</normal>
-      <good>1</good>
-      <excellent>1</excellent>
-      <masterwork>1</masterwork>
-      <legendary>1</legendary>
-    </weights>
-    <chances>
-      <awful>0</awful>
-      <poor>0</poor>
-      <normal>0</normal>
-      <good>0.00125</good>
-      <excellent>0.0025</excellent>
-      <masterwork>0.005</masterwork>
-      <legendary>0.01</legendary>
-    </chances>
-  </Infusion.TierDef>
--->
-<!--
-  <Infusion.TierDef>
-    <defName>TI_Legend</defName>
-    <label>legend</label>
-    <priority>60</priority>
-    <color>(1, 1, 0)</color>
-    <infuserValue>7200</infuserValue>
-    <extractionChance>0.05</extractionChance>
-    <weights>
-      <awful>1</awful>
-      <poor>1</poor>
-      <normal>1</normal>
-      <good>1</good>
-      <excellent>1</excellent>
-      <masterwork>1</masterwork>
-      <legendary>1</legendary>
-    </weights>
-    <chances>
-      <awful>0</awful>
-      <poor>0</poor>
-      <normal>0</normal>
-      <good>0.01</good>
-      <excellent>0.02</excellent>
-      <masterwork>0.05</masterwork>
-      <legendary>0.1</legendary>
-    </chances>
+  <Infusion.TierDef ParentName="TI_CommonNormal">
+    <defName>TI_ApparelCommonNormal</defName>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
-    <defName>TI_Artifact</defName>
-    <label>artifact</label>
-    <priority>70</priority>
-    <color>(1, 0, 1)</color>
-    <infuserValue>7200</infuserValue>
-    <extractionChance>0.025</extractionChance>
-    <weights>
-      <awful>1</awful>
-      <poor>1</poor>
-      <normal>1</normal>
-      <good>1</good>
-      <excellent>1</excellent>
-      <masterwork>1</masterwork>
-      <legendary>1</legendary>
-    </weights>
-    <chances>
-      <awful>0.05</awful>
-      <poor>0.05</poor>
-      <normal>0.05</normal>
-      <good>0.05</good>
-      <excellent>0.05</excellent>
-      <masterwork>0.05</masterwork>
-      <legendary>0.05</legendary>
-    </chances>
+  <Infusion.TierDef ParentName="TI_CommonGood">
+    <defName>TI_ApparelCommonGood</defName>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
-    <defName>TI_One</defName>
-    <label>one of a kind</label>
-    <priority>80</priority>
-    <color>(0, 1, 1)</color>
-    <infuserValue>12800</infuserValue>
-    <extractionChance>0</extractionChance>
-    <weights>
-      <awful>1</awful>
-      <poor>1</poor>
-      <normal>1</normal>
-      <good>1</good>
-      <excellent>1</excellent>
-      <masterwork>1</masterwork>
-      <legendary>1</legendary>
-    </weights>
-    <chances>
-      <awful>0.01</awful>
-      <poor>0.01</poor>
-      <normal>0.01</normal>
-      <good>0.01</good>
-      <excellent>0.01</excellent>
-      <masterwork>0.01</masterwork>
-      <legendary>0.01</legendary>
-    </chances>
+  <Infusion.TierDef ParentName="TI_CommonExcellent">
+    <defName>TI_ApparelCommonExcellent</defName>
   </Infusion.TierDef>
 
-  <Infusion.TierDef>
-    <defName>TI_Record</defName>
-    <label>record</label>
-    <priority>80</priority>
-    <color>(1, 0.5, 0)</color>
-    <infuserValue>12800</infuserValue>
-    <extractionChance>0.01</extractionChance>
-    <weights>
-      <awful>1</awful>
-      <poor>1</poor>
-      <normal>1</normal>
-      <good>1</good>
-      <excellent>1</excellent>
-      <masterwork>1</masterwork>
-      <legendary>1</legendary>
-    </weights>
-    <chances>
-      <awful>0.01</awful>
-      <poor>0.01</poor>
-      <normal>0.01</normal>
-      <good>0.01</good>
-      <excellent>0.01</excellent>
-      <masterwork>0.01</masterwork>
-      <legendary>0.01</legendary>
-    </chances>
+  <Infusion.TierDef ParentName="TI_CommonMasterwork">
+    <defName>TI_ApparelCommonMasterwork</defName>
   </Infusion.TierDef>
--->
+
+  <Infusion.TierDef ParentName="TI_CommonLegendary">
+    <defName>TI_ApparelCommonLegendary</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_ModAwful">
+    <defName>TI_ApparelModAwful</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_ModPoor">
+    <defName>TI_ApparelModPoor</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_ModNormal">
+    <defName>TI_ApparelModNormal</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_ModGood">
+    <defName>TI_ApparelModGood</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_ModExcellent">
+    <defName>TI_ApparelModExcellent</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_ModMasterwork">
+    <defName>TI_ApparelModMasterwork</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_ModLegendary">
+    <defName>TI_ApparelModLegendary</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_AlternateNormal">
+    <defName>TI_ApparelAlternateNormal</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_AlternateGood">
+    <defName>TI_ApparelAlternateGood</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_AlternateExcellent">
+    <defName>TI_ApparelAlternateExcellent</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_AlternateMasterwork">
+    <defName>TI_ApparelAlternateMasterwork</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_AlternateLegendary">
+    <defName>TI_ApparelAlternateLegendary</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_MagicNormal">
+    <defName>TI_ApparelMagicNormal</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_MagicGood">
+    <defName>TI_ApparelMagicGood</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_MagicExcellent">
+    <defName>TI_ApparelMagicExcellent</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_MagicMasterwork">
+    <defName>TI_ApparelMagicMasterwork</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_MagicLegendary">
+    <defName>TI_ApparelMagicLegendary</defName>
+  </Infusion.TierDef>
+
+
 </Defs>
