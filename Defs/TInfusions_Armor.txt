@@ -1,0 +1,1442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<Infusion.TierDef ParentName="TI_Broken">
+    <defName>TI_ApparelBroken</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_Bad">
+    <defName>TI_ApparelBad</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_1Level">
+    <defName>TI_Apparel1Level</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_2Level">
+    <defName>TI_Apparel2Level</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_3Level">
+    <defName>TI_Apparel3Level</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_4Level">
+    <defName>TI_Apparel4Level</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_5Level">
+    <defName>TI_Apparel5Level</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_6Level">
+    <defName>TI_Apparel6Level</defName>
+  </Infusion.TierDef>
+
+  <Infusion.TierDef ParentName="TI_7Level">
+    <defName>TI_Apparel7Level</defName>
+  </Infusion.TierDef>
+
+  
+  <Infusion.TierDef ParentName="TI_8Level">
+    <defName>TI_Apparel8Level</defName>
+  </Infusion.TierDef>
+
+  
+  <Infusion.TierDef ParentName="TI_9Level">
+    <defName>TI_Apparel9Level</defName>
+  </Infusion.TierDef>
+
+  
+  <Infusion.TierDef ParentName="TI_10Level">
+    <defName>TI_Apparel10Level</defName>
+  </Infusion.TierDef>
+
+    <!-- thickness -->
+    <Infusion.InfusionDef ParentName="TI_ArmorBad">
+        <defName>TI_ArmorBad_Thin</defName>
+        <label>thin</label>
+        <labelShort>thin</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <multiplier>-0.05</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <multiplier>-0.35</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Heat</key>
+                <value>
+                    <multiplier>-0.25</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Insulation_Cold</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>-0.15</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor2Level">
+        <defName>TI_Armor2Level_Thick</defName>
+        <label>thick</label>
+        <labelShort>thick</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <multiplier>0.25</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <multiplier>0.25</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Heat</key>
+                <value>
+                    <multiplier>0.25</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Insulation_Cold</key>
+                <value>
+                    <multiplier>0.25</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>0.25</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- toughness -->
+    <Infusion.InfusionDef ParentName="TI_ArmorBad">
+        <defName>TI_ArmorBad_Flimsy</defName>
+        <label>flimsy</label>
+        <labelShort>flimsy</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <multiplier>-0.05</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor2Level">
+        <defName>TI_Armor2Level_Tough</defName>
+        <label>tough</label>
+        <labelShort>tough</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <multiplier>0.05</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <multiplier>0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>0.3</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor3Level">
+        <defName>TI_Armor3Level_Durable</defName>
+        <label>durable</label>
+        <labelShort>dur</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <multiplier>0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <multiplier>0.55</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+
+    <!-- flexibility -->
+    <Infusion.InfusionDef ParentName="TI_ArmorBad">
+        <defName>TI_ArmorBad_Stiff</defName>
+        <label>stiff</label>
+        <labelShort>stiff</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>0.05</offset>
+                </value>
+            </li>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <offset>-0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>EquipDelay</key>
+                <value>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MeleeDodgeChance</key>
+                <value>
+                    <offset>-2</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor2Level">
+        <defName>TI_Armor2Level_Flexible</defName>
+        <label>flexible</label>
+        <labelShort>flex</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <multiplier>-0.05</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <offset>0.05</offset>
+                </value>
+            </li>
+            <li>
+                <key>EquipDelay</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MeleeDodgeChance</key>
+                <value>
+                    <offset>1</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- reinforced -->
+    <Infusion.InfusionDef ParentName="TI_Armor2Level">
+        <defName>TI_Armor2Level_Strengthened</defName>
+        <label>strengthened</label>
+        <labelShort>strng</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>IncomingDamageFactor</key>
+                <value>
+                    <offset>-0.01</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor3Level">
+        <defName>TI_Armor3Level_Reinforced</defName>
+        <label>reinforced</label>
+        <labelShort>reinf</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <offset>0.2</offset>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>0.2</offset>
+                </value>
+            </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>IncomingDamageFactor</key>
+                <value>
+                    <offset>-0.03</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor4Level">
+        <defName>TI_Armor4Level_Armored</defName>
+        <label>armored</label>
+        <labelShort>armor</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <offset>0.4</offset>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>0.4</offset>
+                </value>
+            </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>IncomingDamageFactor</key>
+                <value>
+                    <offset>-0.05</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+
+    <!-- light -->
+    <Infusion.InfusionDef ParentName="TI_Armor2Level">
+        <defName>TI_Armor2Level_Light</defName>
+        <label>light</label>
+        <labelShort>light</labelShort>
+        <stats>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <offset>0.05</offset>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor4Level">
+        <defName>TI_Armor4Level_Weightless</defName>
+        <label>weightless</label>
+        <labelShort>wless</labelShort>
+        <stats>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <offset>0.2</offset>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>-0.75</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- heavy -->
+    <Infusion.InfusionDef ParentName="TI_Armor2Level">
+        <defName>TI_Armor2Level_Weighty</defName>
+        <label>weighty</label>
+        <labelShort>wght</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <multiplier>0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <multiplier>0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <multiplier>-0.05</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>0.1</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor3Level">
+        <defName>TI_Armor3Level_Heavy</defName>
+        <label>heavy</label>
+        <labelShort>heavy</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <multiplier>0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <multiplier>0.4</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <offset>-0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>0.3</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor3Level">
+        <defName>TI_Armor3Level_Massive</defName>
+        <label>massive</label>
+        <labelShort>mass</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <multiplier>0.3</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <multiplier>0.8</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <offset>-0.2</offset>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>0.8</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- small -->
+    <Infusion.InfusionDef ParentName="TI_Armor1Level">
+        <defName>TI_Armor1Level_Mini</defName>
+        <label>mini</label>
+        <labelShort>mini</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <multiplier>-0.4</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <multiplier>-0.4</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <offset>0.075</offset>
+                </value>
+            </li>
+            <li>
+                <key>Mass</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- beauty -->
+    <Infusion.InfusionDef ParentName="TI_ArmorBad">
+        <defName>TI_ArmorBad_Ugly</defName>
+        <label>ugly</label>
+        <labelShort>ugly</labelShort>
+        <stats>
+            <li>
+                <key>PawnBeauty</key>
+                <value>
+                    <offset>-0.3</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor2Level">
+        <defName>TI_Armor2Level_Pretty</defName>
+        <label>pretty</label>
+        <labelShort>pretty</labelShort>
+        <stats>
+            <li>
+                <key>PawnBeauty</key>
+                <value>
+                    <offset>0.3</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor2Level">
+        <defName>TI_Armor2Level_Decorated</defName>
+        <label>decorated</label>
+        <labelShort>decor</labelShort>
+        <stats>
+            <li>
+                <key>PawnBeauty</key>
+                <value>
+                    <offset>0.2</offset>
+                </value>
+            </li>
+            <li>
+                <key>SocialImpact</key>
+                <value>
+                    <offset>0.01</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor2Level">
+        <defName>TI_Armor2Level_Shiny</defName>
+        <label>shiny</label>
+        <labelShort>shiny</labelShort>
+        <stats>
+            <li>
+                <key>PawnBeauty</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>SocialImpact</key>
+                <value>
+                    <offset>0.02</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor2Level">
+        <defName>TI_Armor2Level_Glittering</defName>
+        <label>glittering</label>
+        <labelShort>glitter</labelShort>
+        <stats>
+            <li>
+                <key>PawnBeauty</key>
+                <value>
+                    <offset>0.15</offset>
+                </value>
+            </li>
+            <li>
+                <key>SocialImpact</key>
+                <value>
+                    <offset>0.015</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor3Level">
+        <defName>TI_Armor3Level_Beautiful</defName>
+        <label>beautiful</label>
+        <labelShort>beaut</labelShort>
+        <stats>
+            <li>
+                <key>PawnBeauty</key>
+                <value>
+                    <offset>0.5</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor3Level">
+        <defName>TI_Armor3Level_Cute</defName>
+        <label>cute</label>
+        <labelShort>cute</labelShort>
+        <stats>
+            <li>
+                <key>PawnBeauty</key>
+                <value>
+                    <offset>0.4</offset>
+                </value>
+            </li>
+            <li>
+                <key>SocialImpact</key>
+                <value>
+                    <offset>0.04</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_Armor3Level">
+        <defName>TI_Armor3Level_Stylish</defName>
+        <label>stylish</label>
+        <labelShort>style</labelShort>
+        <stats>
+            <li>
+                <key>PawnBeauty</key>
+                <value>
+                    <offset>0.3</offset>
+                </value>
+            </li>
+            <li>
+                <key>SocialImpact</key>
+                <value>
+                    <offset>0.05</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_Armor4Level">
+        <defName>TI_Armor4Level_Gorgeous</defName>
+        <label>gorgeous</label>
+        <labelShort>gorg</labelShort>
+        <stats>
+            <li>
+                <key>PawnBeauty</key>
+                <value>
+                    <offset>1</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- comfort -->
+    <Infusion.InfusionDef ParentName="TI_ArmorBad">
+        <defName>TI_ArmorBad_Uncomfortable</defName>
+        <label>uncomfortable</label>
+        <labelShort>uncomf</labelShort>
+        <stats>
+            <li>
+                <key>MentalBreakThreshold</key>
+                <value>
+                    <offset>0.01</offset>
+                </value>
+            </li>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <offset>-0.05</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor3Level">
+        <defName>TI_Armor3Level_Comfortable</defName>
+        <label>comfortable</label>
+        <labelShort>comfy</labelShort>
+        <stats>
+            <li>
+                <key>MentalBreakThreshold</key>
+                <value>
+                    <offset>-0.01</offset>
+                </value>
+            </li>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <multiplier>0.04</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor3Level">
+        <defName>TI_Armor3Level_Cosy</defName>
+        <label>cosy</label>
+        <labelShort>cosy</labelShort>
+        <stats>
+            <li>
+                <key>MentalBreakThreshold</key>
+                <value>
+                    <offset>-0.01</offset>
+                </value>
+            </li>
+            <li>
+                <key>Insulation_Cold</key>
+                <value>
+                    <offset>5</offset>
+                </value>
+            </li>
+            <li>
+                <key>RestRateMultiplier</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- warm -->
+
+    <Infusion.InfusionDef ParentName="TI_ArmorBad">
+        <defName>TI_ArmorBad_Cold</defName>
+        <label>cold</label>
+        <labelShort>cold</labelShort>
+        <stats>
+            <li>
+                <key>Insulation_Cold</key>
+                <value>
+                    <offset>-5</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor2Level">
+        <defName>TI_Armor2Level_Warm</defName>
+        <label>warm</label>
+        <labelShort>warm</labelShort>
+        <stats>
+            <li>
+                <key>Insulation_Cold</key>
+                <value>
+                    <offset>8</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor3Level">
+        <defName>TI_Armor3Level_Insulating</defName>
+        <label>insulating</label>
+        <labelShort>insl</labelShort>
+        <stats>
+            <li>
+                <key>Insulation_Cold</key>
+                <value>
+                    <offset>14</offset>
+                </value>
+            </li>
+            <li>
+                <key>Insulation_Heat</key>
+                <value>
+                    <offset>11</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- clean -->
+
+    <Infusion.InfusionDef ParentName="TI_ArmorBad">
+        <defName>TI_ArmorBad_Dirty</defName>
+        <label>dirty</label>
+        <labelShort>dirt</labelShort>
+        <stats>
+            <li>
+                <key>PawnBeauty</key>
+                <value>
+                    <offset>-0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>ImmunityGainSpeed</key>
+                <value>
+                    <offset>-0.01</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor2Level">
+        <defName>TI_Armor2Level_Clean</defName>
+        <label>clean</label>
+        <labelShort>clean</labelShort>
+        <stats>
+            <li>
+                <key>PawnBeauty</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>ImmunityGainSpeed</key>
+                <value>
+                    <offset>0.01</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor3Level">
+        <defName>TI_Armor3Level_Sanitary</defName>
+        <label>sanitary</label>
+        <labelShort>sntr</labelShort>
+        <stats>
+            <li>
+                <key>ImmunityGainSpeed</key>
+                <value>
+                    <offset>0.02</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor4Level">
+        <defName>TI_Armor4Level_Disinfected</defName>
+        <label>disinfected</label>
+        <labelShort>dsnf</labelShort>
+        <stats>
+            <li>
+                <key>ImmunityGainSpeed</key>
+                <value>
+                    <offset>0.03</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor5Level">
+        <defName>TI_Armor5Level_Sterile</defName>
+        <label>sterile</label>
+        <labelShort>strl</labelShort>
+        <stats>
+            <li>
+                <key>ImmunityGainSpeed</key>
+                <value>
+                    <offset>0.04</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- quality -->
+
+    <Infusion.InfusionDef ParentName="TI_ArmorBad">
+        <defName>TI_ArmorBad_Crude</defName>
+        <label>crude</label>
+        <labelShort>crude</labelShort>
+        <stats>
+            <li>
+                <key>PawnBeauty</key>
+                <value>
+                    <offset>-0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>MentalBreakThreshold</key>
+                <value>
+                    <offset>0.01</offset>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <multiplier>-0.05</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <multiplier>-0.05</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>-0.05</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ArmorBad">
+        <defName>TI_ArmorBad_Primitive</defName>
+        <label>primitive</label>
+        <labelShort>prmtv</labelShort>
+        <stats>
+            <li>
+                <key>PawnBeauty</key>
+                <value>
+                    <offset>-0.1</offset>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MaxHitPoints</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+
+    <!-- fitting -->
+
+    <Infusion.InfusionDef ParentName="TI_ArmorBad">
+        <defName>TI_ArmorBad_Tight</defName>
+        <label>tight</label>
+        <labelShort>tight</labelShort>
+        <stats>
+            <li>
+                <key>MentalBreakThreshold</key>
+                <value>
+                    <multiplier>-0.02</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <multiplier>-0.2</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <offset>0.1</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_ArmorBad">
+        <defName>TI_ArmorBad_Baggy</defName>
+        <label>baggy</label>
+        <labelShort>bag</labelShort>
+        <stats>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <offset>-0.05</offset>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>0.04</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+
+    <!-- shields -->
+    <Infusion.InfusionDef ParentName="TI_ShieldBad">
+        <defName>TI_ShieldBad_LowCapacity</defName>
+        <label>low capacity</label>
+        <labelShort>lowcap</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Shield2Level">
+        <defName>TI_Shield2Level_HigherCapacity</defName>
+        <label>higher capacity</label>
+        <labelShort>cap+</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>0.2</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Shield3Level">
+        <defName>TI_Shield3Level_HighCapacity</defName>
+        <label>high capacity</label>
+        <labelShort>hghcap</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>0.4</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Shield5Level">
+        <defName>TI_Shield5Level_UltraHighCapacity</defName>
+        <label>ultra high capacity</label>
+        <labelShort>ultra-c</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>1</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- recharge -->
+
+    <Infusion.InfusionDef ParentName="TI_ShieldBad">
+        <defName>TI_ShieldBad_SlowCharging</defName>
+        <label>slow-charging</label>
+        <labelShort>slow-ch</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>-0.4</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Shield2Level">
+        <defName>TI_Shield2Level_FastCharging</defName>
+        <label>fast-charging</label>
+        <labelShort>fast-ch</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>0.2</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Shield4Level">
+        <defName>TI_Shield4Level_QuickCharging</defName>
+        <label>quick-charging</label>
+        <labelShort>qck-ch</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>0.4</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Shield5Level">
+        <defName>TI_Shield5Level_RapidCharging</defName>
+        <label>rapid-charging</label>
+        <labelShort>rpd-ch</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>0.65</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- size -->
+    <Infusion.InfusionDef ParentName="TI_Shield2Level">
+        <defName>TI_Shield2Level_Light</defName>
+        <label>light</label>
+        <labelShort>light</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Shield2Level">
+        <defName>TI_Shield2Level_Heavy</defName>
+        <label>heavy</label>
+        <labelShort>heavy</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>-0.4</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Shield4Level">
+        <defName>TI_Shield4Level_HeavyDuty</defName>
+        <label>heavy duty</label>
+        <labelShort>heavy</labelShort>
+        <stats>
+            <li>
+                <key>EnergyShieldRechargeRate</key>
+                <value>
+                    <multiplier>-0.6</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>EnergyShieldEnergyMax</key>
+                <value>
+                    <multiplier>1.2</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <!-- sound -->
+    <Infusion.InfusionDef ParentName="TI_BulletBad">
+        <defName>TI_BulletBad_Loud</defName>
+        <label>loud</label>
+        <labelShort>loud</labelShort>
+        <stats>
+            <li>
+                <key>HuntingStealth</key>
+                <value>
+                    <offset>-0.4</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Bullet2Level">
+        <defName>TI_Bullet2Level_Muffled</defName>
+        <label>muffled</label>
+        <labelShort>muffl</labelShort>
+        <stats>
+            <li>
+                <key>HuntingStealth</key>
+                <value>
+                    <offset>0.4</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Bullet3Level">
+        <defName>TI_Bullet3Level_Silent</defName>
+        <label>silent</label>
+        <labelShort>sil</labelShort>
+        <stats>
+            <li>
+                <key>HuntingStealth</key>
+                <value>
+                    <offset>1</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_Armor4Level">
+        <defName>TI_Armor4Level_BluntProtection</defName>
+        <label>Blunt Protection</label>
+        <labelShort>bluntp</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>0.5</offset>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <offset>-0.25</offset>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Heat</key>
+                <value>
+                    <offset>-0.25</offset>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Significantly better protection from blunt attacks, but worse protection from sharp and heat.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor4Level">
+        <defName>TI_Armor4Level_SharpProtection</defName>
+        <label>Sharp Protection</label>
+        <labelShort>sharpp</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>-0.25</offset>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <offset>0.5</offset>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Heat</key>
+                <value>
+                    <offset>-0.25</offset>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Significantly better protection from sharp attacks, but worse protection from blunt and heat.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_Armor4Level">
+        <defName>TI_Armor4Level_HeatProtection</defName>
+        <label>Heat Protection</label>
+        <labelShort>heatp</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>-0.25</offset>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <offset>-0.25</offset>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Heat</key>
+                <value>
+                    <offset>0.75</offset>
+                    <multiplier>0.75</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Insulation_Heat</key>
+                <value>
+                    <offset>40</offset>
+                </value>
+            </li>
+            <li>
+                <key>Flammability</key>
+                <value>
+                    <multiplier>-0.75</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Significantly better protection from heat, but worse protection from sharp and blunt.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor4Level">
+        <defName>TI_Armor4Level_Tank</defName>
+        <label>Tank</label>
+        <labelShort>tank</labelShort>
+        <stats>
+            <li>
+                <key>ArmorRating_Blunt</key>
+                <value>
+                    <offset>0.25</offset>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Sharp</key>
+                <value>
+                    <offset>0.25</offset>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>ArmorRating_Heat</key>
+                <value>
+                    <offset>0.25</offset>
+                    <multiplier>0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>Insulation_Heat</key>
+                <value>
+                    <offset>25</offset>
+                </value>
+            </li>
+            <li>
+                <key>Insulation_Cold</key>
+                <value>
+                    <offset>25</offset>
+                </value>
+            </li>
+            <li>
+                <key>Flammability</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>MoveSpeed</key>
+                <value>
+                    <offset>-1</offset>
+                    <multiplier>-0.3</multiplier>
+                </value>
+            </li>
+        </stats>
+        <extraDescriptions>
+            <li>Offers huge protection but slows the user down significantly.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Armor4Level">
+        <defName>TI_Armor4Level_AntibacterialCoating</defName>
+        <label>antibacterial coating</label>
+        <!--<position>Suffix</position>-->
+        <labelShort>antib</labelShort>
+        <stats>
+            <li>
+                <key>ImmunityGainSpeed</key>
+                <value>
+                    <offset>0.05</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+
+</Defs>
