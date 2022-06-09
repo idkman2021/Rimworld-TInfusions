@@ -1,5 +1,5 @@
-Adds new infusions, a lot of them have various effects.
+Adds many unique weapon infusions with various effects that change how the weapon works.
 ## Content
 - The mod uses its own tier system with 10 tiers.
-- about 50 unique infusions with 10 tiers each.
-- It is totally playable and I use it but if you have a need to see a proper description wait until I release this in august
+- about 50 unique infusion types, each has 10 infusions for each of the 10 tiers.
+- AUGUST
