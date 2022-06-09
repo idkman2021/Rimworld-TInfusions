@@ -474,7 +474,7 @@
             <li>
                 <key>MeleeWeapon_CooldownMultiplier</key>
                 <value>
-                    <multiplier>0.06</multiplier>
+                    <multiplier>0.04</multiplier>
                 </value>
             </li>
             <li>
@@ -2915,13 +2915,19 @@
 
     <Infusion.InfusionDef ParentName="TI_Ranged1Level">
         <defName>TI_Ranged1Level_Overclocked</defName>
-        <label>overclocked</label>
+        <label>accelerated</label>
         <labelShort>oclck1</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
                     <multiplier>-0.1</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>-0.1</offset>
                 </value>
             </li>
             <li>
@@ -2953,7 +2959,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Ranged2Level">
         <defName>TI_Ranged2Level_Overclocked</defName>
-        <label>overclocked</label>
+        <label>accelerated</label>
         <labelShort>oclck2</labelShort>
         <stats>
             <li>
@@ -3422,9 +3428,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged1Level">
-        <defName>TI_Ranged1Level_Powerful</defName>
-        <label>powerful</label>
-        <labelShort>pow1</labelShort>
+        <defName>TI_Ranged1Level_Strong</defName>
+        <label>strong</label>
+        <labelShort>str1</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -3436,9 +3442,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged2Level">
-        <defName>TI_Ranged2Level_Powerful</defName>
-        <label>powerful</label>
-        <labelShort>pow2</labelShort>
+        <defName>TI_Ranged2Level_Strong</defName>
+        <label>strong</label>
+        <labelShort>str2</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -3450,9 +3456,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged3Level">
-        <defName>TI_Ranged3Level_Powerful</defName>
-        <label>powerful</label>
-        <labelShort>pow3</labelShort>
+        <defName>TI_Ranged3Level_Strong</defName>
+        <label>strong</label>
+        <labelShort>str3</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -3464,9 +3470,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged4Level">
-        <defName>TI_Ranged4Level_Powerful</defName>
-        <label>powerful</label>
-        <labelShort>pow4</labelShort>
+        <defName>TI_Ranged4Level_Strong</defName>
+        <label>strong</label>
+        <labelShort>str4</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -3478,9 +3484,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged5Level">
-        <defName>TI_Ranged5Level_Powerful</defName>
-        <label>very powerful</label>
-        <labelShort>pow5</labelShort>
+        <defName>TI_Ranged5Level_Strong</defName>
+        <label>very strong</label>
+        <labelShort>str5</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -3492,9 +3498,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged6Level">
-        <defName>TI_Ranged6Level_Powerful</defName>
-        <label>very powerful</label>
-        <labelShort>pow6</labelShort>
+        <defName>TI_Ranged6Level_Strong</defName>
+        <label>very strong</label>
+        <labelShort>str6</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -3506,9 +3512,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged7Level">
-        <defName>TI_Ranged7Level_Powerful</defName>
-        <label>very powerful</label>
-        <labelShort>pow7</labelShort>
+        <defName>TI_Ranged7Level_Strong</defName>
+        <label>very strong</label>
+        <labelShort>str7</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -3520,9 +3526,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged8Level">
-        <defName>TI_Ranged8Level_Powerful</defName>
-        <label>very powerful</label>
-        <labelShort>pow8</labelShort>
+        <defName>TI_Ranged8Level_Strong</defName>
+        <label>very strong</label>
+        <labelShort>str8</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -3534,9 +3540,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged9Level">
-        <defName>TI_Ranged9Level_Powerful</defName>
-        <label>very powerful</label>
-        <labelShort>pow9</labelShort>
+        <defName>TI_Ranged9Level_Strong</defName>
+        <label>very strong</label>
+        <labelShort>str9</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -3548,9 +3554,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged10Level">
-        <defName>TI_Ranged10Level_Powerful</defName>
-        <label>ultra powerful</label>
-        <labelShort>pow10</labelShort>
+        <defName>TI_Ranged10Level_Strong</defName>
+        <label>ultra strong</label>
+        <labelShort>str10</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -3562,9 +3568,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged11Level">
-        <defName>TI_Ranged11Level_Powerful</defName>
+        <defName>TI_Ranged11Level_Strong</defName>
         <label>Destroyer</label>
-        <labelShort>pow11</labelShort>
+        <labelShort>str11</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -3590,25 +3596,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <multiplier>-0.06</multiplier>
+                    <multiplier>-0.04</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <multiplier>-0.06</multiplier>
+                    <multiplier>-0.04</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <multiplier>-0.06</multiplier>
+                    <multiplier>-0.04</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <multiplier>-0.06</multiplier>
+                    <multiplier>-0.04</multiplier>
                 </value>
             </li>
         </stats>
@@ -4421,7 +4427,7 @@
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <multiplier>-0.06</multiplier>
+                    <multiplier>-0.04</multiplier>
                 </value>
             </li>
             <li>
@@ -5728,14 +5734,13 @@
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
-                    <multiplier>2</multiplier>
+                    <multiplier>3</multiplier>
                 </value>
             </li>
         </stats>
     </Infusion.InfusionDef>
 
 
-    <!-- TODO  1-->
     <Infusion.InfusionDef ParentName="TI_Ranged1Level">
         <defName>TI_Ranged1Level_RangeShort</defName>
         <label>short-range</label>
@@ -6518,7 +6523,7 @@
         </stats>
     </Infusion.InfusionDef>
 
-    <!-- TODO  4-->
+
     <Infusion.InfusionDef ParentName="TI_Ranged1Level">
         <defName>TI_Ranged1Level_AccuracyOffset</defName>
         <label>stabilized</label>
@@ -6527,25 +6532,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>0.05</offset>
+                    <offset>0.03</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>0.05</offset>
+                    <offset>0.03</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>0.05</offset>
+                    <offset>0.03</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>0.05</offset>
+                    <offset>0.03</offset>
                 </value>
             </li>
         </stats>
@@ -6559,25 +6564,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>0.1</offset>
+                    <offset>0.06</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>0.1</offset>
+                    <offset>0.06</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>0.1</offset>
+                    <offset>0.06</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>0.1</offset>
+                    <offset>0.06</offset>
                 </value>
             </li>
         </stats>
@@ -6592,25 +6597,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>0.15</offset>
+                    <offset>0.09</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>0.15</offset>
+                    <offset>0.09</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>0.15</offset>
+                    <offset>0.09</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>0.15</offset>
+                    <offset>0.09</offset>
                 </value>
             </li>
         </stats>
@@ -6624,25 +6629,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>0.2</offset>
+                    <offset>0.12</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>0.2</offset>
+                    <offset>0.12</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>0.2</offset>
+                    <offset>0.12</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>0.2</offset>
+                    <offset>0.12</offset>
                 </value>
             </li>
         </stats>
@@ -6656,25 +6661,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>0.25</offset>
+                    <offset>0.15</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>0.25</offset>
+                    <offset>0.15</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>0.25</offset>
+                    <offset>0.15</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>0.25</offset>
+                    <offset>0.15</offset>
                 </value>
             </li>
         </stats>
@@ -6688,25 +6693,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>0.3</offset>
+                    <offset>0.18</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>0.3</offset>
+                    <offset>0.18</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>0.3</offset>
+                    <offset>0.18</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>0.3</offset>
+                    <offset>0.18</offset>
                 </value>
             </li>
         </stats>
@@ -6720,25 +6725,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>0.35</offset>
+                    <offset>0.21</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>0.35</offset>
+                    <offset>0.21</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>0.35</offset>
+                    <offset>0.21</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>0.35</offset>
+                    <offset>0.21</offset>
                 </value>
             </li>
         </stats>
@@ -6753,25 +6758,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>0.4</offset>
+                    <offset>0.24</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>0.4</offset>
+                    <offset>0.24</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>0.4</offset>
+                    <offset>0.24</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>0.4</offset>
+                    <offset>0.24</offset>
                 </value>
             </li>
         </stats>
@@ -6785,25 +6790,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>0.45</offset>
+                    <offset>0.27</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>0.45</offset>
+                    <offset>0.27</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>0.45</offset>
+                    <offset>0.27</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>0.45</offset>
+                    <offset>0.27</offset>
                 </value>
             </li>
         </stats>
@@ -6817,25 +6822,25 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>0.5</offset>
+                    <offset>0.3</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>0.5</offset>
+                    <offset>0.3</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>0.5</offset>
+                    <offset>0.3</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>0.5</offset>
+                    <offset>0.3</offset>
                 </value>
             </li>
         </stats>
@@ -6849,32 +6854,32 @@
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <offset>0.75</offset>
+                    <offset>0.6</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <offset>0.75</offset>
+                    <offset>0.6</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <offset>0.75</offset>
+                    <offset>0.6</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <offset>0.75</offset>
+                    <offset>0.6</offset>
                 </value>
             </li>
         </stats>
     </Infusion.InfusionDef>
 
 
-    <!-- TODO  5 -->
+    <!-- tough -->
     <Infusion.InfusionDef ParentName="TI_Blunt1Level">
         <defName>TI_Blunt1Level_Strength</defName>
         <label>toughened</label>
@@ -7185,9 +7190,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged1Level">
-        <defName>TI_Ranged1Level_Powered</defName>
-        <label>powered</label>
-        <labelShort>pwrd1</labelShort>
+        <defName>TI_Ranged1Level_Powerful</defName>
+        <label>powerful</label>
+        <labelShort>pw1</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -7205,9 +7210,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged2Level">
-        <defName>TI_Ranged2Level_Powered</defName>
-        <label>powered</label>
-        <labelShort>pwrd2</labelShort>
+        <defName>TI_Ranged2Level_Powerful</defName>
+        <label>powerful</label>
+        <labelShort>pw2</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -7225,9 +7230,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged3Level">
-        <defName>TI_Ranged3Level_Powered</defName>
-        <label>powered</label>
-        <labelShort>pwrd3</labelShort>
+        <defName>TI_Ranged3Level_Powerful</defName>
+        <label>powerful</label>
+        <labelShort>pw3</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -7245,9 +7250,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged4Level">
-        <defName>TI_Ranged4Level_Powered</defName>
-        <label>powered</label>
-        <labelShort>pwrd4</labelShort>
+        <defName>TI_Ranged4Level_Powerful</defName>
+        <label>powerful</label>
+        <labelShort>pw4</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -7265,9 +7270,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged5Level">
-        <defName>TI_Ranged5Level_Powered</defName>
-        <label>powered</label>
-        <labelShort>pwrd5</labelShort>
+        <defName>TI_Ranged5Level_Powerful</defName>
+        <label>powerful</label>
+        <labelShort>pw5</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -7285,9 +7290,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged6Level">
-        <defName>TI_Ranged6Level_Powered</defName>
-        <label>powered</label>
-        <labelShort>pwrd6</labelShort>
+        <defName>TI_Ranged6Level_Powerful</defName>
+        <label>very powerful</label>
+        <labelShort>pw6</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -7305,9 +7310,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged7Level">
-        <defName>TI_Ranged7Level_Powered</defName>
-        <label>powered</label>
-        <labelShort>pwrd7</labelShort>
+        <defName>TI_Ranged7Level_Powerful</defName>
+        <label>very powerful</label>
+        <labelShort>pw7</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -7325,9 +7330,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged8Level">
-        <defName>TI_Ranged8Level_Powered</defName>
-        <label>powered</label>
-        <labelShort>pwrd8</labelShort>
+        <defName>TI_Ranged8Level_Powerful</defName>
+        <label>very powerful</label>
+        <labelShort>pw8</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -7344,9 +7349,9 @@
         </stats>
     </Infusion.InfusionDef>
     <Infusion.InfusionDef ParentName="TI_Ranged9Level">
-        <defName>TI_Ranged9Level_Powered</defName>
-        <label>super-powered</label>
-        <labelShort>pwrd9</labelShort>
+        <defName>TI_Ranged9Level_Powerful</defName>
+        <label>very powerful</label>
+        <labelShort>pw9</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -7364,9 +7369,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged10Level">
-        <defName>TI_Ranged10Level_Powered</defName>
-        <label>super-powered</label>
-        <labelShort>pwrd10</labelShort>
+        <defName>TI_Ranged10Level_Powerful</defName>
+        <label>ultra powerful</label>
+        <labelShort>pw10</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -7384,9 +7389,9 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged11Level">
-        <defName>TI_Ranged11Level_Powered</defName>
+        <defName>TI_Ranged11Level_Powerful</defName>
         <label>Mega</label>
-        <labelShort>pwrd11</labelShort>
+        <labelShort>pw11</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -10244,7 +10249,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Melee2Level">
         <defName>TI_Melee2Level_Explosive</defName>
-        <label>incendiary</label>
+        <label>combustible</label>
         <labelShort>expl2</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -10259,7 +10264,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Melee3Level">
         <defName>TI_Melee3Level_Explosive</defName>
-        <label>incendiary</label>
+        <label>explosive</label>
         <labelShort>expl3</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -10274,7 +10279,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Melee4Level">
         <defName>TI_Melee4Level_Explosive</defName>
-        <label>incendiary</label>
+        <label>explosive</label>
         <labelShort>expl4</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -10350,7 +10355,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Melee9Level">
         <defName>TI_Melee9Level_Explosive</defName>
-        <label>eruptive</label>
+        <label>explosive</label>
         <labelShort>expl9</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -10365,7 +10370,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Melee10Level">
         <defName>TI_Melee10Level_Explosive</defName>
-        <label>eruptive</label>
+        <label>explosive</label>
         <labelShort>expl10</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -10419,7 +10424,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Ranged2Level">
         <defName>TI_Ranged2Level_Explosive</defName>
-        <label>incendiary</label>
+        <label>combustible</label>
         <labelShort>expl2</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -10434,7 +10439,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Ranged3Level">
         <defName>TI_Ranged3Level_Explosive</defName>
-        <label>incendiary</label>
+        <label>explosive</label>
         <labelShort>expl3</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -10449,7 +10454,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Ranged4Level">
         <defName>TI_Ranged4Level_Explosive</defName>
-        <label>incendiary</label>
+        <label>explosive</label>
         <labelShort>expl4</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -10932,7 +10937,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Ranged2Level">
         <defName>TI_Ranged2Level_Bomb</defName>
-        <label>bomb</label>
+        <label>blast</label>
         <labelShort>bomb2</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -10948,7 +10953,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Ranged4Level">
         <defName>TI_Ranged4Level_Bomb</defName>
-        <label>bomb</label>
+        <label>blast</label>
         <labelShort>bomb4</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -10964,7 +10969,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Ranged6Level">
         <defName>TI_Ranged6Level_Bomb</defName>
-        <label>bomb</label>
+        <label>blast</label>
         <labelShort>bomb6</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -10980,7 +10985,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Ranged8Level">
         <defName>TI_Ranged8Level_Bomb</defName>
-        <label>bomb</label>
+        <label>blast</label>
         <labelShort>bomb8</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -10997,7 +11002,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Ranged10Level">
         <defName>TI_Ranged10Level_Bomb</defName>
-        <label>bomb</label>
+        <label>blast</label>
         <labelShort>bomb10</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -11013,7 +11018,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Ranged11Level">
         <defName>TI_Ranged11Level_Bomb</defName>
-        <label>Bomber</label>
+        <label>Blaster</label>
         <labelShort>bomb11</labelShort>
         <onHits>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
@@ -12618,7 +12623,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Ranged1Level">
         <defName>TI_Ranged1Level_Napalm</defName>
-        <label>napalm</label>
+        <label>incendiary</label>
         <labelShort>nplm1</labelShort>
         <stats>
             <li>
@@ -12671,7 +12676,7 @@
 
     <Infusion.InfusionDef ParentName="TI_Ranged3Level">
         <defName>TI_Ranged3Level_Napalm</defName>
-        <label>napalm</label>
+        <label>incendiary</label>
         <labelShort>nplm3</labelShort>
         <stats>
             <li>
@@ -13057,7 +13062,7 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    
+
     <Infusion.InfusionDef ParentName="TI_Ranged4Level">
         <defName>TI_Ranged4Level_Extinguish</defName>
         <label>extinguishing</label>
@@ -13098,7 +13103,7 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    
+
     <Infusion.InfusionDef ParentName="TI_Melee1Level">
         <defName>TI_Melee1Level_Extinguish</defName>
         <label>extinguish</label>
@@ -13178,7 +13183,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.01 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13197,11 +13202,11 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.02 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    
+
     <Infusion.InfusionDef ParentName="TI_Melee3Level">
         <defName>TI_Melee3Level_Healing</defName>
         <label>healing III</label>
@@ -13217,7 +13222,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.03 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13228,7 +13233,7 @@
         <position>Suffix</position>
         <onHits>
             <li Class="Infusion.OnHitWorkers.HealCaster">
-                <amount>0.06</amount>
+                <amount>0.04</amount>
             </li>
             <li Class="Infusion.OnHitWorkers.ThrowFleck">
                 <def>HealingCross</def>
@@ -13236,7 +13241,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.04 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13255,7 +13260,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.05 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13274,7 +13279,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.06 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13293,7 +13298,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.07 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13312,7 +13317,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.08 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13331,7 +13336,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.09 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13350,7 +13355,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.1 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13369,11 +13374,11 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Very quickly heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 1 health point in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    
+
     <Infusion.InfusionDef ParentName="TI_Ranged1Level">
         <defName>TI_Ranged1Level_Healing</defName>
         <label>healing I</label>
@@ -13389,7 +13394,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.01 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13408,11 +13413,11 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.02 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    
+
     <Infusion.InfusionDef ParentName="TI_Ranged3Level">
         <defName>TI_Ranged3Level_Healing</defName>
         <label>healing III</label>
@@ -13428,7 +13433,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.03 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13439,7 +13444,7 @@
         <position>Suffix</position>
         <onHits>
             <li Class="Infusion.OnHitWorkers.HealCaster">
-                <amount>0.06</amount>
+                <amount>0.04</amount>
             </li>
             <li Class="Infusion.OnHitWorkers.ThrowFleck">
                 <def>HealingCross</def>
@@ -13447,7 +13452,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.04 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13466,7 +13471,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.05 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13485,7 +13490,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.06 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13504,7 +13509,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.07 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13523,7 +13528,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.08 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13542,7 +13547,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.09 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13561,7 +13566,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 0.1 health points in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13580,7 +13585,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>Very quickly heals user's fresh wounds when dealing damage.</li>
+            <li>Restores 1 health point in one of user's fresh wounds when dealing damage.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13598,7 +13603,7 @@
                             <amount>0.1</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.HealCaster">
-                            <amount>0.025</amount>
+                            <amount>0.03</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.ThrowFleck">
                             <def>HealingCross</def>
@@ -13614,7 +13619,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.03 health points in one of user's fresh wounds, and reduces user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13632,7 +13637,7 @@
                             <amount>0.2</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.HealCaster">
-                            <amount>0.05</amount>
+                            <amount>0.06</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.ThrowFleck">
                             <def>HealingCross</def>
@@ -13648,7 +13653,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.06 health points in one of user's fresh wounds, and reduces user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13666,7 +13671,7 @@
                             <amount>0.3</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.HealCaster">
-                            <amount>0.075</amount>
+                            <amount>0.09</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.ThrowFleck">
                             <def>HealingCross</def>
@@ -13682,7 +13687,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.09 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13700,7 +13705,7 @@
                             <amount>0.4</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.HealCaster">
-                            <amount>0.1</amount>
+                            <amount>0.12</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.ThrowFleck">
                             <def>HealingCross</def>
@@ -13716,7 +13721,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.12 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13734,7 +13739,7 @@
                             <amount>0.5</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.HealCaster">
-                            <amount>0.125</amount>
+                            <amount>0.15</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.ThrowFleck">
                             <def>HealingCross</def>
@@ -13750,7 +13755,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.15 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13768,7 +13773,7 @@
                             <amount>0.6</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.HealCaster">
-                            <amount>0.15</amount>
+                            <amount>0.18</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.ThrowFleck">
                             <def>HealingCross</def>
@@ -13784,7 +13789,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.18 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13802,7 +13807,7 @@
                             <amount>0.7</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.HealCaster">
-                            <amount>0.175</amount>
+                            <amount>0.21</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.ThrowFleck">
                             <def>HealingCross</def>
@@ -13818,7 +13823,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.21 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13836,7 +13841,7 @@
                             <amount>0.8</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.HealCaster">
-                            <amount>0.2</amount>
+                            <amount>0.24</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.ThrowFleck">
                             <def>HealingCross</def>
@@ -13852,7 +13857,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.24 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13870,7 +13875,7 @@
                             <amount>0.9</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.HealCaster">
-                            <amount>0.225</amount>
+                            <amount>0.27</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.ThrowFleck">
                             <def>HealingCross</def>
@@ -13886,7 +13891,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.27 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13904,7 +13909,7 @@
                             <amount>1</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.HealCaster">
-                            <amount>0.25</amount>
+                            <amount>0.3</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.ThrowFleck">
                             <def>HealingCross</def>
@@ -13920,7 +13925,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.3 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -13954,11 +13959,11 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, quickly drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it very quickly to restore 1 health point in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    
+
     <Infusion.InfusionDef ParentName="TI_Ranged1Level">
         <defName>TI_Ranged1Level_Vampiric</defName>
         <label>vampirism I</label>
@@ -13989,7 +13994,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.02 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -14007,7 +14012,7 @@
                             <amount>0.1</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.HealCaster">
-                            <amount>0.06</amount>
+                            <amount>0.04</amount>
                         </li>
                         <li Class="Infusion.OnHitWorkers.ThrowFleck">
                             <def>HealingCross</def>
@@ -14023,7 +14028,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.04 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -14057,7 +14062,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.06 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -14091,7 +14096,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.08 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -14125,7 +14130,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.1 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -14159,7 +14164,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.12 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -14193,7 +14198,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.14 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -14227,7 +14232,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.16 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -14261,7 +14266,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.18 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -14295,7 +14300,7 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it to restore 0.2 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
@@ -14329,16 +14334,17 @@
             </li>
         </onHits>
         <extraDescriptions>
-            <li>If the target has blood, quickly drains it to heal user's fresh wounds.</li>
+            <li>If the target has blood, drains it very quickly to restore 0.5 health points in one of user's fresh wounds, and reduce user's blood loss.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
 
 
-    
     <Infusion.InfusionDef ParentName="TI_Ranged1Level">
-        <defName>TI_Ranged1Level_Random</defName>
-        <label>random I</label>
-        <labelShort>rndm1</labelShort>
+        <defName>TI_Ranged1Level_Chaos</defName>
+        <label>chaos I</label>
+        <position>Suffix</position>
+        <labelShort>chaos1</labelShort>
+        <position>Suffix</position>
         <onHits>
             <!-- hediffs -->
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
@@ -14450,111 +14456,112 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_Ranged2Level">
-        <defName>TI_Ranged2Level_Random</defName>
-        <label>random II</label>
-        <labelShort>rndm2</labelShort>
+        <defName>TI_Ranged2Level_Chaos</defName>
+        <label>chaos II</label>
+        <position>Suffix</position>
+        <labelShort>chaos2</labelShort>
         <onHits>
             <!-- hediffs -->
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>BloodLoss</def>
                 <amount>1</amount>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>ToxicBuildup</def>
                 <amount>1</amount>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
                 <severityScaleBy>ToxicSensitivity</severityScaleBy>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>Hypothermia</def>
                 <amount>1</amount>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>Heatstroke</def>
                 <amount>1</amount>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
                 <def>Malnutrition</def>
                 <amount>1</amount>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
 
             <!-- explosions -->
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
                 <amount>0.5</amount>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Bomb</def>
                 <amount>0.25</amount>
                 <radius>3</radius>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Flame</def>
                 <amount>0.5</amount>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Flame</def>
                 <amount>0.25</amount>
                 <radius>5</radius>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>EMP</def>
                 <amount>1</amount>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>EMP</def>
                 <amount>0.75</amount>
                 <radius>5</radius>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>EMP</def>
                 <amount>0.5</amount>
                 <radius>10</radius>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Smoke</def>
                 <amount>1</amount>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Smoke</def>
                 <amount>0.75</amount>
                 <radius>5</radius>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Smoke</def>
                 <amount>0.5</amount>
                 <radius>10</radius>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Extinguish</def>
                 <amount>1</amount>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Extinguish</def>
                 <amount>0.75</amount>
                 <radius>5</radius>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
             <li Class="Infusion.OnHitWorkers.CreateExplosion">
                 <def>Extinguish</def>
                 <amount>0.5</amount>
                 <radius>10</radius>
-                <chance>0.06</chance>
+                <chance>0.04</chance>
             </li>
 
         </onHits>
@@ -14563,11 +14570,12 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    
+
     <Infusion.InfusionDef ParentName="TI_Ranged3Level">
-        <defName>TI_Ranged3Level_Random</defName>
-        <label>random III</label>
-        <labelShort>rndm3</labelShort>
+        <defName>TI_Ranged3Level_Chaos</defName>
+        <label>chaos III</label>
+        <position>Suffix</position>
+        <labelShort>chaos3</labelShort>
         <onHits>
             <!-- hediffs -->
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
@@ -14678,12 +14686,12 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    
-    
+
     <Infusion.InfusionDef ParentName="TI_Ranged4Level">
-        <defName>TI_Ranged4Level_Random</defName>
-        <label>random IV</label>
-        <labelShort>rndm4</labelShort>
+        <defName>TI_Ranged4Level_Chaos</defName>
+        <label>chaos IV</label>
+        <position>Suffix</position>
+        <labelShort>chaos4</labelShort>
         <onHits>
             <!-- hediffs -->
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
@@ -14795,11 +14803,11 @@
     </Infusion.InfusionDef>
 
 
-    
     <Infusion.InfusionDef ParentName="TI_Ranged5Level">
-        <defName>TI_Ranged5Level_Random</defName>
-        <label>random V</label>
-        <labelShort>rndm5</labelShort>
+        <defName>TI_Ranged5Level_Chaos</defName>
+        <label>chaos V</label>
+        <position>Suffix</position>
+        <labelShort>chaos5</labelShort>
         <onHits>
             <!-- hediffs -->
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
@@ -14910,11 +14918,12 @@
         </extraDescriptions>
     </Infusion.InfusionDef>
 
-    
+
     <Infusion.InfusionDef ParentName="TI_Ranged6Level">
-        <defName>TI_Ranged6Level_Random</defName>
-        <label>random VI</label>
-        <labelShort>rndm6</labelShort>
+        <defName>TI_Ranged6Level_Chaos</defName>
+        <label>chaos VI</label>
+        <position>Suffix</position>
+        <labelShort>chaos6</labelShort>
         <onHits>
             <!-- hediffs -->
             <li Class="Infusion.OnHitWorkers.ApplyHediff">
@@ -15024,5 +15033,1072 @@
             <li>Applies random effects on hits.</li>
         </extraDescriptions>
     </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged1Level">
+        <defName>TI_Ranged1Level_Crit</defName>
+        <label>critical I</label>
+        <position>Suffix</position>
+        <labelShort>crit1</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+                <chance>0.1</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>10% chance for a critical hit that deals 200% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged2Level">
+        <defName>TI_Ranged2Level_Crit</defName>
+        <label>critical II</label>
+        <position>Suffix</position>
+        <labelShort>crit2</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1.2</amount>
+                <chance>0.12</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>12% chance for a critical hit that deals 220% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged3Level">
+        <defName>TI_Ranged3Level_Crit</defName>
+        <label>critical III</label>
+        <position>Suffix</position>
+        <labelShort>crit3</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1.4</amount>
+                <chance>0.14</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>14% chance for a critical hit that deals 240% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged4Level">
+        <defName>TI_Ranged4Level_Crit</defName>
+        <label>critical IV</label>
+        <position>Suffix</position>
+        <labelShort>crit4</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1.6</amount>
+                <chance>0.16</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>16% chance for a critical hit that deals 260% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_Ranged5Level">
+        <defName>TI_Ranged5Level_Crit</defName>
+        <label>critical V</label>
+        <position>Suffix</position>
+        <labelShort>crit5</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1.8</amount>
+                <chance>0.18</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>18% chance for a critical hit that deals 280% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged6Level">
+        <defName>TI_Ranged6Level_Crit</defName>
+        <label>critical VI</label>
+        <position>Suffix</position>
+        <labelShort>crit6</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>2</amount>
+                <chance>0.2</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>20% chance for a critical hit that deals 300% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged7Level">
+        <defName>TI_Ranged7Level_Crit</defName>
+        <label>critical VII</label>
+        <position>Suffix</position>
+        <labelShort>crit7</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>2.2</amount>
+                <chance>0.22</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>22% chance for a critical hit that deals 320% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged8Level">
+        <defName>TI_Ranged8Level_Crit</defName>
+        <label>critical VIII</label>
+        <position>Suffix</position>
+        <labelShort>crit8</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>2.4</amount>
+                <chance>0.24</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>24% chance for a critical hit that deals 340% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged9Level">
+        <defName>TI_Ranged9Level_Crit</defName>
+        <label>critical IX</label>
+        <position>Suffix</position>
+        <labelShort>crit9</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>2.6</amount>
+                <chance>0.26</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>26% chance for a critical hit that deals 360% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged10Level">
+        <defName>TI_Ranged10Level_Crit</defName>
+        <label>critical X</label>
+        <position>Suffix</position>
+        <labelShort>crit10</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>3</amount>
+                <chance>0.3</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>30% chance for a critical hit that deals 400% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged11Level">
+        <defName>TI_Ranged11Level_Crit</defName>
+        <label>Critical Hits</label>
+        <position>Suffix</position>
+        <labelShort>crit11</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>10</amount>
+                <chance>0.2</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>20% chance for a critical hit that deals 1000% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_Sharp1Level">
+        <defName>TI_Sharp1Level_Crit</defName>
+        <label>critical I</label>
+        <position>Suffix</position>
+        <labelShort>crit1</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stab</def>
+                <amount>1</amount>
+                <chance>0.1</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>10% chance for a critical hit that deals 200% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Sharp2Level">
+        <defName>TI_Sharp2Level_Crit</defName>
+        <label>critical II</label>
+        <position>Suffix</position>
+        <labelShort>crit2</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stab</def>
+                <amount>1.2</amount>
+                <chance>0.12</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>12% chance for a critical hit that deals 220% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Sharp3Level">
+        <defName>TI_Sharp3Level_Crit</defName>
+        <label>critical III</label>
+        <position>Suffix</position>
+        <labelShort>crit3</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stab</def>
+                <amount>1.4</amount>
+                <chance>0.14</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>14% chance for a critical hit that deals 240% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Sharp4Level">
+        <defName>TI_Sharp4Level_Crit</defName>
+        <label>critical IV</label>
+        <position>Suffix</position>
+        <labelShort>crit4</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stab</def>
+                <amount>1.6</amount>
+                <chance>0.16</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>16% chance for a critical hit that deals 260% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_Sharp5Level">
+        <defName>TI_Sharp5Level_Crit</defName>
+        <label>critical V</label>
+        <position>Suffix</position>
+        <labelShort>crit5</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stab</def>
+                <amount>1.8</amount>
+                <chance>0.18</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>18% chance for a critical hit that deals 280% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Sharp6Level">
+        <defName>TI_Sharp6Level_Crit</defName>
+        <label>critical VI</label>
+        <position>Suffix</position>
+        <labelShort>crit6</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stab</def>
+                <amount>2</amount>
+                <chance>0.2</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>20% chance for a critical hit that deals 300% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Sharp7Level">
+        <defName>TI_Sharp7Level_Crit</defName>
+        <label>critical VII</label>
+        <position>Suffix</position>
+        <labelShort>crit7</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stab</def>
+                <amount>2.2</amount>
+                <chance>0.22</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>22% chance for a critical hit that deals 320% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Sharp8Level">
+        <defName>TI_Sharp8Level_Crit</defName>
+        <label>critical VIII</label>
+        <position>Suffix</position>
+        <labelShort>crit8</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stab</def>
+                <amount>2.4</amount>
+                <chance>0.24</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>24% chance for a critical hit that deals 340% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Sharp9Level">
+        <defName>TI_Sharp9Level_Crit</defName>
+        <label>critical IX</label>
+        <position>Suffix</position>
+        <labelShort>crit9</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stab</def>
+                <amount>2.6</amount>
+                <chance>0.26</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>26% chance for a critical hit that deals 360% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Sharp10Level">
+        <defName>TI_Sharp10Level_Crit</defName>
+        <label>critical X</label>
+        <position>Suffix</position>
+        <labelShort>crit10</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stab</def>
+                <amount>3</amount>
+                <chance>0.3</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>30% chance for a critical hit that deals 400% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Sharp11Level">
+        <defName>TI_Sharp11Level_Crit</defName>
+        <label>Critical Hits</label>
+        <position>Suffix</position>
+        <labelShort>crit11</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Stab</def>
+                <amount>10</amount>
+                <chance>0.2</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>20% chance for a critical hit that deals 1000% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_Blunt1Level">
+        <defName>TI_Blunt1Level_Crit</defName>
+        <label>critical I</label>
+        <position>Suffix</position>
+        <labelShort>crit1</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Blunt</def>
+                <amount>1</amount>
+                <chance>0.1</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>10% chance for a critical hit that deals 200% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Blunt2Level">
+        <defName>TI_Blunt2Level_Crit</defName>
+        <label>critical II</label>
+        <position>Suffix</position>
+        <labelShort>crit2</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Blunt</def>
+                <amount>1.2</amount>
+                <chance>0.12</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>12% chance for a critical hit that deals 220% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Blunt3Level">
+        <defName>TI_Blunt3Level_Crit</defName>
+        <label>critical III</label>
+        <position>Suffix</position>
+        <labelShort>crit3</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Blunt</def>
+                <amount>1.4</amount>
+                <chance>0.14</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>14% chance for a critical hit that deals 240% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Blunt4Level">
+        <defName>TI_Blunt4Level_Crit</defName>
+        <label>critical IV</label>
+        <position>Suffix</position>
+        <labelShort>crit4</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Blunt</def>
+                <amount>1.6</amount>
+                <chance>0.16</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>16% chance for a critical hit that deals 260% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_Blunt5Level">
+        <defName>TI_Blunt5Level_Crit</defName>
+        <label>critical V</label>
+        <position>Suffix</position>
+        <labelShort>crit5</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Blunt</def>
+                <amount>1.8</amount>
+                <chance>0.18</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>18% chance for a critical hit that deals 280% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Blunt6Level">
+        <defName>TI_Blunt6Level_Crit</defName>
+        <label>critical VI</label>
+        <position>Suffix</position>
+        <labelShort>crit6</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Blunt</def>
+                <amount>2</amount>
+                <chance>0.2</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>20% chance for a critical hit that deals 300% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Blunt7Level">
+        <defName>TI_Blunt7Level_Crit</defName>
+        <label>critical VII</label>
+        <position>Suffix</position>
+        <labelShort>crit7</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Blunt</def>
+                <amount>2.2</amount>
+                <chance>0.22</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>22% chance for a critical hit that deals 320% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Blunt8Level">
+        <defName>TI_Blunt8Level_Crit</defName>
+        <label>critical VIII</label>
+        <position>Suffix</position>
+        <labelShort>crit8</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Blunt</def>
+                <amount>2.4</amount>
+                <chance>0.24</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>24% chance for a critical hit that deals 340% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Blunt9Level">
+        <defName>TI_Blunt9Level_Crit</defName>
+        <label>critical IX</label>
+        <position>Suffix</position>
+        <labelShort>crit9</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Blunt</def>
+                <amount>2.6</amount>
+                <chance>0.26</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>26% chance for a critical hit that deals 360% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Blunt10Level">
+        <defName>TI_Blunt10Level_Crit</defName>
+        <label>critical X</label>
+        <position>Suffix</position>
+        <labelShort>crit10</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Blunt</def>
+                <amount>3</amount>
+                <chance>0.3</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>30% chance for a critical hit that deals 400% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Blunt11Level">
+        <defName>TI_Blunt11Level_Crit</defName>
+        <label>Critical Hits</label>
+        <position>Suffix</position>
+        <labelShort>crit11</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Blunt</def>
+                <amount>10</amount>
+                <chance>0.2</chance>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>20% chance for a critical hit that deals 1000% damage.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_Ranged2Level">
+        <defName>TI_Ranged2Level_Multi</defName>
+        <label>double</label>
+        <labelShort>2x</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>0.55</multiplier>
+                </value>
+            </li>
+        </stats>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Deals 55% damage two times.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged4Level">
+        <defName>TI_Ranged4Level_Multi</defName>
+        <label>triple</label>
+        <labelShort>3x</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>0.4</multiplier>
+                </value>
+            </li>
+        </stats>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Deals 40% damage three times.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged6Level">
+        <defName>TI_Ranged6Level_Multi</defName>
+        <label>quadruple</label>
+        <labelShort>4x</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>0.35</multiplier>
+                </value>
+            </li>
+        </stats>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Deals 35% damage four times.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged8Level">
+        <defName>TI_Ranged6Level_Multi</defName>
+        <label>octuple</label>
+        <labelShort>8x</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>0.2</multiplier>
+                </value>
+            </li>
+        </stats>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Deals 20% damage eight times.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged10Level">
+        <defName>TI_Ranged6Level_Multi</defName>
+        <label>decuple</label>
+        <labelShort>10x</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>0.18</multiplier>
+                </value>
+            </li>
+        </stats>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Deals 18% damage ten times.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged11Level">
+        <defName>TI_Ranged6Level_Multi</defName>
+        <label>MulitShot</label>
+        <labelShort>20x</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>0.1</multiplier>
+                </value>
+            </li>
+        </stats>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Deals 10% damage twenty times.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_RangedBad" MayRequire="RimEffect.Core">
+        <defName>TI_RangedBad_Range</defName>
+        <label>low range</label>
+        <labelShort>lrng</labelShort>
+        <stats>
+            <li>
+                <key>VEF_VerbRangeFactor</key>
+                <value>
+                    <offset>-0.2</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_RangedBroken" MayRequire="RimEffect.Core">
+        <defName>TI_RangedBroken_Range</defName>
+        <label>very low range</label>
+        <labelShort>lrng2</labelShort>
+        <stats>
+            <li>
+                <key>VEF_VerbRangeFactor</key>
+                <value>
+                    <offset>-0.5</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged1Level" MayRequire="RimEffect.Core">
+        <defName>TI_Ranged1Level_Range</defName>
+        <label>high range</label>
+        <labelShort>rng1</labelShort>
+        <stats>
+            <li>
+                <key>VEF_VerbRangeFactor</key>
+                <value>
+                    <offset>0.04</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged2Level" MayRequire="RimEffect.Core">
+        <defName>TI_Ranged2Level_Range</defName>
+        <label>high range</label>
+        <labelShort>rng2</labelShort>
+        <stats>
+            <li>
+                <key>VEF_VerbRangeFactor</key>
+                <value>
+                    <offset>0.08</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_Ranged3Level" MayRequire="RimEffect.Core">
+        <defName>TI_Ranged3Level_Range</defName>
+        <label>high range</label>
+        <labelShort>rng3</labelShort>
+        <stats>
+            <li>
+                <key>VEF_VerbRangeFactor</key>
+                <value>
+                    <offset>0.12</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged4Level" MayRequire="RimEffect.Core">
+        <defName>TI_Ranged4Level_Range</defName>
+        <label>high range</label>
+        <labelShort>rng4</labelShort>
+        <stats>
+            <li>
+                <key>VEF_VerbRangeFactor</key>
+                <value>
+                    <offset>0.16</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged5Level" MayRequire="RimEffect.Core">
+        <defName>TI_Ranged5Level_Range</defName>
+        <label>high range</label>
+        <labelShort>rng5</labelShort>
+        <stats>
+            <li>
+                <key>VEF_VerbRangeFactor</key>
+                <value>
+                    <offset>0.2</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged6Level" MayRequire="RimEffect.Core">
+        <defName>TI_Ranged6Level_Range</defName>
+        <label>high range</label>
+        <labelShort>rng6</labelShort>
+        <stats>
+            <li>
+                <key>VEF_VerbRangeFactor</key>
+                <value>
+                    <offset>0.24</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_Ranged7Level" MayRequire="RimEffect.Core">
+        <defName>TI_Ranged7Level_Range</defName>
+        <label>very high range</label>
+        <labelShort>rng7</labelShort>
+        <stats>
+            <li>
+                <key>VEF_VerbRangeFactor</key>
+                <value>
+                    <offset>0.28</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged8Level" MayRequire="RimEffect.Core">
+        <defName>TI_Ranged8Level_Range</defName>
+        <label>very high range</label>
+        <labelShort>rng8</labelShort>
+        <stats>
+            <li>
+                <key>VEF_VerbRangeFactor</key>
+                <value>
+                    <offset>0.32</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged9Level" MayRequire="RimEffect.Core">
+        <defName>TI_Ranged9Level_Range</defName>
+        <label>ultra range</label>
+        <labelShort>rng9</labelShort>
+        <stats>
+            <li>
+                <key>VEF_VerbRangeFactor</key>
+                <value>
+                    <offset>0.36</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged10Level" MayRequire="RimEffect.Core">
+        <defName>TI_Ranged10Level_Range</defName>
+        <label>ultra range</label>
+        <labelShort>rng10</labelShort>
+        <stats>
+            <li>
+                <key>VEF_VerbRangeFactor</key>
+                <value>
+                    <offset>0.4</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged11Level" MayRequire="RimEffect.Core">
+        <defName>TI_Ranged11Level_Range</defName>
+        <label>Infinite</label>
+        <labelShort>rng11</labelShort>
+        <stats>
+            <li>
+                <key>VEF_VerbRangeFactor</key>
+                <value>
+                    <offset>1</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_Ranged10Level">
+        <defName>TI_Ranged10Level_DualA</defName>
+        <label>dual</label>
+        <labelShort>dualA</labelShort>
+        <onHits>
+            <li Class="Infusion.OnHitWorkers.ApplyDamage">
+                <def>Bullet</def>
+                <amount>1</amount>
+            </li>
+        </onHits>
+        <extraDescriptions>
+            <li>Deals damage two times.</li>
+        </extraDescriptions>
+    </Infusion.InfusionDef>
+
+
+    <Infusion.InfusionDef ParentName="TI_Ranged10Level">
+        <defName>TI_Ranged10Level_DualB</defName>
+        <label>dual</label>
+        <labelShort>dualB</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>-0.5</offset>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
 
 </Defs>
