@@ -229,7 +229,7 @@
     <defName>TI_Rare</defName>
     <label>rare</label>
     <priority>10</priority>
-    <color>(1, 1, 1)</color>
+    <color>(0, 1, 0)</color>
     <infuserValue>800</infuserValue>
     <extractionChance>0.25</extractionChance>
     <weights>
@@ -242,11 +242,11 @@
       <legendary>1</legendary>
     </weights>
     <chances>
-      <awful>0.1</awful>
-      <poor>0.1</poor>
-      <normal>0.1</normal>
-      <good>0.15</good>
-      <excellent>0.15</excellent>
+      <awful>0.2</awful>
+      <poor>0.2</poor>
+      <normal>0.2</normal>
+      <good>0.2</good>
+      <excellent>0.2</excellent>
       <masterwork>0.2</masterwork>
       <legendary>0.2</legendary>
     </chances>
@@ -318,7 +318,7 @@
     <defName>TI_Legendary</defName>
     <label>legendary</label>
     <priority>10</priority>
-    <color>(1, 1, 1)</color>
+    <color>(1, 1, 0)</color>
     <infuserValue>2400</infuserValue>
     <extractionChance>0.2</extractionChance>
     <weights>
@@ -331,13 +331,13 @@
       <legendary>1</legendary>
     </weights>
     <chances>
-      <awful>0.01</awful>
-      <poor>0.01</poor>
-      <normal>0.01</normal>
-      <good>0.02</good>
-      <excellent>0.03</excellent>
-      <masterwork>0.04</masterwork>
-      <legendary>0.05</legendary>
+      <awful>0.05</awful>
+      <poor>0.05</poor>
+      <normal>0.05</normal>
+      <good>0.05</good>
+      <excellent>0.05</excellent>
+      <masterwork>0.075</masterwork>
+      <legendary>0.1</legendary>
     </chances>
   </Infusion.TierDef>
 
@@ -408,7 +408,7 @@
     <defName>TI_Mythical</defName>
     <label>mythical</label>
     <priority>10</priority>
-    <color>(1, 1, 1)</color>
+    <color>(1, 0, 1)</color>
     <infuserValue>5200</infuserValue>
     <extractionChance>0.01</extractionChance>
     <weights>
@@ -421,11 +421,11 @@
       <legendary>1</legendary>
     </weights>
     <chances>
-      <awful>0.001</awful>
-      <poor>0.002</poor>
-      <normal>0.003</normal>
-      <good>0.004</good>
-      <excellent>0.005</excellent>
+      <awful>0.01</awful>
+      <poor>0.01</poor>
+      <normal>0.01</normal>
+      <good>0.01</good>
+      <excellent>0.01</excellent>
       <masterwork>0.01</masterwork>
       <legendary>0.02</legendary>
     </chances>

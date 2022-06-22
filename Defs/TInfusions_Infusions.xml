@@ -622,10 +622,10 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_RangedMythical">
-        <defName>TI_RangedMythical_Overclocked</defName>
-        <label>bullet rain</label>
-        <labelShort>b-rain</labelShort>
+    <Infusion.InfusionDef ParentName="TI_BulletMythical">
+        <defName>TI_BulletMythical_Overclocked</defName>
+        <label>bullet hell</label>
+        <labelShort>b-hell</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_Cooldown</key>
@@ -661,6 +661,56 @@
                 <key>AccuracyLong</key>
                 <value>
                     <multiplier>-0.7</multiplier>
+                </value>
+            </li>
+        </stats>
+    </Infusion.InfusionDef>
+
+    <Infusion.InfusionDef ParentName="TI_BulletMythical">
+        <defName>TI_BulletMythical_OverclockedB</defName>
+        <label>bullet rain</label>
+        <labelShort>b-rain</labelShort>
+        <stats>
+            <li>
+                <key>RangedWeapon_Cooldown</key>
+                <value>
+                    <multiplier>-0.999</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AimingDelayFactor</key>
+                <value>
+                    <offset>-0.999</offset>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyTouch</key>
+                <value>
+                    <multiplier>-0.999</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyShort</key>
+                <value>
+                    <multiplier>-0.999</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyMedium</key>
+                <value>
+                    <multiplier>-0.999</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>AccuracyLong</key>
+                <value>
+                    <multiplier>-0.999</multiplier>
+                </value>
+            </li>
+            <li>
+                <key>RangedWeapon_DamageMultiplier</key>
+                <value>
+                    <multiplier>-0.5</multiplier>
                 </value>
             </li>
         </stats>
@@ -1155,10 +1205,10 @@
     </Infusion.InfusionDef>
 
 
-    <Infusion.InfusionDef ParentName="TI_RangedMythical">
-        <defName>TI_RangedMythical_RapidFire</defName>
-        <label>bullet hell</label>
-        <labelShort>b-hell</labelShort>
+    <Infusion.InfusionDef ParentName="TI_BulletMythical">
+        <defName>TI_BulletMythical_RapidFire</defName>
+        <label>bullet sprayer</label>
+        <labelShort>b-spray</labelShort>
         <stats>
             <li>
                 <key>RangedWeapon_DamageMultiplier</key>
@@ -1494,7 +1544,7 @@
     </Infusion.InfusionDef>
 
     <Infusion.InfusionDef ParentName="TI_RangedMythical">
-        <defName>TI_RangedMythical_Hot</defName>
+        <defName>TI_RangedMythical_HotB</defName>
         <label>blazing</label>
         <labelShort>blz</labelShort>
         <onHits>
@@ -1715,7 +1765,7 @@
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
-                    <offset>0.5</offset>
+                    <offset>1</offset>
                 </value>
             </li>
             <li>
@@ -1745,31 +1795,31 @@
             <li>
                 <key>RangedWeapon_Cooldown</key>
                 <value>
-                    <offset>2</offset>
+                    <offset>8</offset>
                 </value>
             </li>
             <li>
                 <key>AccuracyTouch</key>
                 <value>
-                    <multiplier>-0.7</multiplier>
+                    <multiplier>-0.9</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyShort</key>
                 <value>
-                    <multiplier>-0.7</multiplier>
+                    <multiplier>-0.9</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyMedium</key>
                 <value>
-                    <multiplier>-0.7</multiplier>
+                    <multiplier>-0.9</multiplier>
                 </value>
             </li>
             <li>
                 <key>AccuracyLong</key>
                 <value>
-                    <multiplier>-0.7</multiplier>
+                    <multiplier>-0.9</multiplier>
                 </value>
             </li>
         </stats>
